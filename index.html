@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BeWinnerEngineer. High-intensity aerospace GNC mentorship, career portfolio armor, and emotional resilience coaching for future engineers.">
+    <title>BeWinnerEngineer | Forge Your Engineering Excellence</title>
+    
+    <!-- Google Fonts for English/Latin & Cairo for Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- Responsive mobile/tablet stylesheet overrides -->
+    <style>
+        /* Responsive typography scaling */
+        .hero-title {
+            font-size: clamp(2.2rem, 7vw, 4.8rem) !important;
+        }
+        .hero-description {
+            font-size: clamp(1rem, 3.5vw, 1.25rem) !important;
+        }
+        
+        /* Mobile Navigation stack */
+        @media (max-width: 768px) {
+            header {
+                position: relative !important;
+                padding: 15px 0 !important;
+            }
+            header .manga-container {
+                flex-direction: column !important;
+                gap: 15px !important;
+                text-align: center !important;
+            }
+            header nav {
+                flex-direction: column !important;
+                gap: 10px !important;
+                width: 100% !important;
+                margin-top: 10px !important;
+            }
+            header .lang-selector-group {
+                width: 100% !important;
+                justify-content: center !important;
+            }
+            header .btn-bankai {
+                width: 100% !important;
+                text-align: center !important;
+                margin: 0 !important;
+                box-sizing: border-box !important;
+            }
+            main {
+                padding-top: 40px !important;
+            }
+        }
+
+        /* Responsive Grid layouts */
+        @media (max-width: 992px) {
+            .teaser-pillars .dojo-grid {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+            .monetization-wrapper {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+            }
+        }
+
+        /* Mobile countdown grid scale */
+        @media (max-width: 600px) {
+            .countdown-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 12px !important;
+            }
+            .countdown-num {
+                font-size: 2.2rem !important;
+            }
+            .countdown-box {
+                padding: 15px 8px !important;
+            }
+            
+            /* Responsive newsletter form stack */
+            .monetization-wrapper div[style*="grid-template-columns"] {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 10px !important;
+            }
+            .monetization-wrapper input, .monetization-wrapper button {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body class="teaser-body-wrapper">
+
+    <!-- Speed-Lines Canvas Overlay -->
+    <canvas id="speed-lines-canvas"></canvas>
+
+    <!-- Header / Nav -->
+    <header style="position: absolute; top: 0; left: 0; width: 100%; z-index: 10; padding: 25px 0;">
+        <div class="manga-container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="footer-logo" style="font-size: 2.2rem;" data-i18n="teaser-logo">
+                BeWinnerEngineer<span style="color: var(--crimson);">.SYS</span>
+            </div>
+            
+            <nav style="display: flex; gap: 20px; align-items: center;">
+                <!-- Sleek Monospace Language Picker -->
+                <div class="lang-selector-group" style="display: flex; align-items: center; gap: 6px; border: 1px solid var(--steel-dark); padding: 4px 8px; background-color: rgba(10, 10, 12, 0.8);">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <span style="color: var(--steel-dark); font-size: 0.8rem;">|</span>
+                    <button class="lang-btn" data-lang="jp">JP</button>
+                    <span style="color: var(--steel-dark); font-size: 0.8rem;">|</span>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                    <span style="color: var(--steel-dark); font-size: 0.8rem;">|</span>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                    <span style="color: var(--steel-dark); font-size: 0.8rem;">|</span>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                </div>
+                
+                <a href="portfolio.html" class="btn-bankai" id="nav-portfolio-btn" style="font-size: 1.1rem; padding: 6px 18px; box-shadow: 3px 3px 0px var(--accent-cyan); border-color: var(--accent-cyan); color: var(--accent-cyan); margin-left: 10px;" data-i18n="teaser-nav-portfolio">VIEW PORTFOLIO</a>
+                <a href="#waitlist" class="btn-bankai" id="nav-bankai-btn" style="font-size: 1.1rem; padding: 6px 18px; box-shadow: 3px 3px 0px var(--text-light); margin-left: 10px;" data-i18n="teaser-nav-cta">JOIN WAITLIST</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="manga-container" style="padding-top: 130px; padding-bottom: 80px;">
+        
+        <!-- TEASER HERO & COUNTDOWN -->
+        <section class="teaser-hero" style="margin-bottom: 60px;">
+            <div class="hero-main" style="text-align: center; margin-bottom: 40px; width: 100%; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <div class="hero-subtext" data-i18n="teaser-telemetry">INITIALIZING LAUNCH VECTOR // POWER LEVEL: UNBOUNDED</div>
+                <h1 class="hero-title" style="font-size: 4.8rem; line-height: 1.1;">
+                    <span data-i18n="teaser-title-1">LAUNCHING SOON:</span><br>
+                    <span class="crimson-text glitch-hover" data-i18n="teaser-title-2">FORGE YOUR BANKAI.</span>
+                </h1>
+                <p class="hero-description" style="font-size: 1.25rem; margin-top: 25px;" data-i18n="teaser-desc">
+                    University teaches you how to calculate. We teach you how to survive and thrive. Join the elite cohort of future aerospace and systems engineers. Accelerate your career from basic student to premium systems architect.
+                </p>
+            </div>
+
+            <!-- Glowing Terminal Countdown Grid -->
+            <div class="countdown-dashboard manga-outline" style="max-width: 800px; margin: 0 auto 50px auto; padding: 30px; background-color: rgba(7, 8, 11, 0.95); position: relative; border-color: var(--crimson);">
+                <div class="dashboard-header" style="border-bottom: 1px solid var(--steel-dark); padding-bottom: 12px; margin-bottom: 25px; display: flex; justify-content: space-between;">
+                    <span data-i18n="teaser-clock-header">> TIME_TILL_LAUNCH.EXE</span>
+                    <span id="telemetry-timer">TARGET: 2026-08-01 00:00:00Z</span>
+                </div>
+                
+                <div class="countdown-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center;">
+                    <div class="countdown-box" style="border: 2px solid var(--steel-dark); padding: 20px 10px; background-color: #0c0d12; box-shadow: 4px 4px 0 var(--steel-dark);">
+                        <div class="countdown-num" id="countdown-days" style="font-family: var(--font-mono); font-size: 3.5rem; font-weight: 900; color: var(--accent-cyan); text-shadow: 0 0 10px var(--accent-cyan);">00</div>
+                        <div class="countdown-label" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--steel); margin-top: 10px;" data-i18n="teaser-days">DAYS</div>
+                    </div>
+                    <div class="countdown-box" style="border: 2px solid var(--steel-dark); padding: 20px 10px; background-color: #0c0d12; box-shadow: 4px 4px 0 var(--steel-dark);">
+                        <div class="countdown-num" id="countdown-hours" style="font-family: var(--font-mono); font-size: 3.5rem; font-weight: 900; color: var(--text-light);">00</div>
+                        <div class="countdown-label" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--steel); margin-top: 10px;" data-i18n="teaser-hours">HOURS</div>
+                    </div>
+                    <div class="countdown-box" style="border: 2px solid var(--steel-dark); padding: 20px 10px; background-color: #0c0d12; box-shadow: 4px 4px 0 var(--steel-dark);">
+                        <div class="countdown-num" id="countdown-mins" style="font-family: var(--font-mono); font-size: 3.5rem; font-weight: 900; color: var(--text-light);">00</div>
+                        <div class="countdown-label" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--steel); margin-top: 10px;" data-i18n="teaser-mins">MINUTES</div>
+                    </div>
+                    <div class="countdown-box" style="border: 2px solid var(--steel-dark); padding: 20px 10px; background-color: #0c0d12; box-shadow: 4px 4px 0 var(--steel-dark);">
+                        <div class="countdown-num" id="countdown-secs" style="font-family: var(--font-mono); font-size: 3.5rem; font-weight: 900; color: var(--accent-gold); text-shadow: 0 0 10px var(--accent-gold);">00</div>
+                        <div class="countdown-label" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--steel); margin-top: 10px;" data-i18n="teaser-secs">SECONDS</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VALUE PILLARS & KEYWORDS -->
+        <section class="teaser-pillars" style="margin-bottom: 80px;">
+            <div class="section-title-wrapper" style="margin-bottom: 40px; text-align: center;">
+                <h2 class="section-title" style="display:inline-block;" data-i18n="teaser-pillars-title">SYSTEM <span>CAPABILITIES</span></h2>
+                <div class="section-num" data-i18n="teaser-pillars-num">TACTICAL VALUE MATRIX</div>
+            </div>
+            
+            <div class="dojo-grid" style="grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <!-- Pillar 1: Help Students become better engineers -->
+                <div class="dojo-panel manga-outline" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="dojo-panel-header">
+                        <span class="dojo-tag" data-i18n="teaser-tag-skills">ENGINEERING EXCELLENCE</span>
+                        <span class="dojo-rank">P1</span>
+                    </div>
+                    <div>
+                        <h3 class="dojo-title" data-i18n="teaser-p1-title">BECOME BETTER ENGINEERS</h3>
+                        <p class="dojo-desc" data-i18n="teaser-p1-desc">
+                            Standard curriculums teach equations. We teach practical systems architecture. Master GNC modeling, ANSYS structural validation, and robust workflow automation so your engineering output meets professional space standards.
+                        </p>
+                    </div>
+                    <div class="dojo-footer" style="margin-top: 20px; padding-top: 10px; border-top: 1px dashed var(--steel-dark);">
+                        <span style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.8rem;">[ > SYSTEMS ALIGNMENT ]</span>
+                    </div>
+                </div>
+
+                <!-- Pillar 2: Find opportunities -->
+                <div class="dojo-panel manga-outline" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="dojo-panel-header">
+                        <span class="dojo-tag" data-i18n="teaser-tag-career">CAREER HARDENING</span>
+                        <span class="dojo-rank">P2</span>
+                    </div>
+                    <div>
+                        <h3 class="dojo-title" data-i18n="teaser-p2-title">FIND OPPORTUNITIES</h3>
+                        <p class="dojo-desc" data-i18n="teaser-p2-desc">
+                            We transform soft resumes into unbreakable exoeskeleton portfolios. Learn how to draft technical proposals and application packets that command immediate attention from giants like Boeing, Airbus, and ESA research centers.
+                        </p>
+                    </div>
+                    <div class="dojo-footer" style="margin-top: 20px; padding-top: 10px; border-top: 1px dashed var(--steel-dark);">
+                        <span style="color: var(--accent-gold); font-family: var(--font-mono); font-size: 0.8rem;">[ > FLIGHTLINE ACCESS ]</span>
+                    </div>
+                </div>
+
+                <!-- Pillar 3: Emotional Support & Stress -->
+                <div class="dojo-panel manga-outline" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="dojo-panel-header">
+                        <span class="dojo-tag" data-i18n="teaser-tag-resilience">MENTAL SHIELDING</span>
+                        <span class="dojo-rank">P3</span>
+                    </div>
+                    <div>
+                        <h3 class="dojo-title" data-i18n="teaser-p3-title">EMOTIONAL SUPPORT</h3>
+                        <p class="dojo-desc" data-i18n="teaser-p3-desc">
+                            The academic grind is brutal. We provide direct coaching on managing heavy engineering workloads, overcoming failure in simulation labs, and building the mental armor needed to stay calm under intense board reviews.
+                        </p>
+                    </div>
+                    <div class="dojo-footer" style="margin-top: 20px; padding-top: 10px; border-top: 1px dashed var(--steel-dark);">
+                        <span style="color: var(--crimson); font-family: var(--font-mono); font-size: 0.8rem;">[ > UNBREAKABLE WALL ]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MONETIZATION PANELS: WAITLIST, AUDIT, NEWSLETTER -->
+        <section class="monetization-wrapper" id="waitlist" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+            
+            <!-- Left: Waitlist Intake Form -->
+            <div class="terminal-box manga-outline" style="padding: 0; background-color: #07080b;">
+                <div class="terminal-header" style="background-color: var(--steel-dark); padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot" style="background-color:#555;"></span>
+                            <span class="dot" style="background-color:#555;"></span>
+                        </div>
+                        <span data-i18n="teaser-waitlist-header">BEWINNERENGINEER_ADMISSION_INTEG.EXE</span>
+                    </div>
+                </div>
+                
+                <div style="padding: 25px;">
+                    <h3 class="dojo-title" style="font-size: 2.2rem; margin-bottom: 12px;" data-i18n="teaser-waitlist-title">JOIN ELITE WAITLIST</h3>
+                    <p style="color: var(--steel); font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 25px;" data-i18n="teaser-waitlist-desc">
+                         Mentorship cohort seats are capped strictly at 5 students for Fall 2026. Submitting enters you into the priority selection queue.
+                    </p>
+                    
+                    <form id="waitlist-form" onsubmit="return false;">
+                        <div class="terminal-form-group">
+                            <label class="terminal-label" data-i18n="teaser-intake-lbl-name">> INTAKE OPERATOR NAME:</label>
+                            <input type="text" id="waitlist-name" class="terminal-input" required placeholder="e.g. CAD_WARRIOR_01">
+                        </div>
+
+                        <div class="terminal-form-group">
+                            <label class="terminal-label" data-i18n="teaser-intake-lbl-email">> SECURE EMAIL CHANNELS:</label>
+                            <input type="email" id="waitlist-email" class="terminal-input" required placeholder="e.g. candidate@satellite.org">
+                        </div>
+
+                        <div class="terminal-form-group">
+                            <label class="terminal-label" data-i18n="teaser-intake-lbl-stress">> CHOOSE PRIMARY BOTTLENECK:</label>
+                            <select id="waitlist-struggle" class="terminal-select" required>
+                                <option value="" data-i18n="teaser-intake-opt-default">-- SELECT PRIMARY CHALLENGE --</option>
+                                <option value="Finding Placements & Opportunities" data-i18n="teaser-intake-opt-1">Finding Top Internships & Opportunities</option>
+                                <option value="Academic Burnout & Stress Support" data-i18n="teaser-intake-opt-2">Managing Workload Stress & Emotional Support</option>
+                                <option value="GNC & Control Theory Code Hardening" data-i18n="teaser-intake-opt-3">GNC & Control Theory Code Hardening</option>
+                                <option value="Building Premium Resume Portfolio" data-i18n="teaser-intake-opt-4">Building S-Class Portfolio Armor</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="terminal-btn-submit" style="width: 100%;" data-i18n="teaser-intake-btn">> SECURE PRIORITY APPLICATION TICKET</button>
+                    </form>
+
+                    <div class="terminal-response-box" id="waitlist-response" style="display: none; margin-top: 20px; font-family: var(--font-mono); font-size: 0.85rem; padding: 15px; border: 1px dashed var(--terminal-green); color: var(--terminal-green); white-space: pre-wrap; background-color: rgba(0, 10, 0, 0.3);">
+                        <!-- Dynamic ticket output -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Premium Audit Audits & Newsletter Options -->
+            <div style="display: flex; flex-direction: column; gap: 30px;">
+                
+                <!-- Premium Resume Audit Card -->
+                <div class="dojo-panel manga-outline" style="border-color: var(--accent-gold); padding: 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <span class="badge-crimson" style="background-color: var(--accent-gold); border-color: var(--accent-gold); color: #000; font-weight: bold;" data-i18n="teaser-audit-badge">PRE-LAUNCH PREMIUM OFFER</span>
+                            <span style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.9rem;" data-i18n="teaser-audit-price">PREMIUM ACCESS</span>
+                        </div>
+                        <h3 class="dojo-title" style="font-size: 2.2rem; color: var(--accent-gold); text-shadow: 0 0 5px rgba(212, 175, 55, 0.2);" data-i18n="teaser-audit-title">EXOSKELETON PORTFOLIO AUDIT</h3>
+                        <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-audit-desc">
+                            Don't wait for August. Secure a direct, private 1-on-1 resume and portfolio audit by Zyad. We will rebuild your project catalog, identify structural resume holes, and align your GNC parameters before applications open.
+                        </p>
+                    </div>
+                    <div style="margin-top: 25px;">
+                        <a href="mailto:zyadel.aouad.eng@gmail.com?subject=[BeWinnerEngineer] Pre-Launch Portfolio Audit Booking" class="btn-bankai" style="display: block; text-align: center; font-size: 1rem; border-color: var(--accent-gold); color: var(--accent-gold); text-decoration: none; box-shadow: 3px 3px 0 var(--accent-gold);" data-i18n="teaser-audit-btn">BOOK PREMIUM AUDIT &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Newsletter Subscription Card -->
+                <div class="dojo-panel manga-outline" style="padding: 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <span class="dojo-tag" style="margin-bottom: 15px;" data-i18n="teaser-news-badge">WEEKLY TRANSMISSIONS</span>
+                        <h3 class="dojo-title" style="font-size: 2.2rem;" data-i18n="teaser-news-title">THE IRON TELEMETRY</h3>
+                        <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-news-desc">
+                            Receive GNC simulation blueprints, upcoming internship telemetry alerts, and emotional resilience manuals to keep your engineering discipline unbreakable under stress.
+                        </p>
+                    </div>
+                    <div style="margin-top: 25px; display: grid; grid-template-columns: 1fr auto; gap: 10px;">
+                        <input type="email" id="newsletter-email" class="terminal-input" placeholder="operator@satellite.org" style="margin: 0;">
+                        <button id="newsletter-btn" class="btn-bankai" style="font-size: 0.9rem; padding: 10px 20px; box-shadow: 2px 2px 0 var(--accent-cyan); border-color: var(--accent-cyan); color: var(--accent-cyan);" data-i18n="teaser-news-btn">SUBSCRIBE</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Dynamic Live Ticker Overlay -->
+        <div class="hero-dashboard manga-outline" style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #07080b;">
+            <div class="dashboard-header" style="border-bottom: 1px solid var(--steel-dark); padding-bottom: 8px; margin-bottom: 12px;">
+                <span data-i18n="teaser-feed-header">> DYNAMIC SYSTEM TELEMETRY TICKER</span>
+            </div>
+            <div class="telemetry-feed" id="telemetry-log" style="height: 100px; color: var(--terminal-green);">
+                <div class="telemetry-line">> Establishing secure signal block...</div>
+                <div class="telemetry-line">> Listening for incoming intake packets...</div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer style="border-top: 1px solid var(--steel-dark); padding: 40px 0;">
+        <div class="manga-container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+            <div>
+                <div class="footer-logo">
+                    BeWinnerEngineer<span style="color: var(--crimson);">.SYSTEMS</span>
+                </div>
+                <p style="color: var(--steel); font-family: var(--font-mono); font-size: 0.85rem; margin-top: 8px;" data-i18n="teaser-footer-sub">
+                    // PORTFOLIO ACCESS: <a href="portfolio.html" style="color: var(--accent-cyan); text-decoration: underline;">PORTFOLIO.EXE</a> // MENTORSHIP STAGES // 5 LANGUAGES SUPPORTED
+                </p>
+            </div>
+            <div class="footer-copy" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--steel-dark);" data-i18n="teaser-footer-copy">
+                &copy; 2026 BEWINNERENGINEER. ALL CODES SECURED. POWER LEVEL: SYSTEMS.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Web Audio API Synth Toggle (Mute/Unmute in corner) -->
+    <div style="position: fixed; bottom: 20px; right: 20px; z-index: 50;">
+        <button id="audio-toggle" style="background-color: rgba(20, 20, 23, 0.9); border: 2px solid var(--steel); color: var(--steel); font-family: var(--font-mono); font-size: 0.75rem; padding: 6px 12px; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+            <span id="audio-status-indicator" style="display:inline-block; width:8px; height:8px; border-radius:50%; background-color:#555;"></span>
+            <span>AUDIO SYSTEM: INACTIVE</span>
+        </button>
+    </div>
+
+    <!-- JS Core scripts -->
+    <script src="translations.js"></script>
+    <script src="launch.js"></script>
+</body>
+</html>
