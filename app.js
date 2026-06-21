@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 400);
 });
 
-// --- 3. CANVAS SPEED-LINES ANIMATION (INITIAL D AESTHETIC) ---
+// --- 3. CANVAS DEEP SPACE STARFIELD ANIMATION ---
 const canvas = document.getElementById('speed-lines-canvas');
 const ctx = canvas ? canvas.getContext('2d') : null;
 
@@ -73,98 +73,179 @@ if (canvas && ctx) {
     });
 }
 
-const starCount = 120;
+// 3 Layers of Stars for deep space depth/parallax
 const stars = [];
+const layers = [
+    { count: 140, depth: 0.1, speed: 0.02, minSize: 0.2, maxSize: 0.6, baseAlpha: 0.25 }, // Deepest / Slowest / Smallest
+    { count: 70,  depth: 0.4, speed: 0.05, minSize: 0.6, maxSize: 1.2, baseAlpha: 0.45 }, // Midground
+    { count: 25,  depth: 0.9, speed: 0.12, minSize: 1.2, maxSize: 2.0, baseAlpha: 0.70 }  // Foreground / Brightest
+];
 
-for (let i = 0; i < starCount; i++) {
-    stars.push({
-        x: Math.random() * width,
-        y: Math.random() * height,
-        size: Math.random() * 1.5 + 0.5,
-        speedX: -(Math.random() * 0.15 + 0.05), // slow left drift
-        speedY: (Math.random() * 0.08 - 0.04),  // slow vertical drift
-        baseOpacity: Math.random() * 0.5 + 0.3,
-        phase: Math.random() * Math.PI * 2,
-        twinkleSpeed: Math.random() * 0.015 + 0.005
-    });
-}
+layers.forEach((layer) => {
+    for (let i = 0; i < layer.count; i++) {
+        stars.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            size: Math.random() * (layer.maxSize - layer.minSize) + layer.minSize,
+            speedX: -layer.speed * (Math.random() * 0.4 + 0.8), // slow leftward movement
+            speedY: (Math.random() * 0.02 - 0.01) * layer.speed, // tiny vertical drift
+            baseOpacity: Math.random() * 0.2 + layer.baseAlpha,
+            twinkleSpeed: Math.random() * 0.01 + 0.003,
+            phase: Math.random() * Math.PI * 2,
+            depth: layer.depth
+        });
+    }
+});
 
-// Target center for radial speed lines
-let centerX = width / 2;
-let centerY = height / 2;
-let mouseVelocity = 0;
-let lastMouseX = 0;
-let lastMouseY = 0;
-let scrollVelocity = 0;
-let lastScrollY = window.scrollY;
+// Interactive mouse parallax variables (inertia eased)
+let mouseX = width / 2;
+let mouseY = height / 2;
+let targetParallaxX = 0;
+let targetParallaxY = 0;
+let currentParallaxX = 0;
+let currentParallaxY = 0;
 
 window.addEventListener('mousemove', (e) => {
-    centerX = e.clientX;
-    centerY = e.clientY;
-    
-    const dx = e.clientX - lastMouseX;
-    const dy = e.clientY - lastMouseY;
-    mouseVelocity = Math.min(Math.sqrt(dx * dx + dy * dy) * 0.5, 20);
-    
-    lastMouseX = e.clientX;
-    lastMouseY = e.clientY;
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    // Max parallax displacement is 25px in either direction
+    targetParallaxX = ((width / 2) - mouseX) * 0.03;
+    targetParallaxY = ((height / 2) - mouseY) * 0.03;
 });
 
+// Scrolling parallax offset
+let scrollYOffset = window.scrollY;
 window.addEventListener('scroll', () => {
-    const currentScrollY = window.scrollY;
-    scrollVelocity = Math.min(Math.abs(currentScrollY - lastScrollY) * 0.8, 30);
-    lastScrollY = currentScrollY;
+    scrollYOffset = window.scrollY;
 });
+
+// Shooting star definition
+class ShootingStar {
+    constructor() {
+        this.reset();
+    }
+    
+    reset() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * (height * 0.4); // Start in top half
+        this.length = Math.random() * 80 + 50;
+        this.speedX = -(Math.random() * 10 + 12); // Shoots left
+        this.speedY = Math.random() * 4 + 4;      // Shoots down
+        this.opacity = 1;
+        this.decay = Math.random() * 0.018 + 0.012; // Fade speed
+        this.active = Math.random() < 0.2; // 20% chance of starting immediately, else delayed
+        this.delayTimer = Math.random() * 300; // Delay frame count
+    }
+    
+    update() {
+        if (!this.active) {
+            this.delayTimer--;
+            if (this.delayTimer <= 0) {
+                this.active = true;
+            }
+            return;
+        }
+        
+        this.x += this.speedX;
+        this.y += this.speedY;
+        this.opacity -= this.decay;
+        
+        if (this.opacity <= 0 || this.x < -this.length || this.y > height + this.length) {
+            this.reset();
+        }
+    }
+    
+    draw(context) {
+        if (!this.active || !context) return;
+        
+        const grad = context.createLinearGradient(
+            this.x, this.y, 
+            this.x - this.speedX * 2, this.y - this.speedY * 2
+        );
+        grad.addColorStop(0, `rgba(255, 255, 255, ${this.opacity})`);
+        grad.addColorStop(1, 'rgba(255, 255, 255, 0)');
+        
+        context.beginPath();
+        context.strokeStyle = grad;
+        context.lineWidth = 1.5;
+        context.moveTo(this.x, this.y);
+        context.lineTo(this.x - this.speedX * 1.5, this.y - this.speedY * 1.5);
+        context.stroke();
+    }
+}
+
+const shootingStarsCount = 2;
+const shootingStars = [];
+for (let i = 0; i < shootingStarsCount; i++) {
+    shootingStars.push(new ShootingStar());
+}
 
 let starTime = 0;
-function animateSpeedLines() {
+function animateStarfield() {
     if (!ctx) return;
     ctx.clearRect(0, 0, width, height);
     starTime += 1;
     
-    const scrollEffect = scrollVelocity * 0.15;
-    const mouseEffectX = (centerX - width / 2) * 0.00015 * mouseVelocity;
-    const mouseEffectY = (centerY - height / 2) * 0.00015 * mouseVelocity;
-    
-    // Decay velocity overrides
-    mouseVelocity *= 0.95;
-    scrollVelocity *= 0.92;
+    // Easing for mouse parallax to make it ultra-smooth
+    currentParallaxX += (targetParallaxX - currentParallaxX) * 0.05;
+    currentParallaxY += (targetParallaxY - currentParallaxY) * 0.05;
     
     stars.forEach(star => {
-        // Twinkle calculation
-        const opacity = Math.max(0.1, star.baseOpacity + Math.sin(starTime * star.twinkleSpeed + star.phase) * 0.2);
+        // Shimmering sinusoidal twinkle
+        const twinkle = Math.sin(starTime * star.twinkleSpeed + star.phase);
+        const opacity = Math.max(0.05, star.baseOpacity + twinkle * 0.15);
+        
+        // Calculate dynamic position incorporating drift, scroll parallax, and eased mouse parallax
+        const scrollEffect = scrollYOffset * 0.1 * star.depth;
+        const mouseEffectX = currentParallaxX * star.depth;
+        const mouseEffectY = currentParallaxY * star.depth;
+        
+        let drawX = star.x + mouseEffectX;
+        let drawY = star.y - scrollEffect + mouseEffectY;
+        
+        // Wrap coordinates to draw bounds
+        drawX = (drawX % width + width) % width;
+        drawY = (drawY % height + height) % height;
         
         ctx.beginPath();
         ctx.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-        ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+        
+        // Draw standard stars, foreground stars get a tiny premium glow
+        if (star.size > 1.4) {
+            ctx.shadowBlur = 4;
+            ctx.shadowColor = 'rgba(255, 255, 255, 0.4)';
+        } else {
+            ctx.shadowBlur = 0;
+        }
+        
+        ctx.arc(drawX, drawY, star.size, 0, Math.PI * 2);
         ctx.fill();
         
-        // Move stars (drift + parallax scroll effect + mouse interaction drift)
-        star.x += star.speedX - scrollEffect * 0.08 + mouseEffectX;
-        star.y += star.speedY + mouseEffectY;
+        // Update natural drifting position of stars
+        star.x += star.speedX;
+        star.y += star.speedY;
         
-        // Wrap around logic
-        if (star.x < 0) {
-            star.x = width;
-            star.y = Math.random() * height;
-        } else if (star.x > width) {
-            star.x = 0;
-            star.y = Math.random() * height;
-        }
-        
-        if (star.y < 0) {
-            star.y = height;
-            star.x = Math.random() * width;
-        } else if (star.y > height) {
-            star.y = 0;
-            star.x = Math.random() * width;
-        }
+        // Natural drift bounds check & wrap
+        if (star.x < 0) star.x = width;
+        if (star.x > width) star.x = 0;
+        if (star.y < 0) star.y = height;
+        if (star.y > height) star.y = 0;
     });
     
-    requestAnimationFrame(animateSpeedLines);
+    // Reset shadow values for shooting stars
+    ctx.shadowBlur = 0;
+    
+    // Update and draw classy shooting stars
+    shootingStars.forEach(s => {
+        s.update();
+        s.draw(ctx);
+    });
+    
+    requestAnimationFrame(animateStarfield);
 }
+
 if (canvas && ctx) {
-    animateSpeedLines();
+    animateStarfield();
 }
 
 
