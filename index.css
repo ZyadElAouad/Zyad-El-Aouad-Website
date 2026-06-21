@@ -1204,6 +1204,31 @@ footer {
     grid-row: span 2;
 }
 
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(6, 6, 9, 0.85);
+    color: var(--text-light);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+    z-index: 2;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    letter-spacing: 0.5px;
+}
+
+.gallery-item:hover .gallery-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* --- BLOG SYSTEM (MISSION LOGS) --- */
 .blog-intro {
     max-width: 800px;
