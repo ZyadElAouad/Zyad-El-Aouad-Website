@@ -1084,6 +1084,10 @@ footer {
     padding-bottom: 4px;
 }
 
+.social-link:hover {
+    color: var(--crimson) !important;
+}
+
 .footer-copy {
     font-family: var(--font-mono);
     font-size: 0.8rem;
