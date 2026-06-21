@@ -2,29 +2,29 @@
 
 /* --- CUSTOM PROPERTIES --- */
 :root {
-    --bg-darkest: rgba(5, 5, 8, 0.45);
-    --bg-dark: rgba(12, 12, 16, 0.65);
-    --bg-card: rgba(20, 20, 26, 0.75);
-    --bg-panel: rgba(26, 26, 34, 0.85);
-    --crimson: #e50914;
-    --crimson-hover: #ff2a35;
-    --crimson-glow: rgba(229, 9, 20, 0.4);
-    --crimson-glow-strong: rgba(229, 9, 20, 0.85);
+    --bg-darkest: rgba(2, 2, 4, 0.4);
+    --bg-dark: rgba(6, 6, 9, 0.5);
+    --bg-card: rgba(12, 12, 16, 0.35);
+    --bg-panel: rgba(18, 18, 24, 0.4);
+    --crimson: #c8102e;
+    --crimson-hover: #e50914;
+    --crimson-glow: rgba(200, 16, 46, 0.25);
+    --crimson-glow-strong: rgba(200, 16, 46, 0.7);
     --steel: #8c92ac;
-    --steel-dark: #3a3d4d;
+    --steel-dark: #2a2c3a;
     --text-light: #f5f5f7;
     --text-muted: #9fa4bc;
-    --accent-cyan: #00ffcc;
-    --accent-gold: #ffd700;
-    --terminal-green: #39ff14;
+    --accent-cyan: #38bdf8;
+    --accent-gold: #dfb15b;
+    --terminal-green: #4ade80;
     
     --font-heading: 'Bebas Neue', sans-serif;
     --font-body: 'Space Grotesk', sans-serif;
     --font-mono: 'Share Tech Mono', monospace;
     
-    --manga-border: 1px solid rgba(255, 255, 255, 0.12);
-    --manga-border-thick: 2px solid rgba(255, 255, 255, 0.2);
-    --manga-border-crimson: 1px solid rgba(229, 9, 20, 0.4);
+    --manga-border: 1px solid rgba(255, 255, 255, 0.08);
+    --manga-border-thick: 2px solid rgba(255, 255, 255, 0.15);
+    --manga-border-crimson: 1px solid rgba(200, 16, 46, 0.3);
 }
 
 /* --- RESET & FOUNDATION --- */
@@ -36,12 +36,22 @@
 }
 
 body {
-    background: radial-gradient(ellipse at bottom, #0f1626 0%, #030712 100%) !important;
+    background: radial-gradient(ellipse at bottom, #060608 0%, #000000 100%) !important;
     background-attachment: fixed !important;
     color: var(--text-light);
     font-family: var(--font-body);
     overflow-x: hidden;
     line-height: 1.6;
+    animation: bodyFadeIn 0.5s ease-out forwards;
+}
+
+@keyframes bodyFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Custom Scrollbar */
@@ -1630,20 +1640,20 @@ html[dir="rtl"] .dojo-title-large {
 .lang-selector-group,
 .hero-dashboard,
 .countdown-dashboard {
-    background-color: rgba(13, 14, 20, 0.75) !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4) !important;
+    background-color: rgba(6, 6, 9, 0.35) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5) !important;
 }
 
 /* Slimmer input fields for cleaner feel */
 .terminal-input,
 .terminal-select {
-    background-color: rgba(15, 15, 20, 0.6) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    backdrop-filter: blur(5px) !important;
-    -webkit-backdrop-filter: blur(5px) !important;
+    background-color: rgba(4, 4, 6, 0.25) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
 }
 
 
