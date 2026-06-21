@@ -71,16 +71,19 @@ window.addEventListener('resize', () => {
     canvas.height = height;
 });
 
-const speedLineCount = 80;
-const lines = [];
+const starCount = 120;
+const stars = [];
 
-for (let i = 0; i < speedLineCount; i++) {
-    lines.push({
+for (let i = 0; i < starCount; i++) {
+    stars.push({
         x: Math.random() * width,
         y: Math.random() * height,
-        length: Math.random() * 150 + 50,
-        speed: Math.random() * 8 + 3,
-        opacity: Math.random() * 0.4 + 0.1
+        size: Math.random() * 1.5 + 0.5,
+        speedX: -(Math.random() * 0.15 + 0.05), // slow left drift
+        speedY: (Math.random() * 0.08 - 0.04),  // slow vertical drift
+        baseOpacity: Math.random() * 0.5 + 0.3,
+        phase: Math.random() * Math.PI * 2,
+        twinkleSpeed: Math.random() * 0.015 + 0.005
     });
 }
 
@@ -111,51 +114,49 @@ window.addEventListener('scroll', () => {
     lastScrollY = currentScrollY;
 });
 
+let starTime = 0;
 function animateSpeedLines() {
     ctx.clearRect(0, 0, width, height);
+    starTime += 1;
     
-    const currentSpeedMultiplier = 1 + (scrollVelocity * 0.5) + (mouseVelocity * 0.3);
+    const scrollEffect = scrollVelocity * 0.15;
+    const mouseEffectX = (centerX - width / 2) * 0.00015 * mouseVelocity;
+    const mouseEffectY = (centerY - height / 2) * 0.00015 * mouseVelocity;
     
     // Decay velocity overrides
     mouseVelocity *= 0.95;
     scrollVelocity *= 0.92;
     
-    lines.forEach(line => {
-        // Draw horizontal streaming background lines
+    stars.forEach(star => {
+        // Twinkle calculation
+        const opacity = Math.max(0.1, star.baseOpacity + Math.sin(starTime * star.twinkleSpeed + star.phase) * 0.2);
+        
         ctx.beginPath();
-        ctx.strokeStyle = `rgba(255, 255, 255, ${line.opacity * (1 + currentSpeedMultiplier / 10)})`;
-        ctx.lineWidth = 1.5;
+        ctx.fillStyle = `rgba(255, 255, 255, ${opacity})`;
+        ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+        ctx.fill();
         
-        ctx.moveTo(line.x, line.y);
-        ctx.lineTo(line.x + line.length, line.y);
-        ctx.stroke();
+        // Move stars (drift + parallax scroll effect + mouse interaction drift)
+        star.x += star.speedX - scrollEffect * 0.08 + mouseEffectX;
+        star.y += star.speedY + mouseEffectY;
         
-        // Move lines
-        line.x -= line.speed * currentSpeedMultiplier;
+        // Wrap around logic
+        if (star.x < 0) {
+            star.x = width;
+            star.y = Math.random() * height;
+        } else if (star.x > width) {
+            star.x = 0;
+            star.y = Math.random() * height;
+        }
         
-        // Reset when offscreen
-        if (line.x + line.length < 0) {
-            line.x = width + Math.random() * 100;
-            line.y = Math.random() * height;
-            line.speed = Math.random() * 8 + 3;
+        if (star.y < 0) {
+            star.y = height;
+            star.x = Math.random() * width;
+        } else if (star.y > height) {
+            star.y = 0;
+            star.x = Math.random() * width;
         }
     });
-
-    // Draw some radial lines coming from center during fast scrolls/movement
-    if (currentSpeedMultiplier > 3) {
-        ctx.strokeStyle = `rgba(229, 9, 20, ${Math.min((currentSpeedMultiplier - 3) * 0.05, 0.3)})`;
-        ctx.lineWidth = 1;
-        for (let i = 0; i < 15; i++) {
-            const angle = Math.random() * Math.PI * 2;
-            const distStart = Math.random() * 200 + 100;
-            const distEnd = distStart + Math.random() * 300 + 50;
-            
-            ctx.beginPath();
-            ctx.moveTo(centerX + Math.cos(angle) * distStart, centerY + Math.sin(angle) * distStart);
-            ctx.lineTo(centerX + Math.cos(angle) * distEnd, centerY + Math.sin(angle) * distEnd);
-            ctx.stroke();
-        }
-    }
     
     requestAnimationFrame(animateSpeedLines);
 }

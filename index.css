@@ -2,10 +2,10 @@
 
 /* --- CUSTOM PROPERTIES --- */
 :root {
-    --bg-darkest: #050505;
-    --bg-dark: #0c0c0e;
-    --bg-card: #141417;
-    --bg-panel: #1a1a1e;
+    --bg-darkest: rgba(5, 5, 8, 0.45);
+    --bg-dark: rgba(12, 12, 16, 0.65);
+    --bg-card: rgba(20, 20, 26, 0.75);
+    --bg-panel: rgba(26, 26, 34, 0.85);
     --crimson: #e50914;
     --crimson-hover: #ff2a35;
     --crimson-glow: rgba(229, 9, 20, 0.4);
@@ -22,9 +22,9 @@
     --font-body: 'Space Grotesk', sans-serif;
     --font-mono: 'Share Tech Mono', monospace;
     
-    --manga-border: 3px solid #f5f5f7;
-    --manga-border-thick: 6px solid #f5f5f7;
-    --manga-border-crimson: 3px solid #e50914;
+    --manga-border: 1px solid rgba(255, 255, 255, 0.12);
+    --manga-border-thick: 2px solid rgba(255, 255, 255, 0.2);
+    --manga-border-crimson: 1px solid rgba(229, 9, 20, 0.4);
 }
 
 /* --- RESET & FOUNDATION --- */
@@ -36,17 +36,12 @@
 }
 
 body {
-    background-color: var(--bg-darkest);
+    background: radial-gradient(ellipse at bottom, #0f1626 0%, #030712 100%) !important;
+    background-attachment: fixed !important;
     color: var(--text-light);
     font-family: var(--font-body);
     overflow-x: hidden;
     line-height: 1.6;
-    /* 90s manga halftone dot overlay */
-    background-image: 
-        radial-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
-        radial-gradient(rgba(229, 9, 20, 0.01) 1px, transparent 1px);
-    background-size: 24px 24px, 36px 36px;
-    background-position: 0 0, 12px 12px;
 }
 
 /* Custom Scrollbar */
@@ -1613,6 +1608,32 @@ html[dir="rtl"] .manifesto-title-large,
 html[dir="rtl"] .dojo-title-large {
     font-family: 'Cairo', sans-serif !important;
     font-weight: 900;
+}
+
+/* --- PREMIUM GLASSMORPHISM THEMING OVERRIDES --- */
+.dojo-panel,
+.portfolio-card,
+.blueprint-card,
+.terminal-box,
+.manga-panel,
+.comms-form,
+.lang-selector-group,
+.hero-dashboard,
+.countdown-dashboard {
+    background-color: rgba(13, 14, 20, 0.75) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Slimmer input fields for cleaner feel */
+.terminal-input,
+.terminal-select {
+    background-color: rgba(15, 15, 20, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
 }
 
 
