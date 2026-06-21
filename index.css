@@ -89,7 +89,7 @@ p {
     height: 100vh;
     z-index: 1;
     pointer-events: none;
-    opacity: 0.25;
+    opacity: 0.95;
 }
 
 .blueprint-grid {
