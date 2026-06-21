@@ -148,7 +148,7 @@ const translations = {
         // Teaser Keys
         "teaser-logo": "BeWinnerEngineer",
         "teaser-nav-portfolio": "VIEW PORTFOLIO",
-        "teaser-nav-cta": "JOIN WAITLIST",
+        "teaser-nav-cta": "JOIN WAITLIST &rarr;",
         "teaser-telemetry": "INITIALIZING LAUNCH VECTOR // POWER LEVEL: UNBOUNDED",
         "teaser-title-1": "BEWINNERENGINEER:",
         "teaser-title-2": "FORGE YOUR SYSTEMS.",
@@ -342,7 +342,7 @@ const translations = {
         // Teaser Keys
         "teaser-logo": "BeWinnerEngineer",
         "teaser-nav-portfolio": "ポートフォリオを見る",
-        "teaser-nav-cta": "待機リスト登録",
+        "teaser-nav-cta": "待機リスト登録 &rarr;",
         "teaser-telemetry": "起動ベクトル初期化中 // パワーレベル：無制限",
         "teaser-title-1": "BEWINNERENGINEER:",
         "teaser-title-2": "自らの技術を鍛え上げよ。",
@@ -536,7 +536,7 @@ const translations = {
         // Teaser Keys
         "teaser-logo": "BeWinnerEngineer",
         "teaser-nav-portfolio": "VOIR LE PORTFOLIO",
-        "teaser-nav-cta": "S'INSCRIRE",
+        "teaser-nav-cta": "REJOINDRE LA LISTE D'ATTENTE &rarr;",
         "teaser-telemetry": "VECTEUR DE DÉPLOIEMENT INITIALISÉ // PUISSANCE : ILLIMITÉE",
         "teaser-title-1": "BEWINNERENGINEER:",
         "teaser-title-2": "FORGEZ VOTRE EXCELLENCE.",
@@ -731,7 +731,7 @@ const translations = {
         // Teaser Keys
         "teaser-logo": "BeWinnerEngineer",
         "teaser-nav-portfolio": "VER PORTAFOLIO",
-        "teaser-nav-cta": "LISTA DE ESPERA",
+        "teaser-nav-cta": "UNIRSE A LA LISTA DE ESPERA &rarr;",
         "teaser-telemetry": "INICIALIZANDO VECTOR DE LANZAMIENTO // NIVEL DE PODER: ILIMITADO",
         "teaser-title-1": "BEWINNERENGINEER:",
         "teaser-title-2": "FORJA TU EXCELENCIA.",
@@ -927,7 +927,7 @@ const translations = {
         // Teaser Keys
         "teaser-logo": "BeWinnerEngineer",
         "teaser-nav-portfolio": "شاهد البورتفوليو",
-        "teaser-nav-cta": "تسجل فاللائحة",
+        "teaser-nav-cta": "تسجل فاللائحة دابا &rarr;",
         "teaser-telemetry": "البدء فـ توجيه الإطلاق // مستوى الطاقة: غير محدود",
         "teaser-title-1": "BEWINNERENGINEER:",
         "teaser-title-2": "قوّي المهارات ديالك.",
