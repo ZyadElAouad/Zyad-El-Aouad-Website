@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BeWinnerEngineer. High-intensity aerospace GNC mentorship, career portfolio armor, and emotional resilience coaching for future engineers.">
-    <title>BeWinnerEngineer | Forge Your Engineering Excellence</title>
+    <title>BeWinnerEngineer | Mission Logs Blog</title>
     
     <!-- Google Fonts for English/Latin & Cairo for Arabic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,17 +72,8 @@
             }
         }
 
-        /* Mobile layout styling updates */
+        /* Mobile layout styling overrides */
         @media (max-width: 600px) {
-            /* Responsive newsletter form stack */
-            .monetization-wrapper div[style*="grid-template-columns"] {
-                display: flex !important;
-                flex-direction: column !important;
-                gap: 10px !important;
-            }
-            .monetization-wrapper input, .monetization-wrapper button {
-                width: 100% !important;
-            }
             .manga-panel {
                 grid-template-columns: 1fr !important;
                 padding: 20px !important;
@@ -110,7 +101,7 @@
                 <a href="about.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-about">ABOUT</a>
                 <a href="dojo.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-dojo">THE DOJO</a>
                 <a href="zanpakuto.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-zanpakuto">ZANPAKUTO</a>
-                <a href="blog.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-blog">BLOG</a>
+                <a href="blog.html" class="footer-link active-nav-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-blog">BLOG</a>
                 <a href="manifesto.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-manifesto">MANIFESTO</a>
                 
                 <!-- Sleek Monospace Language Picker -->
@@ -133,126 +124,120 @@
 
     <main class="manga-container" style="padding-top: 130px; padding-bottom: 80px;">
         
-        <!-- HERO SECTION: THE GATE -->
-        <section class="hero-wrapper" id="hero" style="margin-bottom: 60px;">
-            <div class="hero-main">
-                <div class="hero-subtext" data-i18n="teaser-telemetry">INITIALIZING LAUNCH VECTOR // POWER LEVEL: UNBOUNDED</div>
-                <h1 class="hero-title" style="font-size: 4.8rem; line-height: 0.95;">
-                    <span data-i18n="teaser-title-1">BEWINNERENGINEER:</span>
-                    <span class="crimson-text glitch-hover" data-i18n="teaser-title-2">FORGE YOUR SYSTEMS.</span>
-                </h1>
-                <p class="hero-description" style="font-size: 1.25rem; margin-top: 25px;" data-i18n="teaser-desc">
-                    University teaches you how to calculate. We teach you how to survive and thrive. Join the elite cohort of future aerospace and systems engineers. Accelerate your career from basic student to premium systems architect.
-                </p>
-                <a href="#booking" class="btn-bankai" id="hero-cta-btn" style="display:inline-block; margin-top:30px; text-decoration:none;" data-i18n="nav-booking">ENTER THE DOJO. BEGIN YOUR SYSTEMS TRAINING.</a>
+        <!-- THE MISSION LOGS (BLOG) -->
+        <section id="blog" style="padding: 40px 0 60px 0;">
+            <div class="section-title-wrapper">
+                <h2 class="section-title" data-i18n="blog-title">MISSION <span>LOGS</span></h2>
+                <div class="section-num" data-i18n="blog-num">SECT_03 // TACTICAL BRIEFINGS</div>
             </div>
 
-            <!-- Telemetry Stats Panel -->
-            <div class="hero-dashboard manga-outline">
-                <div class="dashboard-header">
-                    <span data-i18n="hero-operator">OPERATOR: ZYAD_EL_AOUAD</span>
-                    <span id="telemetry-timer">SYS_TIME: 15:47:58</span>
-                </div>
-                
-                <!-- Avatar Container -->
-                <div class="avatar-container">
-                    <img src="assets/zyad_profile.jpeg" alt="Zyad El Aouad - The Iron Engineer" class="avatar-img">
-                    <div class="japanese-stamp" style="font-size: 0.8rem;">GNC CORES</div>
-                </div>
+            <p class="blog-intro" style="margin-bottom: 30px; color: var(--steel);" data-i18n="blog-intro">
+                Operational logs detailing code performance, rocketry Club stress-testing, and career blueprint algorithms. Compiled for active study.
+            </p>
 
-                <!-- Stats Meters -->
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span class="stat-name" data-i18n="stat-gnc">GNC & ADCS CONTROL</span>
-                        <span class="stat-val">98%</span>
-                    </div>
-                    <div class="stat-bar-container">
-                        <div class="stat-bar-fill" data-width="98%"></div>
-                    </div>
-                </div>
-
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span class="stat-name" data-i18n="stat-workflow">WORKFLOW DRIFTING (MATLAB/PY)</span>
-                        <span class="stat-val">97%</span>
-                    </div>
-                    <div class="stat-bar-container">
-                        <div class="stat-bar-fill cyan-fill" data-width="97%"></div>
-                    </div>
-                </div>
-
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span class="stat-name" data-i18n="stat-structural">RIKI-OH STRUCTURAL RESILIENCE</span>
-                        <span class="stat-val">95%</span>
-                    </div>
-                    <div class="stat-bar-container">
-                        <div class="stat-bar-fill gold-fill" data-width="95%"></div>
-                    </div>
-                </div>
+            <!-- Blog inline tab navigation -->
+            <div class="blog-tabs-nav">
+                <button id="blog-tab-read" class="blog-tab-btn active-tab" data-i18n="blog-tab-read">> READ MISSION LOGS</button>
+                <button id="blog-tab-forge" class="blog-tab-btn" data-i18n="blog-tab-forge">> FORGE NEW LOG</button>
             </div>
-        </section>
 
-        <!-- Subpage sections (ABOUT, DOJO, ZANPAKUTO, BLOG, MANIFESTO) are moved to their respective HTML pages. -->
-
-        <!-- ADMISSIONS & MONETIZATION FUNNELS -->
-        <section id="booking" class="monetization-wrapper" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 60px; margin-bottom: 60px; padding-top: 60px; border-top: 2px dashed var(--steel-dark);">
-            
-            <!-- Left: Call to Action for cohort & trigger button -->
-            <div class="dojo-panel manga-outline" style="padding: 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height:360px;">
-                <div>
-                    <span class="dojo-tag" style="margin-bottom: 15px;" data-i18n="teaser-waitlist-header">COHORT ENROLLMENT</span>
-                    <h3 class="dojo-title" style="font-size: 2.2rem;" data-i18n="teaser-waitlist-title">JOIN ELITE MENTORSHIP</h3>
-                    <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-waitlist-desc">
-                         Mentorship cohort seats are capped strictly at 5 students for Fall 2026. Submitting enters you into the priority selection queue.
-                    </p>
-                </div>
-                <div style="margin-top: 25px;">
-                    <!-- This button opens the interactive terminal booking modal -->
-                    <button class="btn-bankai dojo-action" style="display: block; width: 100%; text-align: center;" data-i18n="nav-booking">APPLY FOR ADMISSION &rarr;</button>
+            <!-- Panel 1: Read Blogs Grid -->
+            <div id="blog-view-panel" class="blog-panel-content active-panel">
+                <div class="blog-grid" id="blog-posts-container">
+                    <!-- Dynamic Blog Cards Injected via app.js -->
                 </div>
             </div>
 
-            <!-- Right: Premium Audit & Newsletter Options -->
-            <div style="display: flex; flex-direction: column; gap: 30px;">
-                
-                <!-- Premium Resume Audit Card -->
-                <div class="dojo-panel manga-outline" style="border-color: var(--accent-gold); padding: 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height: 200px;">
-                    <div>
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                            <span class="badge-crimson" style="background-color: var(--accent-gold); border-color: var(--accent-gold); color: #000; font-weight: bold;" data-i18n="teaser-audit-badge">PRE-LAUNCH PREMIUM OFFER</span>
-                            <span style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.9rem;" data-i18n="teaser-audit-price">PREMIUM ACCESS</span>
+            <!-- Panel 2: Write Blogs Split-Screen Editor -->
+            <div id="blog-write-panel" class="blog-panel-content">
+                <div class="blog-editor-grid">
+                    <!-- Editor Left (Inputs) -->
+                    <div class="editor-left">
+                        <div class="json-monitor-title" data-i18n="editor-fields-title">BLUEPRINT_INPUT_FIELDS</div>
+                        <form id="editor-blog-form" onsubmit="return false;">
+                            <div class="terminal-form-group">
+                                <label class="terminal-label" data-i18n="editor-lbl-title">> LOG ENTRY TITLE:</label>
+                                <input type="text" id="editor-blog-title" class="terminal-input" required placeholder="e.g. SLIDING MODE DEBRIS STABILIZATION">
+                            </div>
+                            <div class="terminal-form-group">
+                                <label class="terminal-label" data-i18n="editor-lbl-tag">> METADATA LOG CLASS (TAG):</label>
+                                <input type="text" id="editor-blog-tag" class="terminal-input" required placeholder="e.g. ADCS, GNC, PROPULSION, UAV">
+                            </div>
+                            <div class="terminal-form-group">
+                                <label class="terminal-label" data-i18n="editor-lbl-date">> COMPILATION STAMP (DATE):</label>
+                                <input type="date" id="editor-blog-date" class="terminal-input" required>
+                            </div>
+                            <div class="terminal-form-group">
+                                <label class="terminal-label" data-i18n="editor-lbl-cover">> CHOOSE COVER CARD INTERFACE:</label>
+                                <select id="editor-blog-image" class="terminal-select" required>
+                                    <option value="assets/manga_ichigo.jpg">Bleach Ichigo Cover (manga_ichigo.jpg)</option>
+                                    <option value="assets/manga_kakugo_1.jpg">Kakugo Susume 1 (manga_kakugo_1.jpg)</option>
+                                    <option value="assets/manga_kakugo_2.jpg">Kakugo Susume 2 (manga_kakugo_2.jpg)</option>
+                                    <option value="assets/manga_ken.jfif">Ken Nekketsu (manga_ken.jfif)</option>
+                                    <option value="assets/manga_ken_glasses.jfif">Ken Glasses (manga_ken_glasses.jfif)</option>
+                                    <option value="assets/manga_hayato.jfif">Hayato Fighter (manga_hayato.jfif)</option>
+                                    <option value="assets/manga_bibi.jfif">Bibi Star (manga_bibi.jfif)</option>
+                                    <option value="assets/manga_justice.jfif">Justice Knight (manga_justice.jfif)</option>
+                                    <option value="assets/zyad_profile.jpeg">Zyad Avatar Profile (zyad_profile.jpeg)</option>
+                                    <option value="assets/zyad_lab_1.jpg">Zyad Laboratory (zyad_lab_1.jpg)</option>
+                                    <option value="assets/zyad_nagasaki_1.jpg">Nagasaki Landscape (zyad_nagasaki_1.jpg)</option>
+                                    <option value="assets/zyad_uav_1.jpeg">UAV Field Photo (zyad_uav_1.jpeg)</option>
+                                    <option value="assets/zyad_rocket_1.jpeg">Planet Q Rocket (zyad_rocket_1.jpeg)</option>
+                                </select>
+                            </div>
+                            <div class="terminal-form-group">
+                                <label class="terminal-label" data-i18n="editor-lbl-excerpt">> LOG SUMMARY EXCERPT:</label>
+                                <input type="text" id="editor-blog-excerpt" class="terminal-input" required placeholder="Brief single-sentence overview...">
+                            </div>
+                            
+                            <div class="terminal-form-group">
+                                <label class="terminal-label" data-i18n="editor-lbl-content">> CORE LOG TRANSMISSION (CONTENT):</label>
+                                <!-- Editor Toolbar -->
+                                <div class="editor-toolbar">
+                                    <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--steel); margin-right: 5px;">TOOLBAR:</span>
+                                    <select id="toolbar-image-select" class="terminal-select" style="width: auto; padding: 2px 5px; font-size: 0.7rem; border-color: var(--steel-dark); margin-right: 5px;">
+                                        <option value="assets/zyad_lab_1.jpg">Lab Photo 1</option>
+                                        <option value="assets/zyad_lab_2.jpg">Lab Photo 2</option>
+                                        <option value="assets/zyad_lab_3.jpeg">Lab Photo 3</option>
+                                        <option value="assets/zyad_nagasaki_1.jpg">Nagasaki landscape</option>
+                                        <option value="assets/zyad_nagasaki_2.jpg">Nagasaki scenic view</option>
+                                        <option value="assets/zyad_uav_1.jpeg">UAV flight prep</option>
+                                        <option value="assets/zyad_uav_2.jpeg">UAV on flightline</option>
+                                        <option value="assets/zyad_rocket_1.jpeg">Planet Q Rocket assembly</option>
+                                        <option value="assets/manga_ichigo.jpg">Manga Ichigo</option>
+                                        <option value="assets/manga_kakugo_1.jpg">Manga Kakugo</option>
+                                    </select>
+                                    <button type="button" id="toolbar-btn-img" class="toolbar-btn">+ INSERT IMAGE</button>
+                                    <button type="button" id="toolbar-btn-code" class="toolbar-btn" style="margin-left: 5px;">+ INSERT CODE BLOCK</button>
+                                </div>
+                                <textarea id="editor-blog-content" class="terminal-input" rows="12" style="resize: none;" required placeholder="Write the full body content here (HTML/Markdown supported). Double return starts a new paragraph. Use the toolbar to insert images..."></textarea>
+                            </div>
+                            <button type="submit" class="terminal-btn-submit" id="submit-editor-blog" data-i18n="editor-btn-submit">> TRANSMIT LOG TO DATABASE</button>
+                            <button type="button" class="terminal-btn-submit" id="cancel-edit-btn" style="border-color: var(--steel); color: var(--steel); display: none; margin-top: 10px;" data-i18n="editor-btn-cancel">> CANCEL EDIT MODE</button>
+                        </form>
+                    </div>
+
+                    <!-- Editor Right (Preview & Code) -->
+                    <div class="editor-right">
+                        <div class="json-monitor-title" data-i18n="editor-preview-title">LIVE_CARD_PREVIEW (REAL-TIME)</div>
+                        <div id="live-card-sandbox" style="border: 2px dashed var(--steel-dark); padding: 15px; background-color: #07070a; display: flex; justify-content: center;">
+                            <!-- Real time rendered card -->
                         </div>
-                        <h3 class="dojo-title" style="font-size: 2.2rem; color: var(--accent-gold); text-shadow: 0 0 5px rgba(212, 175, 55, 0.2);" data-i18n="teaser-audit-title">EXOSKELETON PORTFOLIO AUDIT</h3>
-                        <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-audit-desc">
-                            Don't wait for August. Secure a direct, private 1-on-1 resume and portfolio audit by Zyad. We will rebuild your project catalog, identify structural resume holes, and align your GNC parameters before applications open.
-                        </p>
-                    </div>
-                    <div style="margin-top: 25px;">
-                        <a href="mailto:zyadel.aouad.eng@gmail.com?subject=[BeWinnerEngineer] Pre-Launch Portfolio Audit Booking" class="btn-bankai" style="display: block; text-align: center; font-size: 1rem; border-color: var(--accent-gold); color: var(--accent-gold); text-decoration: none; box-shadow: 3px 3px 0 var(--accent-gold);" data-i18n="teaser-audit-btn">BOOK PREMIUM AUDIT &rarr;</a>
+
+                        <div>
+                            <div class="json-monitor-title" data-i18n="editor-db-title">DATABASE_MONITOR.LOG</div>
+                            <div class="telemetry-feed" id="db-json-monitor" style="height: 140px; color: var(--terminal-green); overflow-y: auto; white-space: pre; font-size: 0.75rem;">
+                                <!-- Live JSON dump -->
+                            </div>
+                            <button class="terminal-btn-submit" id="wipe-db-btn" style="margin-top: 10px; border-color: var(--crimson); color: var(--crimson); font-size: 0.8rem; padding: 6px 12px;" data-i18n="editor-btn-wipe">WIPE LOCAL DATABASE</button>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Newsletter Subscription Card -->
-                <div class="dojo-panel manga-outline" style="padding: 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height: 180px;">
-                    <div>
-                        <span class="dojo-tag" style="margin-bottom: 15px;" data-i18n="teaser-news-badge">WEEKLY TRANSMISSIONS</span>
-                        <h3 class="dojo-title" style="font-size: 2.2rem;" data-i18n="teaser-news-title">THE IRON TELEMETRY</h3>
-                        <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-news-desc">
-                            Receive GNC simulation blueprints, upcoming internship telemetry alerts, and emotional resilience manuals to keep your engineering discipline unbreakable under stress.
-                        </p>
-                    </div>
-                    <div style="margin-top: 25px; display: grid; grid-template-columns: 1fr auto; gap: 10px;">
-                        <input type="email" id="newsletter-email" class="terminal-input" placeholder="operator@satellite.org" style="margin: 0;">
-                        <button id="newsletter-btn" class="btn-bankai" style="font-size: 0.9rem; padding: 10px 20px; box-shadow: 2px 2px 0 var(--accent-cyan); border-color: var(--accent-cyan); color: var(--accent-cyan);" data-i18n="teaser-news-btn">SUBSCRIBE</button>
-                    </div>
-                </div>
-
             </div>
         </section>
 
         <!-- Dynamic Live Ticker Overlay -->
-        <div class="hero-dashboard manga-outline" style="max-width: 800px; margin: 0 auto padding: 20px; background-color: #07080b;">
+        <div class="hero-dashboard manga-outline" style="max-width: 800px; margin: 40px auto 0 auto; padding: 20px; background-color: #07080b;">
             <div class="dashboard-header" style="border-bottom: 1px solid var(--steel-dark); padding-bottom: 8px; margin-bottom: 12px;">
                 <span data-i18n="teaser-feed-header">> DYNAMIC SYSTEM TELEMETRY TICKER</span>
             </div>

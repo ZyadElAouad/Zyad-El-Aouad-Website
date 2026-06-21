@@ -1078,6 +1078,12 @@ footer {
     color: var(--crimson);
 }
 
+.footer-link.active-nav-link {
+    color: var(--text-light) !important;
+    border-bottom: 2px solid var(--crimson);
+    padding-bottom: 4px;
+}
+
 .footer-copy {
     font-family: var(--font-mono);
     font-size: 0.8rem;

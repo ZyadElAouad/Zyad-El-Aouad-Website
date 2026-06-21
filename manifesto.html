@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BeWinnerEngineer. High-intensity aerospace GNC mentorship, career portfolio armor, and emotional resilience coaching for future engineers.">
-    <title>BeWinnerEngineer | Forge Your Engineering Excellence</title>
+    <title>BeWinnerEngineer | The Manifesto</title>
     
     <!-- Google Fonts for English/Latin & Cairo for Arabic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,6 +44,7 @@
             header .lang-selector-group {
                 width: 100% !important;
                 justify-content: center !important;
+                margin-top: 10px !important;
             }
             header .btn-bankai {
                 width: 100% !important;
@@ -72,17 +73,8 @@
             }
         }
 
-        /* Mobile layout styling updates */
+        /* Mobile layout styling overrides */
         @media (max-width: 600px) {
-            /* Responsive newsletter form stack */
-            .monetization-wrapper div[style*="grid-template-columns"] {
-                display: flex !important;
-                flex-direction: column !important;
-                gap: 10px !important;
-            }
-            .monetization-wrapper input, .monetization-wrapper button {
-                width: 100% !important;
-            }
             .manga-panel {
                 grid-template-columns: 1fr !important;
                 padding: 20px !important;
@@ -111,7 +103,7 @@
                 <a href="dojo.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-dojo">THE DOJO</a>
                 <a href="zanpakuto.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-zanpakuto">ZANPAKUTO</a>
                 <a href="blog.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-blog">BLOG</a>
-                <a href="manifesto.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-manifesto">MANIFESTO</a>
+                <a href="manifesto.html" class="footer-link active-nav-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-manifesto">MANIFESTO</a>
                 
                 <!-- Sleek Monospace Language Picker -->
                 <div class="lang-selector-group" style="display: flex; align-items: center; gap: 6px; border: 1px solid var(--steel-dark); padding: 4px 8px; background-color: rgba(10, 10, 12, 0.8);">
@@ -133,126 +125,35 @@
 
     <main class="manga-container" style="padding-top: 130px; padding-bottom: 80px;">
         
-        <!-- HERO SECTION: THE GATE -->
-        <section class="hero-wrapper" id="hero" style="margin-bottom: 60px;">
-            <div class="hero-main">
-                <div class="hero-subtext" data-i18n="teaser-telemetry">INITIALIZING LAUNCH VECTOR // POWER LEVEL: UNBOUNDED</div>
-                <h1 class="hero-title" style="font-size: 4.8rem; line-height: 0.95;">
-                    <span data-i18n="teaser-title-1">BEWINNERENGINEER:</span>
-                    <span class="crimson-text glitch-hover" data-i18n="teaser-title-2">FORGE YOUR SYSTEMS.</span>
-                </h1>
-                <p class="hero-description" style="font-size: 1.25rem; margin-top: 25px;" data-i18n="teaser-desc">
-                    University teaches you how to calculate. We teach you how to survive and thrive. Join the elite cohort of future aerospace and systems engineers. Accelerate your career from basic student to premium systems architect.
-                </p>
-                <a href="#booking" class="btn-bankai" id="hero-cta-btn" style="display:inline-block; margin-top:30px; text-decoration:none;" data-i18n="nav-booking">ENTER THE DOJO. BEGIN YOUR SYSTEMS TRAINING.</a>
+        <!-- THE MANIFESTO -->
+        <section id="manifesto" style="padding: 40px 0 60px 0;">
+            <div class="section-title-wrapper">
+                <h2 class="section-title" data-i18n="nav-manifesto">THE <span>MANIFESTO</span></h2>
+                <div class="section-num" data-i18n="manifesto-num">SECT_04 // CORE INTENT</div>
             </div>
-
-            <!-- Telemetry Stats Panel -->
-            <div class="hero-dashboard manga-outline">
-                <div class="dashboard-header">
-                    <span data-i18n="hero-operator">OPERATOR: ZYAD_EL_AOUAD</span>
-                    <span id="telemetry-timer">SYS_TIME: 15:47:58</span>
-                </div>
-                
-                <!-- Avatar Container -->
-                <div class="avatar-container">
-                    <img src="assets/zyad_profile.jpeg" alt="Zyad El Aouad - The Iron Engineer" class="avatar-img">
-                    <div class="japanese-stamp" style="font-size: 0.8rem;">GNC CORES</div>
-                </div>
-
-                <!-- Stats Meters -->
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span class="stat-name" data-i18n="stat-gnc">GNC & ADCS CONTROL</span>
-                        <span class="stat-val">98%</span>
-                    </div>
-                    <div class="stat-bar-container">
-                        <div class="stat-bar-fill" data-width="98%"></div>
-                    </div>
-                </div>
-
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span class="stat-name" data-i18n="stat-workflow">WORKFLOW DRIFTING (MATLAB/PY)</span>
-                        <span class="stat-val">97%</span>
-                    </div>
-                    <div class="stat-bar-container">
-                        <div class="stat-bar-fill cyan-fill" data-width="97%"></div>
-                    </div>
-                </div>
-
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span class="stat-name" data-i18n="stat-structural">RIKI-OH STRUCTURAL RESILIENCE</span>
-                        <span class="stat-val">95%</span>
-                    </div>
-                    <div class="stat-bar-container">
-                        <div class="stat-bar-fill gold-fill" data-width="95%"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Subpage sections (ABOUT, DOJO, ZANPAKUTO, BLOG, MANIFESTO) are moved to their respective HTML pages. -->
-
-        <!-- ADMISSIONS & MONETIZATION FUNNELS -->
-        <section id="booking" class="monetization-wrapper" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 60px; margin-bottom: 60px; padding-top: 60px; border-top: 2px dashed var(--steel-dark);">
             
-            <!-- Left: Call to Action for cohort & trigger button -->
-            <div class="dojo-panel manga-outline" style="padding: 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height:360px;">
-                <div>
-                    <span class="dojo-tag" style="margin-bottom: 15px;" data-i18n="teaser-waitlist-header">COHORT ENROLLMENT</span>
-                    <h3 class="dojo-title" style="font-size: 2.2rem;" data-i18n="teaser-waitlist-title">JOIN ELITE MENTORSHIP</h3>
-                    <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-waitlist-desc">
-                         Mentorship cohort seats are capped strictly at 5 students for Fall 2026. Submitting enters you into the priority selection queue.
+            <div class="manifesto-panel manga-outline">
+                <div class="japanese-stamp" style="font-size: 1.5rem; top: 30px; right: 30px;">信念</div>
+                <h3 class="manifesto-title-large" data-i18n="manifesto-title">SYSTEM HARDENING BLUEPRINT</h3>
+                <div class="manifesto-body">
+                    <p data-i18n="manifesto-para-1">
+                        Modern engineering training is broken. Universities prepare you for academic research in idealized, friction-free environments. They teach you formulas, but not how to build a robust script that runs under failing sensors, how to present aerospace concepts clearly to high-level executives, or how to handle workload stress when simulation designs fail hours before dynamic deadlines.
+                    </p>
+                    <p data-i18n="manifesto-para-2">
+                        I don't offer generic templates or academic hand-holding. I mentor engineers who want to test their steel under fire, rebuild their methodologies, and unlock their technical Bankai.
                     </p>
                 </div>
-                <div style="margin-top: 25px;">
-                    <!-- This button opens the interactive terminal booking modal -->
-                    <button class="btn-bankai dojo-action" style="display: block; width: 100%; text-align: center;" data-i18n="nav-booking">APPLY FOR ADMISSION &rarr;</button>
+                <div class="manifesto-quote" data-i18n="manifesto-quote">
+                    "THE ULTIMATE SHIELD IS NOT YOUR DEGREE. IT IS AN UNBREAKABLE DISCIPLINE TO REMAIN A STUDENT AT THE HEIGHT OF THREAT."
                 </div>
-            </div>
-
-            <!-- Right: Premium Audit & Newsletter Options -->
-            <div style="display: flex; flex-direction: column; gap: 30px;">
-                
-                <!-- Premium Resume Audit Card -->
-                <div class="dojo-panel manga-outline" style="border-color: var(--accent-gold); padding: 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height: 200px;">
-                    <div>
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                            <span class="badge-crimson" style="background-color: var(--accent-gold); border-color: var(--accent-gold); color: #000; font-weight: bold;" data-i18n="teaser-audit-badge">PRE-LAUNCH PREMIUM OFFER</span>
-                            <span style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.9rem;" data-i18n="teaser-audit-price">PREMIUM ACCESS</span>
-                        </div>
-                        <h3 class="dojo-title" style="font-size: 2.2rem; color: var(--accent-gold); text-shadow: 0 0 5px rgba(212, 175, 55, 0.2);" data-i18n="teaser-audit-title">EXOSKELETON PORTFOLIO AUDIT</h3>
-                        <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-audit-desc">
-                            Don't wait for August. Secure a direct, private 1-on-1 resume and portfolio audit by Zyad. We will rebuild your project catalog, identify structural resume holes, and align your GNC parameters before applications open.
-                        </p>
-                    </div>
-                    <div style="margin-top: 25px;">
-                        <a href="mailto:zyadel.aouad.eng@gmail.com?subject=[BeWinnerEngineer] Pre-Launch Portfolio Audit Booking" class="btn-bankai" style="display: block; text-align: center; font-size: 1rem; border-color: var(--accent-gold); color: var(--accent-gold); text-decoration: none; box-shadow: 3px 3px 0 var(--accent-gold);" data-i18n="teaser-audit-btn">BOOK PREMIUM AUDIT &rarr;</a>
-                    </div>
+                <div style="font-family: var(--font-mono); color: var(--steel); font-size: 0.9rem; margin-top: 10px; text-transform: uppercase;" data-i18n="manifesto-author">
+                    &mdash; ZYAD EL AOUAD, THE IRON ENGINEER
                 </div>
-
-                <!-- Newsletter Subscription Card -->
-                <div class="dojo-panel manga-outline" style="padding: 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height: 180px;">
-                    <div>
-                        <span class="dojo-tag" style="margin-bottom: 15px;" data-i18n="teaser-news-badge">WEEKLY TRANSMISSIONS</span>
-                        <h3 class="dojo-title" style="font-size: 2.2rem;" data-i18n="teaser-news-title">THE IRON TELEMETRY</h3>
-                        <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-news-desc">
-                            Receive GNC simulation blueprints, upcoming internship telemetry alerts, and emotional resilience manuals to keep your engineering discipline unbreakable under stress.
-                        </p>
-                    </div>
-                    <div style="margin-top: 25px; display: grid; grid-template-columns: 1fr auto; gap: 10px;">
-                        <input type="email" id="newsletter-email" class="terminal-input" placeholder="operator@satellite.org" style="margin: 0;">
-                        <button id="newsletter-btn" class="btn-bankai" style="font-size: 0.9rem; padding: 10px 20px; box-shadow: 2px 2px 0 var(--accent-cyan); border-color: var(--accent-cyan); color: var(--accent-cyan);" data-i18n="teaser-news-btn">SUBSCRIBE</button>
-                    </div>
-                </div>
-
             </div>
         </section>
 
         <!-- Dynamic Live Ticker Overlay -->
-        <div class="hero-dashboard manga-outline" style="max-width: 800px; margin: 0 auto padding: 20px; background-color: #07080b;">
+        <div class="hero-dashboard manga-outline" style="max-width: 800px; margin: 40px auto 0 auto; padding: 20px; background-color: #07080b;">
             <div class="dashboard-header" style="border-bottom: 1px solid var(--steel-dark); padding-bottom: 8px; margin-bottom: 12px;">
                 <span data-i18n="teaser-feed-header">> DYNAMIC SYSTEM TELEMETRY TICKER</span>
             </div>

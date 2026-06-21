@@ -57,19 +57,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // --- 3. CANVAS SPEED-LINES ANIMATION (INITIAL D AESTHETIC) ---
 const canvas = document.getElementById('speed-lines-canvas');
-const ctx = canvas.getContext('2d');
+const ctx = canvas ? canvas.getContext('2d') : null;
 
 let width = window.innerWidth;
 let height = window.innerHeight;
-canvas.width = width;
-canvas.height = height;
-
-window.addEventListener('resize', () => {
-    width = window.innerWidth;
-    height = window.innerHeight;
+if (canvas && ctx) {
     canvas.width = width;
     canvas.height = height;
-});
+
+    window.addEventListener('resize', () => {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+    });
+}
 
 const starCount = 120;
 const stars = [];
@@ -116,6 +118,7 @@ window.addEventListener('scroll', () => {
 
 let starTime = 0;
 function animateSpeedLines() {
+    if (!ctx) return;
     ctx.clearRect(0, 0, width, height);
     starTime += 1;
     
@@ -160,7 +163,9 @@ function animateSpeedLines() {
     
     requestAnimationFrame(animateSpeedLines);
 }
-animateSpeedLines();
+if (canvas && ctx) {
+    animateSpeedLines();
+}
 
 
 // --- 4. INTERACTIVE BOOKING / TERMINAL INTAKE MODAL ---
@@ -174,7 +179,7 @@ const intakePillar = document.getElementById('intake-pillar');
 openBookingBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault();
-        bookingModal.classList.add('active');
+        if (bookingModal) bookingModal.classList.add('active');
         playSynthSound('open');
         
         // Auto-select option if clicked from a specific service card
@@ -185,18 +190,22 @@ openBookingBtns.forEach(btn => {
     });
 });
 
-closeBookingBtn.addEventListener('click', () => {
-    bookingModal.classList.remove('active');
-    playSynthSound('close');
-});
+if (closeBookingBtn) {
+    closeBookingBtn.addEventListener('click', () => {
+        if (bookingModal) bookingModal.classList.remove('active');
+        playSynthSound('close');
+    });
+}
 
 // Close modal when clicking outside
-bookingModal.addEventListener('click', (e) => {
-    if (e.target === bookingModal) {
-        bookingModal.classList.remove('active');
-        playSynthSound('close');
-    }
-});
+if (bookingModal) {
+    bookingModal.addEventListener('click', (e) => {
+        if (e.target === bookingModal) {
+            bookingModal.classList.remove('active');
+            playSynthSound('close');
+        }
+    });
+}
 
 // Handle form submission
 if (dojoForm) {
@@ -357,8 +366,11 @@ triggerBlueprintBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         const projectKey = btn.getAttribute('data-project');
         const data = blueprintDetails[projectKey];
-        if (data && blueprintBody) {
-            document.getElementById('blueprint-header-title').textContent = `${projectKey.toUpperCase()}_SPEC_READER.EXE`;
+        if (data && blueprintBody && blueprintModal) {
+            const blueprintHeaderTitle = document.getElementById('blueprint-header-title');
+            if (blueprintHeaderTitle) {
+                blueprintHeaderTitle.textContent = `${projectKey.toUpperCase()}_SPEC_READER.EXE`;
+            }
             blueprintBody.innerHTML = data.content;
             blueprintModal.classList.add('active');
             playSynthSound('open');
@@ -369,17 +381,21 @@ triggerBlueprintBtns.forEach(btn => {
     });
 });
 
-closeBlueprintBtn.addEventListener('click', () => {
-    blueprintModal.classList.remove('active');
-    playSynthSound('close');
-});
-
-blueprintModal.addEventListener('click', (e) => {
-    if (e.target === blueprintModal) {
-        blueprintModal.classList.remove('active');
+if (closeBlueprintBtn) {
+    closeBlueprintBtn.addEventListener('click', () => {
+        if (blueprintModal) blueprintModal.classList.remove('active');
         playSynthSound('close');
-    }
-});
+    });
+}
+
+if (blueprintModal) {
+    blueprintModal.addEventListener('click', (e) => {
+        if (e.target === blueprintModal) {
+            blueprintModal.classList.remove('active');
+            playSynthSound('close');
+        }
+    });
+}
 
 
 // --- 6. MISSION LOGS (BLOG) DATABASE & DYNAMIC RENDER ---
@@ -558,8 +574,11 @@ function renderBlogPosts() {
         btn.addEventListener('click', (e) => {
             const postId = btn.getAttribute('data-post-id');
             const post = blogsDB.find(p => p.id === postId);
-            if (post && blueprintBody) {
-                document.getElementById('blueprint-header-title').textContent = `MISSION_LOG_READER.EXE`;
+            if (post && blueprintBody && blueprintModal) {
+                const blueprintHeaderTitle = document.getElementById('blueprint-header-title');
+                if (blueprintHeaderTitle) {
+                    blueprintHeaderTitle.textContent = `MISSION_LOG_READER.EXE`;
+                }
                 blueprintBody.innerHTML = `
                     <div class="drawer-content-box">
                         <div class="drawer-header">
@@ -670,7 +689,7 @@ if (editActiveBlogBtn) {
         const post = blogsDB.find(p => p.id === postId);
         if (post) {
             // Close the spec modal
-            blueprintModal.classList.remove('active');
+            if (blueprintModal) blueprintModal.classList.remove('active');
             playSynthSound('close');
             
             // Switch to Forge tab

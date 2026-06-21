@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BeWinnerEngineer. High-intensity aerospace GNC mentorship, career portfolio armor, and emotional resilience coaching for future engineers.">
-    <title>BeWinnerEngineer | Forge Your Engineering Excellence</title>
+    <title>BeWinnerEngineer | The Zanpakuto Projects</title>
     
     <!-- Google Fonts for English/Latin & Cairo for Arabic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,17 +72,8 @@
             }
         }
 
-        /* Mobile layout styling updates */
+        /* Mobile layout styling overrides */
         @media (max-width: 600px) {
-            /* Responsive newsletter form stack */
-            .monetization-wrapper div[style*="grid-template-columns"] {
-                display: flex !important;
-                flex-direction: column !important;
-                gap: 10px !important;
-            }
-            .monetization-wrapper input, .monetization-wrapper button {
-                width: 100% !important;
-            }
             .manga-panel {
                 grid-template-columns: 1fr !important;
                 padding: 20px !important;
@@ -109,7 +100,7 @@
             <nav style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
                 <a href="about.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-about">ABOUT</a>
                 <a href="dojo.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-dojo">THE DOJO</a>
-                <a href="zanpakuto.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-zanpakuto">ZANPAKUTO</a>
+                <a href="zanpakuto.html" class="footer-link active-nav-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-zanpakuto">ZANPAKUTO</a>
                 <a href="blog.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-blog">BLOG</a>
                 <a href="manifesto.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-manifesto">MANIFESTO</a>
                 
@@ -133,126 +124,143 @@
 
     <main class="manga-container" style="padding-top: 130px; padding-bottom: 80px;">
         
-        <!-- HERO SECTION: THE GATE -->
-        <section class="hero-wrapper" id="hero" style="margin-bottom: 60px;">
-            <div class="hero-main">
-                <div class="hero-subtext" data-i18n="teaser-telemetry">INITIALIZING LAUNCH VECTOR // POWER LEVEL: UNBOUNDED</div>
-                <h1 class="hero-title" style="font-size: 4.8rem; line-height: 0.95;">
-                    <span data-i18n="teaser-title-1">BEWINNERENGINEER:</span>
-                    <span class="crimson-text glitch-hover" data-i18n="teaser-title-2">FORGE YOUR SYSTEMS.</span>
-                </h1>
-                <p class="hero-description" style="font-size: 1.25rem; margin-top: 25px;" data-i18n="teaser-desc">
-                    University teaches you how to calculate. We teach you how to survive and thrive. Join the elite cohort of future aerospace and systems engineers. Accelerate your career from basic student to premium systems architect.
-                </p>
-                <a href="#booking" class="btn-bankai" id="hero-cta-btn" style="display:inline-block; margin-top:30px; text-decoration:none;" data-i18n="nav-booking">ENTER THE DOJO. BEGIN YOUR SYSTEMS TRAINING.</a>
+        <!-- THE ZANPAKUTO (PORTFOLIO PROJECTS) -->
+        <section id="zanpakuto" style="padding: 40px 0 60px 0;">
+            <div class="section-title-wrapper">
+                <h2 class="section-title" data-i18n="zanpakuto-title">THE <span>ZANPAKUTO</span></h2>
+                <div class="section-num" data-i18n="zanpakuto-num">SECT_02 // SYSTEM ARSENAL</div>
             </div>
 
-            <!-- Telemetry Stats Panel -->
-            <div class="hero-dashboard manga-outline">
-                <div class="dashboard-header">
-                    <span data-i18n="hero-operator">OPERATOR: ZYAD_EL_AOUAD</span>
-                    <span id="telemetry-timer">SYS_TIME: 15:47:58</span>
-                </div>
-                
-                <!-- Avatar Container -->
-                <div class="avatar-container">
-                    <img src="assets/zyad_profile.jpeg" alt="Zyad El Aouad - The Iron Engineer" class="avatar-img">
-                    <div class="japanese-stamp" style="font-size: 0.8rem;">GNC CORES</div>
-                </div>
+            <p class="portfolio-intro" style="margin-bottom: 40px; color: var(--steel);" data-i18n="zanpakuto-intro">
+                A warrior's soul is reflected in their blade. Here is my operational record—proof of GNC and propulsion capability validated by aerospace agencies and academic clubs.
+            </p>
 
-                <!-- Stats Meters -->
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span class="stat-name" data-i18n="stat-gnc">GNC & ADCS CONTROL</span>
-                        <span class="stat-val">98%</span>
+            <!-- Project 1: Hybrid Rocket -->
+            <div class="manga-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-img-box">
+                        <span class="badge-crimson portfolio-overlay" data-i18n="proj1-overlay">PLANET Q // KYUSHU U</span>
+                        <img src="assets/hybrid_rocket.png" alt="Tadori-Tadori Hybrid Rockets" class="portfolio-img">
                     </div>
-                    <div class="stat-bar-container">
-                        <div class="stat-bar-fill" data-width="98%"></div>
-                    </div>
-                </div>
-
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span class="stat-name" data-i18n="stat-workflow">WORKFLOW DRIFTING (MATLAB/PY)</span>
-                        <span class="stat-val">97%</span>
-                    </div>
-                    <div class="stat-bar-container">
-                        <div class="stat-bar-fill cyan-fill" data-width="97%"></div>
-                    </div>
-                </div>
-
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span class="stat-name" data-i18n="stat-structural">RIKI-OH STRUCTURAL RESILIENCE</span>
-                        <span class="stat-val">95%</span>
-                    </div>
-                    <div class="stat-bar-container">
-                        <div class="stat-bar-fill gold-fill" data-width="95%"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Subpage sections (ABOUT, DOJO, ZANPAKUTO, BLOG, MANIFESTO) are moved to their respective HTML pages. -->
-
-        <!-- ADMISSIONS & MONETIZATION FUNNELS -->
-        <section id="booking" class="monetization-wrapper" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 60px; margin-bottom: 60px; padding-top: 60px; border-top: 2px dashed var(--steel-dark);">
-            
-            <!-- Left: Call to Action for cohort & trigger button -->
-            <div class="dojo-panel manga-outline" style="padding: 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height:360px;">
-                <div>
-                    <span class="dojo-tag" style="margin-bottom: 15px;" data-i18n="teaser-waitlist-header">COHORT ENROLLMENT</span>
-                    <h3 class="dojo-title" style="font-size: 2.2rem;" data-i18n="teaser-waitlist-title">JOIN ELITE MENTORSHIP</h3>
-                    <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-waitlist-desc">
-                         Mentorship cohort seats are capped strictly at 5 students for Fall 2026. Submitting enters you into the priority selection queue.
-                    </p>
-                </div>
-                <div style="margin-top: 25px;">
-                    <!-- This button opens the interactive terminal booking modal -->
-                    <button class="btn-bankai dojo-action" style="display: block; width: 100%; text-align: center;" data-i18n="nav-booking">APPLY FOR ADMISSION &rarr;</button>
-                </div>
-            </div>
-
-            <!-- Right: Premium Audit & Newsletter Options -->
-            <div style="display: flex; flex-direction: column; gap: 30px;">
-                
-                <!-- Premium Resume Audit Card -->
-                <div class="dojo-panel manga-outline" style="border-color: var(--accent-gold); padding: 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height: 200px;">
-                    <div>
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                            <span class="badge-crimson" style="background-color: var(--accent-gold); border-color: var(--accent-gold); color: #000; font-weight: bold;" data-i18n="teaser-audit-badge">PRE-LAUNCH PREMIUM OFFER</span>
-                            <span style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.9rem;" data-i18n="teaser-audit-price">PREMIUM ACCESS</span>
+                    <div class="portfolio-card-content">
+                        <div>
+                            <h3 class="portfolio-title" data-i18n="proj1-title">TADORI-TADORI HYBRID ROCKETS</h3>
+                            <p class="portfolio-desc" data-i18n="proj1-desc">
+                                Reconstructed flight control logs and structural layout simulation for Kyushu University's Planet Q Rocketry club. Analyzed dynamic atmospheric stabilization, nozzle expansion ratios, and hybrid combustion telemetry under extreme conditions.
+                            </p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Hybrid Propulsion</span>
+                                <span class="portfolio-tag">Telemetry</span>
+                                <span class="portfolio-tag">Kyushu U</span>
+                                <span class="portfolio-tag">Dynamic Flight</span>
+                            </div>
                         </div>
-                        <h3 class="dojo-title" style="font-size: 2.2rem; color: var(--accent-gold); text-shadow: 0 0 5px rgba(212, 175, 55, 0.2);" data-i18n="teaser-audit-title">EXOSKELETON PORTFOLIO AUDIT</h3>
-                        <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-audit-desc">
-                            Don't wait for August. Secure a direct, private 1-on-1 resume and portfolio audit by Zyad. We will rebuild your project catalog, identify structural resume holes, and align your GNC parameters before applications open.
-                        </p>
-                    </div>
-                    <div style="margin-top: 25px;">
-                        <a href="mailto:zyadel.aouad.eng@gmail.com?subject=[BeWinnerEngineer] Pre-Launch Portfolio Audit Booking" class="btn-bankai" style="display: block; text-align: center; font-size: 1rem; border-color: var(--accent-gold); color: var(--accent-gold); text-decoration: none; box-shadow: 3px 3px 0 var(--accent-gold);" data-i18n="teaser-audit-btn">BOOK PREMIUM AUDIT &rarr;</a>
+                        <button class="portfolio-btn-trigger" data-project="hybrid-rocket" data-i18n="proj1-btn">EXAMINE BLUEPRINT &rarr;</button>
                     </div>
                 </div>
 
-                <!-- Newsletter Subscription Card -->
-                <div class="dojo-panel manga-outline" style="padding: 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height: 180px;">
-                    <div>
-                        <span class="dojo-tag" style="margin-bottom: 15px;" data-i18n="teaser-news-badge">WEEKLY TRANSMISSIONS</span>
-                        <h3 class="dojo-title" style="font-size: 2.2rem;" data-i18n="teaser-news-title">THE IRON TELEMETRY</h3>
-                        <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-news-desc">
-                            Receive GNC simulation blueprints, upcoming internship telemetry alerts, and emotional resilience manuals to keep your engineering discipline unbreakable under stress.
-                        </p>
+                <div class="blueprint-card">
+                    <div class="blueprint-grid"></div>
+                    <span class="japanese-stamp" style="font-size: 1rem; top: 15px; right: 15px;" data-i18n="proj1-stamp">TOP SECRET</span>
+                    <div class="blueprint-header" data-i18n="proj1-header">FLIGHT PROPULSION SPEC</div>
+                    <div class="blueprint-title-big" data-i18n="proj1-big-title">TADORI COMBUSTION</div>
+                    <div class="blueprint-meta" data-i18n="proj1-meta">
+                        // ENGINE CLASS: HYBRID PROPULSION<br>
+                        // FUEL CORE: HTPB + SOLID GRAIN<br>
+                        // OXIDIZER: LIQUID N2O (NITROUS OXIDE)<br>
+                        // TELEMETRY RECOVERY RATE: 99.4%
                     </div>
-                    <div style="margin-top: 25px; display: grid; grid-template-columns: 1fr auto; gap: 10px;">
-                        <input type="email" id="newsletter-email" class="terminal-input" placeholder="operator@satellite.org" style="margin: 0;">
-                        <button id="newsletter-btn" class="btn-bankai" style="font-size: 0.9rem; padding: 10px 20px; box-shadow: 2px 2px 0 var(--accent-cyan); border-color: var(--accent-cyan); color: var(--accent-cyan);" data-i18n="teaser-news-btn">SUBSCRIBE</button>
+                    <div class="blueprint-spec-grid">
+                        <div class="blueprint-spec">
+                            <div class="blueprint-spec-label" data-i18n="proj1-lbl1">Chamber Pressure</div>
+                            <div class="blueprint-spec-val" data-i18n="proj1-val1">4.5 MPa</div>
+                        </div>
+                        <div class="blueprint-spec">
+                            <div class="blueprint-spec-label" data-i18n="proj1-lbl2">Max Thrust</div>
+                            <div class="blueprint-spec-val" data-i18n="proj1-val2">2.8 kN</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Cubesat Simulator -->
+            <div class="manga-grid" style="margin-top: 50px;">
+                <div class="blueprint-card">
+                    <div class="blueprint-grid"></div>
+                    <span class="japanese-stamp" style="font-size: 1rem; top: 15px; right: 15px; border-color: var(--accent-cyan); color: var(--accent-cyan);" data-i18n="proj2-stamp">VERIFIED</span>
+                    <div class="blueprint-header" data-i18n="proj2-header">ADCS SIMULATION VECTOR</div>
+                    <div class="blueprint-title-big" data-i18n="proj2-big-title">SART CUBESAT LAB</div>
+                    <div class="blueprint-meta" data-i18n="proj2-meta">
+                        // PLATFORM: 3U NANO-SAT BUS<br>
+                        // ATTITUDE ERROR RATE: &lt; 0.05 DEG<br>
+                        // ACTUATOR COMP: 3 AXIS MAGNETORQUER + RW<br>
+                        // INTEGRATOR SUITE: RUNGE-KUTTA ODE45
+                    </div>
+                    <div class="blueprint-spec-grid">
+                        <div class="blueprint-spec">
+                            <div class="blueprint-spec-label" data-i18n="proj2-lbl1">Actuator Loop</div>
+                            <div class="blueprint-spec-val" data-i18n="proj2-val1">50 Hz Real-Time</div>
+                        </div>
+                        <div class="blueprint-spec">
+                            <div class="blueprint-spec-label" data-i18n="proj2-lbl2">Sensor Fusion</div>
+                            <div class="blueprint-spec-val" data-i18n="proj2-val2">EKF Algorithm</div>
+                        </div>
                     </div>
                 </div>
 
+                <div class="portfolio-card">
+                    <div class="portfolio-img-box">
+                        <span class="badge-crimson portfolio-overlay" data-i18n="proj2-overlay">ADCS SIMULATOR</span>
+                        <img src="assets/cubesat_simulator.png" alt="Cubesat ADCS Simulator" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-card-content">
+                        <div>
+                            <h3 class="portfolio-title" data-i18n="proj2-title">SART CUBESAT ATTITUDE SIMULATOR</h3>
+                            <p class="portfolio-desc" data-i18n="proj2-desc">
+                                Hardware-in-the-loop and software simulation of a 3-axis Cubesat ADCS (Attitude Determination and Control System). Modeled orbital magnetic fields, gravity gradient torques, and reaction wheel detumbling.
+                            </p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">ADCS Loop</span>
+                                <span class="portfolio-tag">MATLAB/Simulink</span>
+                                <span class="portfolio-tag">EKF</span>
+                                <span class="portfolio-tag">Hardware-in-Loop</span>
+                            </div>
+                        </div>
+                        <button class="portfolio-btn-trigger" data-project="cubesat-adcs" data-i18n="proj2-btn">EXAMINE BLUEPRINT &rarr;</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: ESA Presentation Banner -->
+            <div class="manga-panel manga-outline diagonal-cut" style="margin-top: 50px; padding: 45px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 30px;">
+                <div>
+                    <span class="badge-crimson" style="background-color: #000; border-color: var(--crimson); color: var(--crimson);" data-i18n="proj3-overlay">ESA CLEAN SPACE DAYS 2026</span>
+                    <h3 class="portfolio-title" style="font-size: 3.5rem; margin-top: 15px;" data-i18n="proj3-title">UNDERACTUATED DEBRIS STABILIZATION</h3>
+                    <p class="portfolio-desc" style="font-size: 1.05rem;" data-i18n="proj3-desc">
+                        Selected speaker presentation at ESTEC (European Space Research and Technology Centre) for ESA Clean Space Days. Developed a highly customized adaptive control law to stabilize a multi-body spacecraft stack post-capture when half the actuator thrusters are disabled or degraded.
+                    </p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Active Debris Removal</span>
+                        <span class="portfolio-tag">ESTEC/ESA</span>
+                        <span class="portfolio-tag">Underactuated Robotics</span>
+                        <span class="portfolio-tag">Adaptive Control</span>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: stretch; gap: 15px;">
+                    <div class="telemetry-feed" style="height: 140px; color: var(--accent-cyan); border-color: var(--steel-dark);">
+                        <div class="telemetry-line">// COUPLING COEFF: L_xx = 0.842</div>
+                        <div class="telemetry-line">// STACK MOMENTUM: J = [12.4, 8.2, 19.1]</div>
+                        <div class="telemetry-line">// CONTROL LAW: LYAPUNOV DIRECT METHOD</div>
+                        <div class="telemetry-line">// STATUS: NOMINAL STABILIZATION CONVERGING</div>
+                        <div class="telemetry-line">// ESA-ESTEC 2026 DEBRIS MITIGATION DIRECTIVE</div>
+                    </div>
+                    <button class="portfolio-btn-trigger" data-project="esa-clean-space" style="width: 100%;" data-i18n="proj3-btn">EXAMINE ABSTRACT &rarr;</button>
+                </div>
             </div>
         </section>
 
         <!-- Dynamic Live Ticker Overlay -->
-        <div class="hero-dashboard manga-outline" style="max-width: 800px; margin: 0 auto padding: 20px; background-color: #07080b;">
+        <div class="hero-dashboard manga-outline" style="max-width: 800px; margin: 40px auto 0 auto; padding: 20px; background-color: #07080b;">
             <div class="dashboard-header" style="border-bottom: 1px solid var(--steel-dark); padding-bottom: 8px; margin-bottom: 12px;">
                 <span data-i18n="teaser-feed-header">> DYNAMIC SYSTEM TELEMETRY TICKER</span>
             </div>
