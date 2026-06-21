@@ -3,7 +3,7 @@ const translations = {
         // Nav
         "nav-about": "ABOUT",
         "nav-dojo": "THE DOJO",
-        "nav-zanpakuto": "ZANPAKUTO",
+        "nav-portfolio": "PORTFOLIO",
         "nav-blog": "BLOG",
         "nav-manifesto": "MANIFESTO",
         "nav-booking": "ENTER DOJO",
@@ -59,10 +59,10 @@ const translations = {
         "dojo-p4-rate": "RATE: 1-ON-1 DRILL",
         "dojo-p4-btn": "HARDEN CODE &rarr;",
 
-        // Zanpakuto
-        "zanpakuto-title": "THE ZANPAKUTO",
-        "zanpakuto-num": "SECT_02 // SYSTEM ARSENAL",
-        "zanpakuto-intro": "A warrior's soul is reflected in their blade. Here is my operational record—proof of GNC and propulsion capability validated by aerospace agencies and academic clubs.",
+        // Portfolio
+        "portfolio-title": "THE PORTFOLIO",
+        "portfolio-num": "SECT_02 // SYSTEM ARSENAL",
+        "portfolio-intro": "Here is my operational record—proof of GNC and propulsion capability validated by aerospace agencies and academic clubs.",
         
         "proj1-overlay": "PLANET Q // KYUSHU U",
         "proj1-title": "TADORI-TADORI HYBRID ROCKETS",
@@ -191,14 +191,14 @@ const translations = {
         "teaser-news-desc": "Receive GNC simulation blueprints, upcoming internship telemetry alerts, and emotional resilience manuals to keep your engineering discipline unbreakable under stress.",
         "teaser-news-btn": "SUBSCRIBE",
         "teaser-feed-header": "> DYNAMIC SYSTEM TELEMETRY TICKER",
-        "teaser-footer-sub": "// PORTFOLIO ACCESS: <a href=\"portfolio.html\" style=\"color: var(--accent-cyan); text-decoration: underline;\">PORTFOLIO.EXE</a> // MENTORSHIP STAGES // 5 LANGUAGES SUPPORTED",
+        "teaser-footer-sub": "// MENTORSHIP STAGES // 5 LANGUAGES SUPPORTED",
         "teaser-footer-copy": "&copy; 2026 BEWINNERENGINEER. ALL CODES SECURED. POWER LEVEL: SYSTEMS."
     },
     jp: {
         // Nav
         "nav-about": "自己紹介",
         "nav-dojo": "道場 (サービス)",
-        "nav-zanpakuto": "斬魄刀 (実績)",
+        "nav-portfolio": "ポートフォリオ",
         "nav-blog": "ブログ",
         "nav-manifesto": "マニフェスト",
         "nav-booking": "道場に入門",
@@ -254,10 +254,10 @@ const translations = {
         "dojo-p4-rate": "受講：1対1訓練",
         "dojo-p4-btn": "コードを鍛える &rarr;",
 
-        // Zanpakuto
-        "zanpakuto-title": "斬魄刀",
-        "zanpakuto-num": "SECT_02 // 実績兵装",
-        "zanpakuto-intro": "戦士の魂は剣に宿る。宇宙機関や大学の部活動で検証された、GNCと推進システムの実績ログを公開します。",
+        // Portfolio
+        "portfolio-title": "ポートフォリオ",
+        "portfolio-num": "SECT_02 // 実績",
+        "portfolio-intro": "宇宙機関や大学の部活動で検証された、GNCと推進システムの実績ログを公開します。",
         
         "proj1-overlay": "PLANET Q // 九州大学",
         "proj1-title": "TADORI-TADORI ハイブリッドロケット",
@@ -385,14 +385,14 @@ const translations = {
         "teaser-news-desc": "GNCシミュレーション設計図、最新インターンシップ情報、困難に立ち向かうための精神的レジリエンス手順書を毎週お届けします。",
         "teaser-news-btn": "購読する",
         "teaser-feed-header": "> ダイナミック・システムテレメトリ・ティッカー",
-        "teaser-footer-sub": "// ポートフォリオ：<a href=\"portfolio.html\" style=\"color: var(--accent-cyan); text-decoration: underline;\">PORTFOLIO.EXE</a> // 指導ステップ // 5ヶ国語対応",
+        "teaser-footer-sub": "// 指導ステップ // 5ヶ国語対応",
         "teaser-footer-copy": "&copy; 2026 BEWINNERENGINEER. 全コードセキュリティ確保完了。パワーレベル：システム。"
     },
     fr: {
         // Nav
         "nav-about": "À PROPOS",
         "nav-dojo": "LE DOJO",
-        "nav-zanpakuto": "ZANPAKUTO",
+        "nav-portfolio": "PORTFOLIO",
         "nav-blog": "BLOG",
         "nav-manifesto": "MANIFESTE",
         "nav-booking": "ACCÉDER AU DOJO",
@@ -448,10 +448,10 @@ const translations = {
         "dojo-p4-rate": "TARIF : ENTRAÎNEMENT INDIVIDUEL 1-ON-1",
         "dojo-p4-btn": "DURCIR LE CODE &rarr;",
 
-        // Zanpakuto
-        "zanpakuto-title": "LE ZANPAKUTO",
-        "zanpakuto-num": "SECT_02 // ARSENAL TECHNIQUE",
-        "zanpakuto-intro": "L'âme d'un guerrier se reflète dans sa lame. Voici mon historique opérationnel — preuve de mes compétences en propulsion et GNC validées par des agences aérospatiales et des clubs académiques.",
+        // Portfolio
+        "portfolio-title": "LE PORTFOLIO",
+        "portfolio-num": "SECT_02 // PORTFOLIO",
+        "portfolio-intro": "Voici mon historique opérationnel — preuve de mes compétences en propulsion et GNC validées par des agences aérospatiales et des clubs académiques.",
         
         "proj1-overlay": "PLANET Q // U KYUSHU",
         "proj1-title": "FUSÉES HYBRIDES TADORI-TADORI",
@@ -579,14 +579,14 @@ const translations = {
         "teaser-news-desc": "Recevez chaque semaine des schémas de simulation GNC, des alertes de stages aérospatiaux et des guides de résilience mentale pour résister au stress sans faiblir.",
         "teaser-news-btn": "S'ABONNER",
         "teaser-feed-header": "> MONITEUR DE TÉLÉMÉTRIE DYNAMIQUE",
-        "teaser-footer-sub": "// ACCÈS PORTFOLIO : <a href=\"portfolio.html\" style=\"color: var(--accent-cyan); text-decoration: underline;\">PORTFOLIO.EXE</a> // MENTORAT // MULTILINGUE EN 5 LANGUES",
+        "teaser-footer-sub": "// MENTORAT // MULTILINGUE EN 5 LANGUES",
         "teaser-footer-copy": "&copy; 2026 BEWINNERENGINEER. TOUS DROITS SÉCURISÉS. PUISSANCE : CLASSE SYSTEME."
     },
     es: {
         // Nav
         "nav-about": "ACERCA DE",
         "nav-dojo": "EL DOJO",
-        "nav-zanpakuto": "ZANPAKUTO",
+        "nav-portfolio": "PORTFOLIO",
         "nav-blog": "BLOG",
         "nav-manifesto": "MANIFIESTO",
         "nav-booking": "ENTRAR AL DOJO",
@@ -642,10 +642,10 @@ const translations = {
         "dojo-p4-rate": "TARIFA: ENTRENAMIENTO INDIVIDUAL 1-A-1",
         "dojo-p4-btn": "ENDURECER CÓDIGO &rarr;",
 
-        // Zanpakuto
-        "zanpakuto-title": "EL ZANPAKUTO",
-        "zanpakuto-num": "SECT_02 // ARSENAL DEL SISTEMA",
-        "zanpakuto-intro": "El alma de un guerrero se refleja en su espada. Aquí está mi registro operativo: pruebas de capacidad GNC y propulsión validadas por agencias aeroespaciales y clubes académicos.",
+        // Portfolio
+        "portfolio-title": "EL PORTFOLIO",
+        "portfolio-num": "SECT_02 // PORTAFOLIO",
+        "portfolio-intro": "Aquí está mi registro operativo: pruebas de capacidad GNC y propulsión validadas por agencias aeroespaciales y clubes académicos.",
         
         "proj1-overlay": "PLANET Q // U KYUSHU",
         "proj1-title": "COHETES HÍBRIDOS TADORI-TADORI",
@@ -774,7 +774,7 @@ const translations = {
         "teaser-news-desc": "Recibe planos de simulación de GNC, alertas de telemetría de próximas prácticas profesionales y manuales de resiliencia emocional para mantener tu disciplina de ingeniería inquebrantable bajo el estrés.",
         "teaser-news-btn": "SUSCRIBIRSE",
         "teaser-feed-header": "> MONITOR DE TELEMETRÍA DINÁMICA DEL SISTEMA",
-        "teaser-footer-sub": "// ACCESO AL PORTAFOLIO: <a href=\"portfolio.html\" style=\"color: var(--accent-cyan); text-decoration: underline;\">PORTFOLIO.EXE</a> // ETAPAS DE MENTORÍA // 5 IDIOMAS DISPONIBLES",
+        "teaser-footer-sub": "// ETAPAS DE MENTORÍA // 5 IDIOMAS DISPONIBLES",
         "teaser-footer-copy": "&copy; 2026 BEWINNERENGINEER. TODOS LOS CÓDIGOS PROTEGIDOS. NIVEL DE PODER: SISTEMA."
     },
     ar: {
@@ -782,7 +782,7 @@ const translations = {
         // Nav
         "nav-about": "شكون أنا",
         "nav-dojo": "الدوجو",
-        "nav-zanpakuto": "الزانباكوتو",
+        "nav-portfolio": "ملف الأعمال",
         "nav-blog": "البلوغ",
         "nav-manifesto": "البيان ديالي",
         "nav-booking": "دخل للدوجو",
@@ -838,10 +838,10 @@ const translations = {
         "dojo-p4-rate": "التعليم: تداريب قاصحة 1 لـ 1",
         "dojo-p4-btn": "قصح الكود ديالك &rarr;",
 
-        // Zanpakuto
-        "zanpakuto-title": "الزانباكوتو",
-        "zanpakuto-num": "SECT_02 // ترسانة الأنظمة",
-        "zanpakuto-intro": "الروح ديال المحارب كتكتب على السيف ديالو. ها هو سجل الخدمة ديالي — دليل على القدرة فـ GNC والدفع الفضائي مقبول من وكالات الفضاء والنوادي الأكاديمية.",
+        // Portfolio
+        "portfolio-title": "ملف الأعمال",
+        "portfolio-num": "SECT_02 // ملف الأعمال",
+        "portfolio-intro": "ها هو سجل الخدمة ديالي — دليل على القدرة فـ GNC والدفع الفضائي مقبول من وكالات الفضاء والنوادي الأكاديمية.",
         
         "proj1-overlay": "PLANET Q // جامعة كيوشو",
         "proj1-title": "صواريخ هجينة TADORI-TADORI",
@@ -970,7 +970,7 @@ const translations = {
         "teaser-news-desc": "توصل كل سيمانة بتصاميم ومحاكاة GNC، تنبيهات لفرص التدريب فالفضاء، ودليل الصلابة النفسية باش تحافظ على الصرامة الهندسية ديالك تحت الضغط.",
         "teaser-news-btn": "اشترك دابا",
         "teaser-feed-header": "> شريط التيليميتري الديناميكي للأنظمة",
-        "teaser-footer-sub": "// دخول للبورتفوليو: <a href=\"portfolio.html\" style=\"color: var(--accent-cyan); text-decoration: underline;\">PORTFOLIO.EXE</a> // مراحل المرافقة // 5 لغات مدعومة",
+        "teaser-footer-sub": "// مراحل المرافقة // 5 لغات مدعومة",
         "teaser-footer-copy": "&copy; 2026 BEWINNERENGINEER. كاع الأكواد محمية. مستوى الطاقة: أنظمة مهنية."
     }
 };
