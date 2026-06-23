@@ -123,7 +123,7 @@ const translations = {
         "manifesto-title": "LIFE-LONG LEARNING<br>AS IF NOTHING<br>WAS KNOWN.",
         "manifesto-para-1": "In the high-stress arenas of aerospace engineering, the moment you think you are the absolute master is the moment you crash. The systems architecture doesn't care about your ego; it only cares about physical laws.",
         "manifesto-para-2": "To survive the 'hell' of Kyushu's labs or command the attention of ESA Executives at ESTEC, you must maintain the spirit of a learner. Every failure in simulations, every drift error, and every structural stress is a lesson.",
-        "manifesto-para-3": "I don't offer generic templates or academic hand-holding. I mentor engineers who want to test their steel under fire, rebuild their methodologies, and unlock their technical potential.",
+        "manifesto-para-3": "I don't offer generic templates or academic hand-holding. I mentor engineers who want to test their steel under fire, rebuild their methodologies, and unlock their technical Bankai.",
         "manifesto-quote": "\"THE ULTIMATE SHIELD IS NOT YOUR DEGREE. IT IS AN UNBREAKABLE DISCIPLINE TO REMAIN A STUDENT AT THE HEIGHT OF THREAT.\"",
         "manifesto-author": "&mdash; ZYAD EL AOUAD, THE IRON ENGINEER",
 
@@ -318,7 +318,7 @@ const translations = {
         "manifesto-title": "何も知らぬが如く<br>生涯にわたり<br>学び続ける。",
         "manifesto-para-1": "宇宙工学の過酷な戦場において、「自分はすべてを習得した」と思った瞬間が破滅の始まりです。システム・アーキテクチャはエンジニアのプライドなど気にしません。物理法則だけがすべてです。",
         "manifesto-para-2": "九大の実験室という「地獄」を生き残り、ESTECでESA幹部の注目を集めるためには、常に学ぶ姿勢を維持しなければなりません。シミュレーションの失敗、軌道ドリフト、構造的応力、そのすべてが修行です。",
-        "manifesto-para-3": "ありきたりのテンプレートや甘い指導は提供しません。戦火の中で己の鋼を鍛え、手法を再構築し、技術的なポテンシャルを開放したいエンジニアを指導します。",
+        "manifesto-para-3": "ありきたりのテンプレートや甘い指導は提供しません。戦火の中で己の鋼を鍛え、手法を再構築し、技術的卍解を解放したいエンジニアを指導します。",
         "manifesto-quote": "「最強の盾は学位ではない。脅威の最中であっても学び続ける、揺るぎなき規律だ。」",
         "manifesto-author": "&mdash; ZYAD EL AOUAD、アイアンエンジニア",
 
@@ -512,7 +512,7 @@ const translations = {
         "manifesto-title": "APPRENDRE TOUTE SA VIE<br>COMME SI RIEN<br>N'ÉTAIT ACQUIS.",
         "manifesto-para-1": "Dans le monde ultra-compétitif de l'ingénierie aérospatiale, le moment où vous pensez avoir tout maîtrisé est celui où vous échouez. Les lois physiques se moquent de votre ego ; elles ne répondent qu'aux lois de la nature.",
         "manifesto-para-2": "Pour survivre aux laboratoires de Kyushu ou capter l'attention des comités de l'ESA à l'ESTEC, vous devez garder l'esprit d'un élève. Chaque échec de simulation, chaque erreur de dérive et chaque contrainte de structure est une leçon.",
-        "manifesto-para-3": "Je n'offre pas de modèles faciles ou d'accompagnement académique passif. J'accompagne les ingénieurs qui veulent forger leur acier sous le feu, reconstruire leurs méthodes et débloquer leur potentiel technique.",
+        "manifesto-para-3": "Je n'offre pas de modèles faciles ou d'accompagnement académique passif. J'accompagne les ingénieurs qui veulent forger leur acier sous le feu, reconstruire leurs méthodes et débloquer leur Bankai technique.",
         "manifesto-quote": "\"LE BLINDAGE ULTIME N'EST PAS VOTRE DIPLÔME. C'EST LA DISCIPLINE INCASSABLE DE RESTER UN ÉTUDIANT AU CŒUR DE LA MENACE.\"",
         "manifesto-author": "&mdash; ZYAD EL AOUAD, THE IRON ENGINEER",
 
@@ -706,7 +706,7 @@ const translations = {
         "manifesto-title": "APRENDER TODA LA VIDA<br>COMO SI NADA<br>ESTUVIESE ESCRITO.",
         "manifesto-para-1": "En las áreas de alta tensión de la ingeniería aeroespacial, el momento en el que crees que eres el maestro absoluto es el momento en el que te estrellas. A las leyes de la física no les importa tu ego; solo responden a las leyes naturales.",
         "manifesto-para-2": "Para sobrevivir al 'infierno' de los laboratorios de Kyushu o llamar la atención de los comités de la ESA en el ESTEC, debes mantener el espíritu del estudiante. Cada fallo en la simulación, cada error de deriva y cada esfuerzo estructural es una lección.",
-        "manifesto-para-3": "No ofrezco plantillas genéricas ni tutorías pasivas. Acompaño a ingenieros que quieren templar su acero bajo el fuego, reconstruir sus metodologías y desbloquear su potencial técnico.",
+        "manifesto-para-3": "No ofrezco plantillas genéricas ni tutorías pasivas. Acompaño a ingenieros que quieren templar su acero bajo el fuego, reconstruir sus metodologías y desbloquear su Bankai técnico.",
         "manifesto-quote": "\"EL BLINDAJE DEFINITIVO NO ES TU TÍTULO. ES LA DISCIPLINA INQUEBRANTABLE DE SEGUIR SIENDO UN ESTUDIANTE EN MEDIO DE LA AMENAZA.\"",
         "manifesto-author": "&mdash; ZYAD EL AOUAD, THE IRON ENGINEER",
 
@@ -902,7 +902,7 @@ const translations = {
         "manifesto-title": "التعلم مدى الحياة<br>بحال يلا ما عمرك<br>عرفتي شي حاجة.",
         "manifesto-para-1": "فالميادين الصعيبة ديال هندسة الطيران والفضاء، اللحظة اللي كتظن فيها أنك وليتي معلم هي اللحظة اللي كطيح وتخسر فيها. ديزاين الأنظمة ماوقفهومش Ego ديالك، كيهمهم غير القوانين الفيزيائية نيشان.",
         "manifesto-para-2": "باش تسلك راسك فـ 'جحيم' مختبرات كيوشو فاليابان ولا تثير انتباه المدراء الكبار ديال وكالة الفضاء الأوروبية فـ ESTEC، خاصك تخلي ديما الروح ديال طالب باغي يتعلم. كاع المشاكل د المحاكاة والصلابة هما دروس قاصحة.",
-        "manifesto-para-3": "أنا ماكنعطيش موديلات واجدة وساهلة ولا كوتشينغ ناعس. أنا كنورّي المهندسين اللي باغيين يقصحو كتافهم تحت الضغط ويفجروا القدرات الهندسية ديالهم.",
+        "manifesto-para-3": "أنا ماكنعطيش موديلات واجدة وساهلة ولا كوتشينغ ناعس. أنا كنورّي المهندسين اللي باغيين يقصحو كتافهم تحت الضغط ويفجروا البانكاي الهندسي ديالهم.",
         "manifesto-quote": "\"الدرع الحقيقي ماشي هو الشهادة ديالك. هو الديسيبلين والصرامة باش تبقى طالب كيتعلم واخا تكون وسط الخطر.\"",
         "manifesto-author": "&mdash; زياد العواد، مهندس من حديد",
 
@@ -1017,7 +1017,7 @@ const localizedDefaultBlogs = {
             tag: "CAREER ARMOR",
             date: "2026-06-01",
             image: "assets/manga_ken.jfif",
-            excerpt: "Ditch generic templates. Learn how to structure aerospace resumes that display systems-level engineering expertise.",
+            excerpt: "Ditch generic templates. Learn how to structure aerospace resumes that display S-Class engineering power levels.",
             content: `
                 <p>When presenting GNC architectures to the European Space Agency (ESA) or interviewing for competitive spots like the Boeing externship, generic, text-heavy resumes get filtered out instantly. Insufficient technical framing represents weak career armor.</p>
                 <p><strong>The Exoskeleton Framework:</strong> Your resume must read like a systems architecture manual. Do not say 'Assisted with CAD models.' Instead, write: 'Designed 3-axis Cubesat ADCS simulator in MATLAB/Simulink; calibrated EKF sensor fusion loop to achieve pointing accuracy &lt; 0.05 deg.'</p>
@@ -1066,7 +1066,7 @@ const localizedDefaultBlogs = {
             tag: "キャリアの装甲",
             date: "2026-06-01",
             image: "assets/manga_ken.jfif",
-            excerpt: "テンプレート頼みを卒業。システムレベルの工学力をアピールできる、航空宇宙レジュメの記述方法。",
+            excerpt: "テンプレート頼みを卒業。Sクラスの工学力をアピールできる、航空宇宙レジュメの記述方法。",
             content: `
                 <p>欧州宇宙機関（ESA）へGNCアーキテクチャを提案する際や、ボーイングのインターンシップなどの厳しい選考では、文字ばかりのありきたりなレジュメは一瞬でふるい落とされます。不十分な技術表現は、エンジニアとしてのキャリア装甲が薄いことを意味します。</p>
                 <p><strong>骨格フレームワーク：</strong>あなたのレジュメは、システム設計仕様書のように読めるものでなければなりません。「CADモデルの作成を支援した」と書くのは止めましょう。代わりに「3軸Cubesat姿勢制御（ADCS）シミュレータをMATLAB/Simulinkで設計し、拡張カルマンフィルタ（EKF）の補正ループを調整して指向精度0.05度未満を達成した」と記述してください。</p>
@@ -1115,7 +1115,7 @@ const localizedDefaultBlogs = {
             tag: "ARMURE DE CARRIÈRE",
             date: "2026-06-01",
             image: "assets/manga_ken.jfif",
-            excerpt: "Oubliez les modèles génériques. Apprenez à structurer des CV aérospatiaux affichant une expertise technique de niveau systèmes.",
+            excerpt: "Oubliez les modèles génériques. Apprenez à structurer des CV aérospatiaux affichant une puissance technique de Classe S.",
             content: `
                 <p>Lors de la présentation d'architectures GNC à l'Agence spatiale européenne (ESA) ou lors d'entretiens pour des places sélectives comme Boeing, les CV textuels classiques sont filtrés instantanément. Un manque de détails quantitatifs représente une armure professionnelle vulnérable.</p>
                 <p><strong>La structure Exosquelette :</strong> Votre CV doit se lire comme un manuel d'architecture de systèmes. Ne dites pas : 'A aidé sur des modèles CAO.' Écrivez : 'Conçu un simulateur ADCS CubeSat à 3 axes sous MATLAB/Simulink ; ajusté le filtre de Kalman EKF pour obtenir une précision de pointage inférieure à 0,05 degré.'</p>
@@ -1164,7 +1164,7 @@ const localizedDefaultBlogs = {
             tag: "ARMADURA PROFESIONAL",
             date: "2026-06-01",
             image: "assets/manga_ken.jfif",
-            excerpt: "Olvídate de las plantillas genéricas. Aprende a estructurar currículums aeroespaciales con nivel de sistemas.",
+            excerpt: "Olvídate de las plantillas genéricas. Aprende a estructurar currículums aeroespaciales con poder de Clase S.",
             content: `
                 <p>Al presentar arquitecturas GNC a la Agencia Espacial Europea (ESA) o competir por puestos selectos en Boeing, los currículums de texto estándar son descartados al instante. La falta de detalles técnicos representa una armadura débil en tu carrera.</p>
                 <p><strong>La estructura del Exoesqueleto :</strong> Tu currículum debe leerse como un manual de arquitectura de sistemas. No digas: 'Asistí en el diseño CAD.' Escribe: 'Diseñé un simulador ADCS CubeSat de 3 ejes en MATLAB/Simulink; calibré el bucle de filtrado EKF para lograr una precisión inferior a 0,05 grados.'</p>
@@ -1213,7 +1213,7 @@ const localizedDefaultBlogs = {
             tag: "درع الخدمة",
             date: "2026-06-01",
             image: "assets/manga_ken.jfif",
-            excerpt: "بعد من النماذج العادية والضعيفة. تعلم كيفاش تقاد CV ديال هندسة الطيران كيبين القوة ديالك بنيفو سيستم.",
+            excerpt: "بعد من النماذج العادية والضعيفة. تعلم كيفاش تقاد CV ديال هندسة الطيران كيبين القوة ديالك بنيفو S-Class.",
             content: `
                 <p>ملي كتبغي تقدم مشاريع GNC لوكالة الفضاء الأوروبية (ESA) ولا كدوز entretien لشي بلاصة بحال Boeing، الـ CVs العاديين اللي عامرين غير كتبة كيتلاحو نيشان. قلة التفاصيل التقنية الدقيقة هي درع مهني مصدي وضعيف.</p>
                 <p><strong>طريقة الهيكل الخارجي:</strong> الـ CV ديالك خاصو يتقرا بحال كتيب تصميم الأنظمة. ماتكتبش 'عاونت فـ ديزاين CAD'. كتب: 'صممت محاكي ADCS ثلاثي المحاور لـ CubeSat بـ MATLAB/Simulink؛ ضبطت خوارزمية EKF للحصول على دقة توجيه أقل من 0.05 درجة'.</p>

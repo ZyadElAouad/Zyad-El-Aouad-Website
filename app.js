@@ -520,7 +520,7 @@ const defaultBlogs = [
         tag: "CAREER ARMOR",
         date: "2026-06-01",
         image: "assets/manga_ken.jfif",
-        excerpt: "Ditch generic templates. Learn how to structure aerospace resumes that display systems-level engineering expertise.",
+        excerpt: "Ditch generic templates. Learn how to structure aerospace resumes that display S-Class engineering power levels.",
         content: `
             <p>When presenting GNC architectures to the European Space Agency (ESA) or interviewing for competitive spots like the Boeing externship, generic, text-heavy resumes get filtered out instantly. Insufficient technical framing represents weak career armor.</p>
             <p><strong>The Exoskeleton Framework:</strong> Your resume must read like a systems architecture manual. Do not say 'Assisted with CAD models.' Instead, write: 'Designed 3-axis Cubesat ADCS simulator in MATLAB/Simulink; calibrated EKF sensor fusion loop to achieve pointing accuracy &lt; 0.05 deg.'</p>
