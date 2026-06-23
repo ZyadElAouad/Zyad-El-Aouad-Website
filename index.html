@@ -207,18 +207,37 @@
         <section id="booking" class="monetization-wrapper" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 30px;">
             
             <!-- Left: Call to Action for cohort & trigger button -->
-            <div class="dojo-panel manga-outline" style="padding: 24px 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height:330px; align-self: start;">
-                <div>
-                    <span class="dojo-tag" style="margin-bottom: 15px;" data-i18n="teaser-waitlist-header">COHORT ENROLLMENT</span>
-                    <h3 class="dojo-title" style="font-size: 2.2rem;" data-i18n="teaser-waitlist-title">JOIN ELITE MENTORSHIP</h3>
-                    <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-waitlist-desc">
-                          Mentorship cohort seats are capped strictly at 5 students for Fall 2026. Submitting enters you into the priority selection queue.
-                    </p>
+            <div style="display: flex; flex-direction: column; gap: 30px;">
+                
+                <!-- Cohort Enrollment Card -->
+                <div class="dojo-panel manga-outline" style="padding: 24px 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height: 200px;">
+                    <div>
+                        <span class="dojo-tag" style="margin-bottom: 15px;" data-i18n="teaser-waitlist-header">COHORT ENROLLMENT</span>
+                        <h3 class="dojo-title" style="font-size: 2.2rem;" data-i18n="teaser-waitlist-title">JOIN ELITE MENTORSHIP</h3>
+                        <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-waitlist-desc">
+                              Mentorship cohort seats are capped strictly at 5 students for Fall 2026. Submitting enters you into the priority selection queue.
+                        </p>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <!-- This button opens the interactive terminal booking modal -->
+                        <button class="btn-bankai dojo-action" style="display: block; width: 100%; text-align: center; color: var(--text-light) !important;" data-i18n="teaser-nav-cta">JOIN</button>
+                    </div>
                 </div>
-                <div style="margin-top: 25px;">
-                    <!-- This button opens the interactive terminal booking modal -->
-                    <button class="btn-bankai dojo-action" style="display: block; width: 100%; text-align: center; color: var(--text-light) !important;" data-i18n="teaser-nav-cta">JOIN</button>
+
+                <!-- See the Dojo Card -->
+                <div class="dojo-panel manga-outline" style="padding: 24px 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height: 180px; border-color: var(--accent-cyan); box-shadow: 3px 3px 0 var(--accent-cyan);">
+                    <div>
+                        <span class="dojo-tag" style="margin-bottom: 15px; color: var(--accent-cyan) !important;" data-i18n="teaser-dojo-header">TRAINING PATHS</span>
+                        <h3 class="dojo-title" style="font-size: 2.2rem; color: var(--accent-cyan) !important;" data-i18n="teaser-dojo-title">EXPLORE THE DOJO</h3>
+                        <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-dojo-desc">
+                            Inspect our detailed training paths, GNC control loops syllabus, and mechanical engineering modules.
+                        </p>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <a href="dojo.html" class="btn-bankai" style="display: block; text-align: center; font-size: 1rem; border-color: var(--accent-cyan); color: var(--accent-cyan); text-decoration: none; box-shadow: 3px 3px 0 var(--accent-cyan);" data-i18n="teaser-dojo-btn">SEE THE DOJO &rarr;</a>
+                    </div>
                 </div>
+
             </div>
 
             <!-- Right: Premium Audit & Newsletter Options -->
