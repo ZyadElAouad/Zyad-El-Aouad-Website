@@ -303,7 +303,7 @@ if (dojoForm) {
         // Hide form inputs and animate compilation
         dojoForm.style.display = 'none';
         terminalResponse.style.display = 'block';
-        terminalResponse.textContent = `> INITIALIZING BANKAI PROTOCOL...\n> COMPILING SYSTEMS MATRIX FOR: ${name.toUpperCase()}\n> ANALYZING ADCS POTENTIAL...`;
+        terminalResponse.textContent = `> INITIALIZING SYSTEMS PROTOCOL...\n> COMPILING SYSTEMS MATRIX FOR: ${name.toUpperCase()}\n> ANALYZING ADCS POTENTIAL...`;
         
         setTimeout(() => {
             terminalResponse.textContent += `\n> HARDENING RESILIENCE ARMOR ON MENTORSHIP PILLAR: ${pillar.toUpperCase()}...`;
@@ -314,7 +314,7 @@ if (dojoForm) {
             const contractUUID = "SYS-" + Math.floor(100000 + Math.random() * 900000);
             const bodyText = `
 ===================================================
-   BANKAI ENGINEERING CODE OF CONDUCT & INTAKE
+   SYSTEMS ENGINEERING CODE OF CONDUCT & INTAKE
 ===================================================
 UUID: ${contractUUID}
 INTAKE CANDIDATE: ${name.toUpperCase()}
@@ -331,7 +331,7 @@ DEVELOPMENT OBJECTIVES METADATA:
             terminalResponse.textContent = bodyText;
             
             // Build direct mailto link
-            const mailSubject = encodeURIComponent(`[Dojo Admissions] Bankai Training Request - ${name}`);
+            const mailSubject = encodeURIComponent(`[Dojo Admissions] Systems Mentorship Request - ${name}`);
             const mailBody = encodeURIComponent(bodyText);
             const mailtoLink = `mailto:zyadel.aouad.eng@gmail.com?subject=${mailSubject}&body=${mailBody}`;
             
@@ -520,7 +520,7 @@ const defaultBlogs = [
         tag: "CAREER ARMOR",
         date: "2026-06-01",
         image: "assets/manga_ken.jfif",
-        excerpt: "Ditch generic templates. Learn how to structure aerospace resumes that display S-Class engineering power levels.",
+        excerpt: "Ditch generic templates. Learn how to structure aerospace resumes that display systems-level engineering expertise.",
         content: `
             <p>When presenting GNC architectures to the European Space Agency (ESA) or interviewing for competitive spots like the Boeing externship, generic, text-heavy resumes get filtered out instantly. Insufficient technical framing represents weak career armor.</p>
             <p><strong>The Exoskeleton Framework:</strong> Your resume must read like a systems architecture manual. Do not say 'Assisted with CAD models.' Instead, write: 'Designed 3-axis Cubesat ADCS simulator in MATLAB/Simulink; calibrated EKF sensor fusion loop to achieve pointing accuracy &lt; 0.05 deg.'</p>

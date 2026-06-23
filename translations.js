@@ -9,17 +9,17 @@ const translations = {
         "nav-booking": "ENTER DOJO",
 
         // Hero
-        "hero-telemetry": "TELEMETRY ESTABLISHED // POWER SCALE: S-CLASS",
+        "hero-telemetry": "TELEMETRY ESTABLISHED // POWER SCALE: SYSTEMS LEVEL",
         "hero-title-1": "HEAVEN OR HELL:",
-        "hero-title-2": "FORGE YOUR BANKAI.",
+        "hero-title-2": "FORGE YOUR SYSTEMS.",
         "hero-desc": "University taught you how to calculate. I teach you how to survive. Accelerate your career from basic CAD modeler to Systems Architect with high-intensity aerospace guidance. Fusing ESA standard design pipelines with raw 90s shonen grit.",
-        "hero-cta": "ENTER THE DOJO. BEGIN YOUR BANKAI TRAINING.",
+        "hero-cta": "ENTER THE DOJO. BEGIN YOUR SYSTEMS TRAINING.",
         "hero-operator": "OPERATOR: ZYAD_EL_AOUAD",
 
         // Hero Stats
         "stat-gnc": "GNC & ADCS CONTROL",
         "stat-workflow": "WORKFLOW DRIFTING (MATLAB/PY)",
-        "stat-structural": "RIKI-OH STRUCTURAL RESILIENCE",
+        "stat-structural": "RIGOROUS STRUCTURAL RESILIENCE",
 
         // About
         "about-title": "THE OPERATOR",
@@ -123,7 +123,7 @@ const translations = {
         "manifesto-title": "LIFE-LONG LEARNING<br>AS IF NOTHING<br>WAS KNOWN.",
         "manifesto-para-1": "In the high-stress arenas of aerospace engineering, the moment you think you are the absolute master is the moment you crash. The systems architecture doesn't care about your ego; it only cares about physical laws.",
         "manifesto-para-2": "To survive the 'hell' of Kyushu's labs or command the attention of ESA Executives at ESTEC, you must maintain the spirit of a learner. Every failure in simulations, every drift error, and every structural stress is a lesson.",
-        "manifesto-para-3": "I don't offer generic templates or academic hand-holding. I mentor engineers who want to test their steel under fire, rebuild their methodologies, and unlock their technical Bankai.",
+        "manifesto-para-3": "I don't offer generic templates or academic hand-holding. I mentor engineers who want to test their steel under fire, rebuild their methodologies, and unlock their technical potential.",
         "manifesto-quote": "\"THE ULTIMATE SHIELD IS NOT YOUR DEGREE. IT IS AN UNBREAKABLE DISCIPLINE TO REMAIN A STUDENT AT THE HEIGHT OF THREAT.\"",
         "manifesto-author": "&mdash; ZYAD EL AOUAD, THE IRON ENGINEER",
 
@@ -138,7 +138,7 @@ const translations = {
         "intake-pillar-3": "OTOKOJUKU SPIRIT: UAV LEADERSHIP UNDER CRISIS",
         "intake-pillar-4": "UNBREAKABLE WALL: STRUCTURAL RESILIENCE (ANSYS)",
         "intake-lbl-objs": "> COMPILE CURRENT CAPABILITIES & OBJECTIVES:",
-        "intake-btn-submit": "> INITIALIZE BANKAI COMPILATION",
+        "intake-btn-submit": "> INITIALIZE SYSTEMS COMPILATION",
 
         // Footer & Copyright
         "footer-subtext": "// PRESENTING GNC ARCHITECTURES AT ESA // SIMULATING HYBRIDS IN JAPAN // FLUENT IN 5 LANGUAGES",
@@ -179,7 +179,7 @@ const translations = {
         "teaser-intake-opt-1": "Finding Top Internships & Opportunities",
         "teaser-intake-opt-2": "Managing Workload Stress & Emotional Support",
         "teaser-intake-opt-3": "GNC & Control Theory Code Hardening",
-        "teaser-intake-opt-4": "Building S-Class Portfolio Armor",
+        "teaser-intake-opt-4": "Building Systems-Level Portfolio Armor",
         "teaser-intake-btn": "> SECURE PRIORITY APPLICATION TICKET",
         "teaser-audit-badge": "PRE-LAUNCH PREMIUM OFFER",
         "teaser-audit-price": "PREMIUM INTAKE",
@@ -204,17 +204,17 @@ const translations = {
         "nav-booking": "道場に入門",
 
         // Hero
-        "hero-telemetry": "テレメトリ接続確立 // パワースケール：Sクラス",
+        "hero-telemetry": "テレメトリ接続確立 // パワースケール：システムレベル",
         "hero-title-1": "ヘブン・オア・ヘル：",
-        "hero-title-2": "自らの卍解を鍛え上げよ。",
+        "hero-title-2": "自らのシステムを鍛え上げよ。",
         "hero-desc": "大学は計算方法を教えてくれたが、私は生き残る術を教える。高強度の宇宙工学指導により、基本的なCADモデラーからシステムアーキテクトへとキャリアを加速させよ。ESA標準の設計パイプラインと、90年代少年漫画の闘志を融合。",
-        "hero-cta": "道場に入門。卍解の修行を開始する。",
+        "hero-cta": "道場に入門。システムの修行を開始する。",
         "hero-operator": "オペレーター: ZYAD_EL_AOUAD",
 
         // Hero Stats
         "stat-gnc": "GNC＆ADCS制御",
         "stat-workflow": "ワークフロー・ドリフト (MATLAB/PY)",
-        "stat-structural": "力王流 構造レジリエンス",
+        "stat-structural": "高度構造レジリエンス",
 
         // About
         "about-title": "オペレーター",
@@ -318,7 +318,7 @@ const translations = {
         "manifesto-title": "何も知らぬが如く<br>生涯にわたり<br>学び続ける。",
         "manifesto-para-1": "宇宙工学の過酷な戦場において、「自分はすべてを習得した」と思った瞬間が破滅の始まりです。システム・アーキテクチャはエンジニアのプライドなど気にしません。物理法則だけがすべてです。",
         "manifesto-para-2": "九大の実験室という「地獄」を生き残り、ESTECでESA幹部の注目を集めるためには、常に学ぶ姿勢を維持しなければなりません。シミュレーションの失敗、軌道ドリフト、構造的応力、そのすべてが修行です。",
-        "manifesto-para-3": "ありきたりのテンプレートや甘い指導は提供しません。戦火の中で己の鋼を鍛え、手法を再構築し、技術的卍解を解放したいエンジニアを指導します。",
+        "manifesto-para-3": "ありきたりのテンプレートや甘い指導は提供しません。戦火の中で己の鋼を鍛え、手法を再構築し、技術的なポテンシャルを開放したいエンジニアを指導します。",
         "manifesto-quote": "「最強の盾は学位ではない。脅威の最中であっても学び続ける、揺るぎなき規律だ。」",
         "manifesto-author": "&mdash; ZYAD EL AOUAD、アイアンエンジニア",
 
@@ -333,7 +333,7 @@ const translations = {
         "intake-pillar-3": "OTOKOJUKU SPIRIT: 危機下でのUAV指揮権限",
         "intake-pillar-4": "UNBREAKABLE WALL: 構造レジリエンス (ANSYS)",
         "intake-lbl-objs": "> 現在のスキルと解決したい課題を入力:",
-        "intake-btn-submit": "> 卍解コンパイルの開始",
+        "intake-btn-submit": "> システムコンパイルの開始",
 
         "footer-subtext": "// ESAでのGNC設計発表 // 日本でのロケット開発シミュレーション // 5カ国語に対応",
         "footer-top": "一番上へ",
@@ -373,7 +373,7 @@ const translations = {
         "teaser-intake-opt-1": "一流インターンシップや機会の開拓",
         "teaser-intake-opt-2": "莫大なタスク負荷と精神・感情サポート",
         "teaser-intake-opt-3": "GNC＆制御理論コードの強化",
-        "teaser-intake-opt-4": "Sクラスのポートフォリオ装甲構築",
+        "teaser-intake-opt-4": "システムレベルのポートフォリオ装甲構築",
         "teaser-intake-btn": "> 優先選考チケットを確保する",
         "teaser-audit-badge": "ローンチ前特別プレミアムオファー",
         "teaser-audit-price": "プレミアム枠",
@@ -398,17 +398,17 @@ const translations = {
         "nav-booking": "ACCÉDER AU DOJO",
 
         // Hero
-        "hero-telemetry": "TÉLÉMÉTRIE ÉTABLIE // ÉCHELLE DE PUISSANCE : CLASSE S",
+        "hero-telemetry": "TÉLÉMÉTRIE ÉTABLIE // ÉCHELLE DE PUISSANCE : NIVEAU SYSTÈMES",
         "hero-title-1": "LE CIEL OU L'ENFER :",
-        "hero-title-2": "FORGEZ VOTRE BANKAI.",
+        "hero-title-2": "FORGEZ VOS SYSTÈMES.",
         "hero-desc": "L'université vous a appris à calculer. Je vous apprends à survivre. Accélérez votre carrière de simple modélisateur CAO à architecte système grâce à un accompagnement aérospatial intensif. Fusionnant les processus de conception standard de l'ESA avec le style brut des shonen des années 90.",
-        "hero-cta": "ENTRER DANS LE DOJO. COMMENCER VOTRE ENTRAÎNEMENT BANKAI.",
+        "hero-cta": "ENTRER DANS LE DOJO. COMMENCER VOTRE APPRENTISSAGE DES SYSTÈMES.",
         "hero-operator": "OPÉRATEUR : ZYAD_EL_AOUAD",
 
         // Hero Stats
         "stat-gnc": "CONTRÔLE GNC & ADCS",
         "stat-workflow": "DÉRIVE DE FLUX DE TRAVAIL (MATLAB/PY)",
-        "stat-structural": "RÉSILIENCE STRUCTURELLE RIKI-OH",
+        "stat-structural": "RÉSILIENCE STRUCTURELLE RIGOUREUSE",
 
         // About
         "about-title": "L'OPÉRATEUR",
@@ -512,7 +512,7 @@ const translations = {
         "manifesto-title": "APPRENDRE TOUTE SA VIE<br>COMME SI RIEN<br>N'ÉTAIT ACQUIS.",
         "manifesto-para-1": "Dans le monde ultra-compétitif de l'ingénierie aérospatiale, le moment où vous pensez avoir tout maîtrisé est celui où vous échouez. Les lois physiques se moquent de votre ego ; elles ne répondent qu'aux lois de la nature.",
         "manifesto-para-2": "Pour survivre aux laboratoires de Kyushu ou capter l'attention des comités de l'ESA à l'ESTEC, vous devez garder l'esprit d'un élève. Chaque échec de simulation, chaque erreur de dérive et chaque contrainte de structure est une leçon.",
-        "manifesto-para-3": "Je n'offre pas de modèles faciles ou d'accompagnement académique passif. J'accompagne les ingénieurs qui veulent forger leur acier sous le feu, reconstruire leurs méthodes et débloquer leur Bankai technique.",
+        "manifesto-para-3": "Je n'offre pas de modèles faciles ou d'accompagnement académique passif. J'accompagne les ingénieurs qui veulent forger leur acier sous le feu, reconstruire leurs méthodes et débloquer leur potentiel technique.",
         "manifesto-quote": "\"LE BLINDAGE ULTIME N'EST PAS VOTRE DIPLÔME. C'EST LA DISCIPLINE INCASSABLE DE RESTER UN ÉTUDIANT AU CŒUR DE LA MENACE.\"",
         "manifesto-author": "&mdash; ZYAD EL AOUAD, THE IRON ENGINEER",
 
@@ -527,7 +527,7 @@ const translations = {
         "intake-pillar-3": "OTOKOJUKU SPIRIT : DRONE MANAGEMENT EN CRISE",
         "intake-pillar-4": "UNBREAKABLE WALL : RÉSILIENCE STRUCTURELLE (ANSYS)",
         "intake-lbl-objs": "> COMPILER VOS CAPACITÉS ET OBJECTIFS :",
-        "intake-btn-submit": "> INITIALISER LA COMPILATION BANKAI",
+        "intake-btn-submit": "> INITIALISER LA COMPILATION DES SYSTÈMES",
 
         "footer-subtext": "// CONCEPTION GNC POUR L'ESA // SIMULATIONS ROCKETRY AU JAPON // TRILINGUE EN 5 LANGUES",
         "footer-top": "HAUT",
@@ -592,17 +592,17 @@ const translations = {
         "nav-booking": "ENTRAR AL DOJO",
 
         // Hero
-        "hero-telemetry": "TELEMETRÍA ESTABLECIDA // ESCALA DE PODER: CLASE S",
+        "hero-telemetry": "TELEMETRÍA ESTABLECIDA // ESCALA DE PODER: NIVEL DE SISTEMAS",
         "hero-title-1": "EL CIELO O EL INFIERNO:",
-        "hero-title-2": "FORJA TU BANKAI.",
+        "hero-title-2": "FORJA TUS SISTEMAS.",
         "hero-desc": "La universidad te enseñó a calcular. Yo te enseño a sobrevivir. Acelera tu carrera de modelador CAD básico a arquitecto de sistemas con orientación aeroespacial de alta intensidad. Fusionando procesos de diseño estándar de la ESA con la fuerza bruta del shonen de los 90.",
-        "hero-cta": "ENTRAR AL DOJO. INICIAR TU ENTRENAMIENTO BANKAI.",
+        "hero-cta": "ENTRAR AL DOJO. INICIAR TU ENTRENAMIENTO DE SISTEMAS.",
         "hero-operator": "OPERADOR: ZYAD_EL_AOUAD",
 
         // Hero Stats
         "stat-gnc": "CONTROL GNC Y ADCS",
         "stat-workflow": "DERIVA DE FLUJO DE TRABAJO (MATLAB/PY)",
-        "stat-structural": "RESILIENCIA ESTRUCTURAL RIKI-OH",
+        "stat-structural": "RESILIENCIA ESTRUCTURAL RIGUROSA",
 
         // About
         "about-title": "EL OPERADOR",
@@ -706,7 +706,7 @@ const translations = {
         "manifesto-title": "APRENDER TODA LA VIDA<br>COMO SI NADA<br>ESTUVIESE ESCRITO.",
         "manifesto-para-1": "En las áreas de alta tensión de la ingeniería aeroespacial, el momento en el que crees que eres el maestro absoluto es el momento en el que te estrellas. A las leyes de la física no les importa tu ego; solo responden a las leyes naturales.",
         "manifesto-para-2": "Para sobrevivir al 'infierno' de los laboratorios de Kyushu o llamar la atención de los comités de la ESA en el ESTEC, debes mantener el espíritu del estudiante. Cada fallo en la simulación, cada error de deriva y cada esfuerzo estructural es una lección.",
-        "manifesto-para-3": "No ofrezco plantillas genéricas ni tutorías pasivas. Acompaño a ingenieros que quieren templar su acero bajo el fuego, reconstruir sus metodologías y desbloquear su Bankai técnico.",
+        "manifesto-para-3": "No ofrezco plantillas genéricas ni tutorías pasivas. Acompaño a ingenieros que quieren templar su acero bajo el fuego, reconstruir sus metodologías y desbloquear su potencial técnico.",
         "manifesto-quote": "\"EL BLINDAJE DEFINITIVO NO ES TU TÍTULO. ES LA DISCIPLINA INQUEBRANTABLE DE SEGUIR SIENDO UN ESTUDIANTE EN MEDIO DE LA AMENAZA.\"",
         "manifesto-author": "&mdash; ZYAD EL AOUAD, THE IRON ENGINEER",
 
@@ -721,7 +721,7 @@ const translations = {
         "intake-pillar-3": "OTOKOJUKU SPIRIT: GESTIÓN DE UAV EN CRISIS",
         "intake-pillar-4": "UNBREAKABLE WALL: RESILIENCIA ESTRUCTURAL (ANSYS)",
         "intake-lbl-objs": "> COMPILAR CAPACIDADES Y OBJETIVOS:",
-        "intake-btn-submit": "> INICIALIZAR COMPILACIÓN BANKAI",
+        "intake-btn-submit": "> INICIALIZAR COMPILACIÓN DE SISTEMAS",
 
         // Footer
         "footer-subtext": "// PRESENTANDO DISEÑOS GNC EN LA ESA // SIMULACIONES EN JAPÓN // FLUIDO EN 5 IDIOMAS",
@@ -762,7 +762,7 @@ const translations = {
         "teaser-intake-opt-1": "Encontrar Prácticas y Oportunidades Top",
         "teaser-intake-opt-2": "Gestionar el Estrés Laboral y Apoyo Emocional",
         "teaser-intake-opt-3": "Endurecimiento de Código de GNC y Teoría de Control",
-        "teaser-intake-opt-4": "Construcción de Armadura de Portafolio Clase S",
+        "teaser-intake-opt-4": "Construcción de Armadura de Portafolio Nivel Sistemas",
         "teaser-intake-btn": "> ASEGURAR TICKET DE APLICACIÓN PRIORITARIA",
         "teaser-audit-badge": "OFERTA PREMIUM DE PRE-LANZAMIENTO",
         "teaser-audit-price": "INGRESO PREMIUM",
@@ -788,17 +788,17 @@ const translations = {
         "nav-booking": "دخل للدوجو",
 
         // Hero
-        "hero-telemetry": "تيليميتري واجدة // الجهد: كلاص S",
+        "hero-telemetry": "تيليميتري واجدة // الجهد: نيفو سيستم",
         "hero-title-1": "الجنة ولا جهنم:",
-        "hero-title-2": "طوّر البانكاي ديالك.",
+        "hero-title-2": "طوّر الأنظمة ديالك.",
         "hero-desc": "الجامعة قراتك كيفاش تحسب، وأنا غنعلمك كيفاش تسلك راسك وتنجح. زرب الكاريير ديالك من رسام CAD عادي لـ مهندس أنظمة بفضل توجيه قاصح فالطيران والفضاء. كنخلطو طرق الخدمة ديال وكالة الفضاء الأوروبية (ESA) مع الحماس والروح ديال أنمي التسعينات.",
-        "hero-cta": "دخل للدوجو. بدا تدريب البانكاي ديالك دابا.",
+        "hero-cta": "دخل للدوجو. بدا تدريب الأنظمة ديالك دابا.",
         "hero-operator": "المشغل: ZYAD_EL_AOUAD",
 
         // Hero Stats
         "stat-gnc": "التحكّم GNC & ADCS",
         "stat-workflow": "تسيير الخدمة (MATLAB/PY)",
-        "stat-structural": "الصلابة الهيكلية ريكي-أوه",
+        "stat-structural": "الصلابة الهيكلية الدقيقة",
 
         // About
         "about-title": "المُشغّل",
@@ -902,7 +902,7 @@ const translations = {
         "manifesto-title": "التعلم مدى الحياة<br>بحال يلا ما عمرك<br>عرفتي شي حاجة.",
         "manifesto-para-1": "فالميادين الصعيبة ديال هندسة الطيران والفضاء، اللحظة اللي كتظن فيها أنك وليتي معلم هي اللحظة اللي كطيح وتخسر فيها. ديزاين الأنظمة ماوقفهومش Ego ديالك، كيهمهم غير القوانين الفيزيائية نيشان.",
         "manifesto-para-2": "باش تسلك راسك فـ 'جحيم' مختبرات كيوشو فاليابان ولا تثير انتباه المدراء الكبار ديال وكالة الفضاء الأوروبية فـ ESTEC، خاصك تخلي ديما الروح ديال طالب باغي يتعلم. كاع المشاكل د المحاكاة والصلابة هما دروس قاصحة.",
-        "manifesto-para-3": "أنا ماكنعطيش موديلات واجدة وساهلة ولا كوتشينغ ناعس. أنا كنورّي المهندسين اللي باغيين يقصحو كتافهم تحت الضغط ويفجروا البانكاي الهندسي ديالهم.",
+        "manifesto-para-3": "أنا ماكنعطيش موديلات واجدة وساهلة ولا كوتشينغ ناعس. أنا كنورّي المهندسين اللي باغيين يقصحو كتافهم تحت الضغط ويفجروا القدرات الهندسية ديالهم.",
         "manifesto-quote": "\"الدرع الحقيقي ماشي هو الشهادة ديالك. هو الديسيبلين والصرامة باش تبقى طالب كيتعلم واخا تكون وسط الخطر.\"",
         "manifesto-author": "&mdash; زياد العواد، مهندس من حديد",
 
@@ -917,7 +917,7 @@ const translations = {
         "intake-pillar-3": "OTOKOJUKU SPIRIT: قيادة الدرونات فالحالات الحرجة",
         "intake-pillar-4": "UNBREAKABLE WALL: الصلابة الهيكلية (ANSYS)",
         "intake-lbl-objs": "> جمّع القدرات والأهداف الحالية ديابك:",
-        "intake-btn-submit": "> بدا عملية تركيب البانكاي",
+        "intake-btn-submit": "> بدا عملية تركيب الأنظمة",
 
         // Footer
         "footer-subtext": "// تقديم ديزاين GNC فـ ESA // محاكاة الصواريخ فاليابان // كنهضر بـ 5 د اللغات",
@@ -958,7 +958,7 @@ const translations = {
         "teaser-intake-opt-1": "كيفاش نلقى تدريب وفرص واعرين",
         "teaser-intake-opt-2": "كيفاش نسير ضغط الخدمة والدعم النفسي",
         "teaser-intake-opt-3": "تقوية كود التحكّم GNC والرياضيات ديالو",
-        "teaser-intake-opt-4": "بناء درع البورتفوليو نيفو S-Class",
+        "teaser-intake-opt-4": "بناء درع البورتفوليو نيفو سيستم",
         "teaser-intake-btn": "> احصل على تذكرة التقديم ذات الأولوية",
         "teaser-audit-badge": "عرض بريميوم قبل الإطلاق",
         "teaser-audit-price": "تقديم خاص",
@@ -1017,7 +1017,7 @@ const localizedDefaultBlogs = {
             tag: "CAREER ARMOR",
             date: "2026-06-01",
             image: "assets/manga_ken.jfif",
-            excerpt: "Ditch generic templates. Learn how to structure aerospace resumes that display S-Class engineering power levels.",
+            excerpt: "Ditch generic templates. Learn how to structure aerospace resumes that display systems-level engineering expertise.",
             content: `
                 <p>When presenting GNC architectures to the European Space Agency (ESA) or interviewing for competitive spots like the Boeing externship, generic, text-heavy resumes get filtered out instantly. Insufficient technical framing represents weak career armor.</p>
                 <p><strong>The Exoskeleton Framework:</strong> Your resume must read like a systems architecture manual. Do not say 'Assisted with CAD models.' Instead, write: 'Designed 3-axis Cubesat ADCS simulator in MATLAB/Simulink; calibrated EKF sensor fusion loop to achieve pointing accuracy &lt; 0.05 deg.'</p>
@@ -1066,7 +1066,7 @@ const localizedDefaultBlogs = {
             tag: "キャリアの装甲",
             date: "2026-06-01",
             image: "assets/manga_ken.jfif",
-            excerpt: "テンプレート頼みを卒業。Sクラスの工学力をアピールできる、航空宇宙レジュメの記述方法。",
+            excerpt: "テンプレート頼みを卒業。システムレベルの工学力をアピールできる、航空宇宙レジュメの記述方法。",
             content: `
                 <p>欧州宇宙機関（ESA）へGNCアーキテクチャを提案する際や、ボーイングのインターンシップなどの厳しい選考では、文字ばかりのありきたりなレジュメは一瞬でふるい落とされます。不十分な技術表現は、エンジニアとしてのキャリア装甲が薄いことを意味します。</p>
                 <p><strong>骨格フレームワーク：</strong>あなたのレジュメは、システム設計仕様書のように読めるものでなければなりません。「CADモデルの作成を支援した」と書くのは止めましょう。代わりに「3軸Cubesat姿勢制御（ADCS）シミュレータをMATLAB/Simulinkで設計し、拡張カルマンフィルタ（EKF）の補正ループを調整して指向精度0.05度未満を達成した」と記述してください。</p>
@@ -1115,7 +1115,7 @@ const localizedDefaultBlogs = {
             tag: "ARMURE DE CARRIÈRE",
             date: "2026-06-01",
             image: "assets/manga_ken.jfif",
-            excerpt: "Oubliez les modèles génériques. Apprenez à structurer des CV aérospatiaux affichant une puissance technique de Classe S.",
+            excerpt: "Oubliez les modèles génériques. Apprenez à structurer des CV aérospatiaux affichant une expertise technique de niveau systèmes.",
             content: `
                 <p>Lors de la présentation d'architectures GNC à l'Agence spatiale européenne (ESA) ou lors d'entretiens pour des places sélectives comme Boeing, les CV textuels classiques sont filtrés instantanément. Un manque de détails quantitatifs représente une armure professionnelle vulnérable.</p>
                 <p><strong>La structure Exosquelette :</strong> Votre CV doit se lire comme un manuel d'architecture de systèmes. Ne dites pas : 'A aidé sur des modèles CAO.' Écrivez : 'Conçu un simulateur ADCS CubeSat à 3 axes sous MATLAB/Simulink ; ajusté le filtre de Kalman EKF pour obtenir une précision de pointage inférieure à 0,05 degré.'</p>
@@ -1164,7 +1164,7 @@ const localizedDefaultBlogs = {
             tag: "ARMADURA PROFESIONAL",
             date: "2026-06-01",
             image: "assets/manga_ken.jfif",
-            excerpt: "Olvídate de las plantillas genéricas. Aprende a estructurar currículums aeroespaciales con poder de Clase S.",
+            excerpt: "Olvídate de las plantillas genéricas. Aprende a estructurar currículums aeroespaciales con nivel de sistemas.",
             content: `
                 <p>Al presentar arquitecturas GNC a la Agencia Espacial Europea (ESA) o competir por puestos selectos en Boeing, los currículums de texto estándar son descartados al instante. La falta de detalles técnicos representa una armadura débil en tu carrera.</p>
                 <p><strong>La estructura del Exoesqueleto :</strong> Tu currículum debe leerse como un manual de arquitectura de sistemas. No digas: 'Asistí en el diseño CAD.' Escribe: 'Diseñé un simulador ADCS CubeSat de 3 ejes en MATLAB/Simulink; calibré el bucle de filtrado EKF para lograr una precisión inferior a 0,05 grados.'</p>
@@ -1213,7 +1213,7 @@ const localizedDefaultBlogs = {
             tag: "درع الخدمة",
             date: "2026-06-01",
             image: "assets/manga_ken.jfif",
-            excerpt: "بعد من النماذج العادية والضعيفة. تعلم كيفاش تقاد CV ديال هندسة الطيران كيبين القوة ديالك بنيفو S-Class.",
+            excerpt: "بعد من النماذج العادية والضعيفة. تعلم كيفاش تقاد CV ديال هندسة الطيران كيبين القوة ديالك بنيفو سيستم.",
             content: `
                 <p>ملي كتبغي تقدم مشاريع GNC لوكالة الفضاء الأوروبية (ESA) ولا كدوز entretien لشي بلاصة بحال Boeing، الـ CVs العاديين اللي عامرين غير كتبة كيتلاحو نيشان. قلة التفاصيل التقنية الدقيقة هي درع مهني مصدي وضعيف.</p>
                 <p><strong>طريقة الهيكل الخارجي:</strong> الـ CV ديالك خاصو يتقرا بحال كتيب تصميم الأنظمة. ماتكتبش 'عاونت فـ ديزاين CAD'. كتب: 'صممت محاكي ADCS ثلاثي المحاور لـ CubeSat بـ MATLAB/Simulink؛ ضبطت خوارزمية EKF للحصول على دقة توجيه أقل من 0.05 درجة'.</p>
