@@ -300,6 +300,13 @@ if (dojoForm) {
         
         playSynthSound('submit');
         
+        // Save subscriber locally to the newsletter database
+        const subs = JSON.parse(localStorage.getItem('teaser_newsletter_subs') || '[]');
+        if (!subs.some(s => s.email === email)) {
+            subs.push({ email: email, date: new Date().toISOString(), source: 'dojo_intake' });
+            localStorage.setItem('teaser_newsletter_subs', JSON.stringify(subs));
+        }
+
         // Hide form inputs and animate compilation
         dojoForm.style.display = 'none';
         terminalResponse.style.display = 'block';
@@ -307,11 +314,16 @@ if (dojoForm) {
         
         setTimeout(() => {
             terminalResponse.textContent += `\n> HARDENING RESILIENCE ARMOR ON MENTORSHIP PILLAR: ${pillar.toUpperCase()}...`;
-        }, 1000);
+        }, 800);
+
+        setTimeout(() => {
+            terminalResponse.textContent += `\n> SUBSCRIBING SECURE CHANNEL TO SYSTEMS NEWSLETTER... SUCCESS`;
+        }, 1500);
 
         setTimeout(() => {
             // Build the terminal certificate output text
             const contractUUID = "SYS-" + Math.floor(100000 + Math.random() * 900000);
+            const CALENDLY_LINK = "https://calendly.com/zyadel-aouad-eng";
             const bodyText = `
 ===================================================
    SYSTEMS ENGINEERING CODE OF CONDUCT & INTAKE
@@ -325,7 +337,10 @@ DEVELOPMENT OBJECTIVES METADATA:
 "${objectives}"
 
 [STATUS]: APPROVED FOR THE GATE MENTORSHIP STAGE
-[ACTION REQUIRED]: SEND DATA PACKET TO INSTRUCTOR
+[ACTION REQUIRED]: 
+1. SEND THIS EMAIL PACKET TO THE INSTRUCTOR (zyadel.aouad.eng@gmail.com)
+2. BOOK YOUR 1-ON-1 DEEP DIVE ON CALENDLY:
+   ${CALENDLY_LINK}
 ===================================================`;
             
             terminalResponse.textContent = bodyText;
@@ -349,6 +364,17 @@ DEVELOPMENT OBJECTIVES METADATA:
             mailBtn.textContent = 'TRANSMIT ADMISSION PACKET VIA EMAIL';
             actionDiv.appendChild(mailBtn);
 
+            const calendlyBtn = document.createElement('a');
+            calendlyBtn.href = CALENDLY_LINK;
+            calendlyBtn.target = '_blank';
+            calendlyBtn.className = 'terminal-btn-submit';
+            calendlyBtn.style.borderColor = 'var(--accent-cyan)';
+            calendlyBtn.style.color = 'var(--accent-cyan)';
+            calendlyBtn.style.textAlign = 'center';
+            calendlyBtn.style.textDecoration = 'none';
+            calendlyBtn.textContent = 'BOOK 1-ON-1 ON CALENDLY';
+            actionDiv.appendChild(calendlyBtn);
+
             const copyBtn = document.createElement('button');
             copyBtn.className = 'terminal-btn-submit';
             copyBtn.style.borderColor = 'var(--accent-gold)';
@@ -362,7 +388,7 @@ DEVELOPMENT OBJECTIVES METADATA:
             actionDiv.appendChild(copyBtn);
             
             terminalResponse.appendChild(actionDiv);
-        }, 2200);
+        }, 2500);
     });
 }
 
@@ -1220,5 +1246,30 @@ const initLanguageSelector = () => {
 
 // Initialize language selector immediately
 initLanguageSelector();
+
+// --- NEWSLETTER SUBSCRIPTION LOGIC ---
+const newsletterEmail = document.getElementById('newsletter-email');
+const newsletterBtn = document.getElementById('newsletter-btn');
+
+if (newsletterBtn && newsletterEmail) {
+    newsletterBtn.addEventListener('click', () => {
+        const mailVal = newsletterEmail.value;
+        if (!mailVal || !mailVal.includes('@')) {
+            alert("Please enter a valid email channel.");
+            return;
+        }
+        playSynthSound('submit');
+        newsletterBtn.textContent = "SUBSCRIBED";
+        newsletterBtn.disabled = true;
+        newsletterEmail.disabled = true;
+        
+        // Save subscriber locally
+        const subs = JSON.parse(localStorage.getItem('teaser_newsletter_subs') || '[]');
+        if (!subs.some(s => s.email === mailVal)) {
+            subs.push({ email: mailVal, date: new Date().toISOString(), source: 'homepage_newsletter' });
+            localStorage.setItem('teaser_newsletter_subs', JSON.stringify(subs));
+        }
+    });
+}
 
 
