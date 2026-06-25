@@ -280,6 +280,52 @@ p {
     left: 140%;
 }
 
+.btn-secondary {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--text-light);
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    padding: 12px 35px;
+    border: 1px solid var(--text-light);
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 5px 5px 0px var(--text-light);
+    letter-spacing: 2px;
+}
+
+.btn-secondary:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0px var(--accent-cyan);
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    background-color: rgba(56, 189, 248, 0.05);
+}
+
+.btn-secondary:active {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0px var(--accent-cyan);
+}
+
+.btn-secondary::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    background: rgba(56, 189, 248, 0.15);
+    transform: rotate(30deg);
+    transition: all 0.5s ease;
+}
+
+.btn-secondary:hover::after {
+    left: 140%;
+}
+
 /* Hero Stats Dashboard Card */
 .hero-dashboard {
     background-color: var(--bg-panel);

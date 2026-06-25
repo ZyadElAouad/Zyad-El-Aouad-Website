@@ -2,6 +2,7 @@ const translations = {
     en: {
         // Nav
         "nav-about": "ABOUT",
+        "hero-who-am-i": "WHO AM I ?",
         "nav-dojo": "THE DOJO",
         "nav-portfolio": "PORTFOLIO",
         "nav-blog": "BLOG",
@@ -201,6 +202,7 @@ const translations = {
     jp: {
         // Nav
         "nav-about": "自己紹介",
+        "hero-who-am-i": "プロフィール",
         "nav-dojo": "道場 (サービス)",
         "nav-portfolio": "ポートフォリオ",
         "nav-blog": "ブログ",
@@ -399,6 +401,7 @@ const translations = {
     fr: {
         // Nav
         "nav-about": "À PROPOS",
+        "hero-who-am-i": "QUI SUIS-JE ?",
         "nav-dojo": "LE DOJO",
         "nav-portfolio": "PORTFOLIO",
         "nav-blog": "BLOG",
@@ -597,6 +600,7 @@ const translations = {
     es: {
         // Nav
         "nav-about": "ACERCA DE",
+        "hero-who-am-i": "¿QUIÉN SOY?",
         "nav-dojo": "EL DOJO",
         "nav-portfolio": "PORTFOLIO",
         "nav-blog": "BLOG",
@@ -797,6 +801,7 @@ const translations = {
         // Moroccan Arabic (Darija in Arabic Script)
         // Nav
         "nav-about": "شكون أنا",
+        "hero-who-am-i": "شكون أنا",
         "nav-dojo": "الدوجو",
         "nav-portfolio": "ملف الأعمال",
         "nav-blog": "البلوغ",
