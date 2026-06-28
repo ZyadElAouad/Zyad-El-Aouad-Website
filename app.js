@@ -323,7 +323,7 @@ if (dojoForm) {
         setTimeout(() => {
             // Build the terminal certificate output text
             const contractUUID = "SYS-" + Math.floor(100000 + Math.random() * 900000);
-            const CALENDLY_LINK = "https://calendly.com/zyadel-aouad-eng";
+            const CALENDLY_LINK = "https://calendly.com/elaouadzyad/30min";
             const bodyText = `
 ===================================================
    SYSTEMS ENGINEERING CODE OF CONDUCT & INTAKE
