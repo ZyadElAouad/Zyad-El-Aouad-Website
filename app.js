@@ -1,4 +1,5 @@
 // --- 1. TELEMETRY & SYSTEM STATUS TICKS ---
+const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE"; // Put your Web3Forms access key here to receive form submissions via email automatically!
 const telemetryLog = document.getElementById('telemetry-log');
 const telemetryTimer = document.getElementById('telemetry-timer');
 
@@ -344,6 +345,39 @@ DEVELOPMENT OBJECTIVES METADATA:
 ===================================================`;
             
             terminalResponse.textContent = bodyText;
+            
+            // Automatically submit to Web3Forms in the background if key is provided
+            if (WEB3FORMS_ACCESS_KEY && WEB3FORMS_ACCESS_KEY !== "YOUR_ACCESS_KEY_HERE") {
+                terminalResponse.textContent += `\n\n> TRANSMITTING ADMISSION DATA MATRIX TO OPERATOR CONTROL STATION...`;
+                fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify({
+                        access_key: WEB3FORMS_ACCESS_KEY,
+                        subject: `[Dojo Admissions] Systems Mentorship Request - ${name}`,
+                        from_name: "BeWinnerEngineer Dojo",
+                        name: name,
+                        email: email,
+                        pillar: pillar,
+                        objectives: objectives,
+                        uuid: contractUUID
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        terminalResponse.textContent = bodyText + `\n\n[SUCCESS]: ADMISSION DATA MATRIX SECURELY TRANSMITTED TO OPERATOR INBOX.`;
+                    } else {
+                        terminalResponse.textContent = bodyText + `\n\n[ERROR]: TRANSMISSION FAILURE. PLEASE USE MANUAL TRANSMISSION BUTTON BELOW.`;
+                    }
+                })
+                .catch(err => {
+                    terminalResponse.textContent = bodyText + `\n\n[ERROR]: TRANSMISSION OFFLINE. PLEASE USE MANUAL TRANSMISSION BUTTON BELOW.`;
+                });
+            }
             
             // Build direct mailto link
             const mailSubject = encodeURIComponent(`[Dojo Admissions] Systems Mentorship Request - ${name}`);
@@ -1268,6 +1302,31 @@ if (newsletterBtn && newsletterEmail) {
         if (!subs.some(s => s.email === mailVal)) {
             subs.push({ email: mailVal, date: new Date().toISOString(), source: 'homepage_newsletter' });
             localStorage.setItem('teaser_newsletter_subs', JSON.stringify(subs));
+        }
+        
+        // Transmit to Web3Forms automatically if key is set
+        if (WEB3FORMS_ACCESS_KEY && WEB3FORMS_ACCESS_KEY !== "YOUR_ACCESS_KEY_HERE") {
+            fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                    access_key: WEB3FORMS_ACCESS_KEY,
+                    subject: `[Newsletter] BeWinnerEngineer New Subscriber - ${mailVal}`,
+                    from_name: "BeWinnerEngineer Newsletter",
+                    email: mailVal,
+                    source: "homepage_newsletter"
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Newsletter transmission success:", data);
+            })
+            .catch(err => {
+                console.error("Newsletter transmission failed:", err);
+            });
         }
     });
 }
