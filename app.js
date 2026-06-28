@@ -338,7 +338,7 @@ DEVELOPMENT OBJECTIVES METADATA:
 
 [STATUS]: APPROVED FOR THE GATE MENTORSHIP STAGE
 [ACTION REQUIRED]: 
-1. SEND THIS EMAIL PACKET TO THE INSTRUCTOR (zyadel.aouad.eng@gmail.com)
+1. SEND THIS EMAIL PACKET TO THE INSTRUCTOR (elaouadzyad@gmail.com)
 2. BOOK YOUR 1-ON-1 DEEP DIVE ON CALENDLY:
    ${CALENDLY_LINK}
 ===================================================`;
@@ -348,7 +348,7 @@ DEVELOPMENT OBJECTIVES METADATA:
             // Build direct mailto link
             const mailSubject = encodeURIComponent(`[Dojo Admissions] Systems Mentorship Request - ${name}`);
             const mailBody = encodeURIComponent(bodyText);
-            const mailtoLink = `mailto:zyadel.aouad.eng@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+            const mailtoLink = `mailto:elaouadzyad@gmail.com?subject=${mailSubject}&body=${mailBody}`;
             
             // Append Action Button to Terminal
             const actionDiv = document.createElement('div');

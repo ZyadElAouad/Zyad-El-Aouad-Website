@@ -215,7 +215,7 @@ PRIMARY BOTTLENECK: ${struggle.toUpperCase()}
                 const mailBtn = document.createElement('a');
                 const mailSubject = encodeURIComponent(`[Waitlist] BeWinnerEngineer Admission Request - ${name}`);
                 const mailBody = encodeURIComponent(secureMsg);
-                mailBtn.href = `mailto:zyadel.aouad.eng@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+                mailBtn.href = `mailto:elaouadzyad@gmail.com?subject=${mailSubject}&body=${mailBody}`;
                 mailBtn.className = 'terminal-btn-submit';
                 mailBtn.style.textAlign = 'center';
                 mailBtn.style.textDecoration = 'none';
