@@ -36,29 +36,29 @@ const translations = {
         "dojo-title": "THE DOJO",
         "dojo-num": "SECT_01 // SERVICES",
         
-        "dojo-p1-tag": "SIMULATION & TUNING",
-        "dojo-p1-title": "THE DRIFT",
-        "dojo-p1-desc": "Technical workflow optimization. Like Takumi finding the perfect line down Mt. Haruna, we tune your GNC pipelines. Master high-performance MATLAB/Simulink modeling and Python scripting to automate simulation suites.",
-        "dojo-p1-rate": "RATE: 1-ON-1 SESSION",
-        "dojo-p1-btn": "BOOK AUDIT &rarr;",
+        "dojo-p1-tag": "SIMULATION & CONTROL",
+        "dojo-p1-title": "GNC AUTOPILOT TUNER",
+        "dojo-p1-desc": "Automated tuning and validation for high-dynamic flight control loops. Upload plant models and controller architectures to automatically synthesize robust gains, run Monte Carlo stability analyses, and export optimized C++/Python autopilot code.",
+        "dojo-p1-rate": "DEVELOPER: $49/MO",
+        "dojo-p1-btn": "LAUNCH TUNER &rarr;",
 
-        "dojo-p2-tag": "CAREER PORTFOLIO ARMOR",
-        "dojo-p2-title": "REINFORCED EXOSKELETON",
-        "dojo-p2-desc": "Career armor building. Stop submitting weak, soft CVs. Together we structure lethal aerospace resumes and systems architectures portfolios based on Boeing externships and ESA-level technical submissions.",
-        "dojo-p2-rate": "RATE: PREMIUM BLUEPRINT",
-        "dojo-p2-btn": "ARMOR UP &rarr;",
+        "dojo-p2-tag": "ORBITAL MECHANICS",
+        "dojo-p2-title": "DEBRIS STABILIZATION SOLVER",
+        "dojo-p2-desc": "Compute magnetic detumbling and active debris stabilization control laws. Upload target inertia tensors and spin rates to generate optimal magnetorquer commands and attitude transition profiles compliant with European Space Agency (ESA) standards.",
+        "dojo-p2-rate": "PROFESSIONAL: $99/MO",
+        "dojo-p2-btn": "COMPUTE LAW &rarr;",
 
-        "dojo-p3-tag": "LEADERSHIP & CRITICAL OPERATIONS",
-        "dojo-p3-title": "OTOKOJUKU SPIRIT",
-        "dojo-p3-desc": "Engineering leadership under crisis. Standard universities teach math, but not how to stand in front of ESA executives or handle a failing UAV team under pressure. Learn the lead engineer delegation mindset.",
-        "dojo-p3-rate": "RATE: COACHING SUITE",
-        "dojo-p3-btn": "LEAD NOW &rarr;",
+        "dojo-p3-tag": "PROPULSION SYSTEM",
+        "dojo-p3-title": "HYBRID ROCKET SIMULATOR",
+        "dojo-p3-desc": "Cloud-based regression rate and transient combustion simulation for hybrid rocket propulsion systems. Instantly model grain geometry regression, chamber pressure oscillations, and nozzle gas dynamics using our serverless CFD cluster.",
+        "dojo-p3-rate": "ENTERPRISE: $149/MO",
+        "dojo-p3-btn": "RUN SIMULATION &rarr;",
 
-        "dojo-p4-tag": "STRUCTURAL ANALYSIS RESILIENCE",
-        "dojo-p4-title": "UNBREAKABLE WALL",
-        "dojo-p4-desc": "Structural engineering resilience. Direct instruction on solid mechanics, finite element analysis (FEA) using ANSYS, and rigorous verification strategies. Harden your code and designs against failures.",
-        "dojo-p4-rate": "RATE: 1-ON-1 DRILL",
-        "dojo-p4-btn": "HARDEN CODE &rarr;",
+        "dojo-p4-tag": "STRUCTURAL ANALYSIS",
+        "dojo-p4-title": "CLOUD FEA VALIDATOR",
+        "dojo-p4-desc": "High-fidelity structural analysis validation and safety margin verification pipelines. Upload mechanical assemblies to verify stress concentrations, load paths, and structural resilience factors under launch vibration constraints using cloud-based ANSYS wrappers.",
+        "dojo-p4-rate": "BASE TIER: $29/MO",
+        "dojo-p4-btn": "VALIDATE DESIGN &rarr;",
 
         // Portfolio
         "portfolio-title": "THE PORTFOLIO",
@@ -129,15 +129,13 @@ const translations = {
         "manifesto-author": "&mdash; ZYAD EL AOUAD, THE IRON ENGINEER",
 
         // Booking Intake
-        "intake-header": "DOJO_ADMISSION_INTEG.EXE",
-        "intake-lbl-name": "> ENTER INTAKE OPERATOR NAME:",
-        "intake-lbl-email": "> ENTER SECURE EMAIL CHANNELS:",
-        "intake-lbl-pillar": "> SELECT YOUR TRAINING PILLAR:",
-        "intake-pillar-default": "-- CHOOSE MENTORSHIP PATH --",
-        "intake-pillar-1": "THE DRIFT: MATLAB/PYTHON TUNING",
-        "intake-pillar-2": "REINFORCED EXOSKELETON: ESA/BOEING PORTFOLIO",
-        "intake-pillar-3": "OTOKOJUKU SPIRIT: UAV LEADERSHIP UNDER CRISIS",
-        "intake-pillar-4": "UNBREAKABLE WALL: STRUCTURAL RESILIENCE (ANSYS)",
+        "intake-header": "SAAS_LICENSE_INITIALIZATION.EXE",
+        "intake-lbl-pillar": "> SELECT SAAS PRODUCT LICENSE:",
+        "intake-pillar-default": "-- SELECT SAAS PRODUCT LICENSE --",
+        "intake-pillar-1": "GNC AUTOPILOT TUNER ($49/MO)",
+        "intake-pillar-2": "DEBRIS STABILIZATION SOLVER ($99/MO)",
+        "intake-pillar-3": "HYBRID ROCKET SIMULATOR ($149/MO)",
+        "intake-pillar-4": "CLOUD FEA VALIDATOR ($29/MO)",
         "intake-lbl-objs": "> COMPILE CURRENT CAPABILITIES & OBJECTIVES:",
         "intake-btn-submit": "> INITIALIZE SYSTEMS COMPILATION",
 
@@ -186,11 +184,11 @@ const translations = {
         "teaser-intake-opt-3": "GNC & Control Theory Code Hardening",
         "teaser-intake-opt-4": "Building Systems-Level Portfolio Armor",
         "teaser-intake-btn": "> SECURE PRIORITY APPLICATION TICKET",
-        "teaser-audit-badge": "PRE-LAUNCH PREMIUM OFFER",
-        "teaser-audit-price": "PREMIUM INTAKE",
-        "teaser-audit-title": "EXOSKELETON PORTFOLIO AUDIT",
-        "teaser-audit-desc": "Don't wait for August. Secure a direct, private 1-on-1 resume and portfolio audit by Zyad. We will rebuild your project catalog, identify structural resume holes, and align your GNC parameters before applications open.",
-        "teaser-audit-btn": "BOOK PREMIUM AUDIT &rarr;",
+        "teaser-audit-badge": "SaaS AUDIT",
+        "teaser-audit-price": "$49 / AUDIT",
+        "teaser-audit-title": "PORTFOLIO AUDIT & OPTIMIZATION",
+        "teaser-audit-desc": "Harden your engineering projects. Upload your portfolio and resumes to run an automated check against strict aerospace recruitment requirements, verifying GNC core terms, structural FEA project entries, and formatting alignment.",
+        "teaser-audit-btn": "RUN AUDIT &rarr;",
         "teaser-news-badge": "WEEKLY TRANSMISSIONS",
         "teaser-news-title": "THE IRON TELEMETRY",
         "teaser-news-desc": "Receive GNC simulation blueprints, upcoming internship telemetry alerts, and emotional resilience manuals to keep your engineering discipline unbreakable under stress.",
@@ -236,29 +234,29 @@ const translations = {
         "dojo-title": "道場",
         "dojo-num": "SECT_01 // サービス",
         
-        "dojo-p1-tag": "シミュレーション＆チューニング",
-        "dojo-p1-title": "THE DRIFT (ドリフト)",
-        "dojo-p1-desc": "技術ワークフローの最適化。『頭文字D』の藤原拓海が秋名山で完璧なラインを見つけるように、GNCパイプラインをチューニングします。高性能なMATLAB/SimulinkモデリングとPythonスクリプトをマスターし、シミュレーションスイートを自動化します。",
-        "dojo-p1-rate": "受講：1対1個別セッション",
-        "dojo-p1-btn": "監査を予約する &rarr;",
+        "dojo-p1-tag": "シミュレーション＆制御",
+        "dojo-p1-title": "GNC AUTOPILOT TUNER",
+        "dojo-p1-desc": "高運動飛行制御ループの自動チューニングと検証。プラントモデルとコントローラ構成をアップロードして、ロバストゲインを自動合成し、モンテカルロ安定性解析を実行し、最適化されたC++/Python自動操縦コードをエクスポートします。",
+        "dojo-p1-rate": "開発者プラン: $49/月",
+        "dojo-p1-btn": "チューナーを起動 &rarr;",
 
-        "dojo-p2-tag": "キャリア・ポートフォリオ・アーマー",
-        "dojo-p2-title": "REINFORCED EXOSKELETON (強化外骨格)",
-        "dojo-p2-desc": "キャリアの装甲構築。脆弱なレジュメの提出は止めましょう。ボーイングでの経験やESAレベルの技術文書に基づき、強力な航空宇宙レジュメとシステムアーキテクチャのポートフォリオを構築します。",
-        "dojo-p2-rate": "受講：プレミアム設計図",
-        "dojo-p2-btn": "装甲を強化 &rarr;",
+        "dojo-p2-tag": "軌道力学",
+        "dojo-p2-title": "DEBRIS STABILIZATION SOLVER",
+        "dojo-p2-desc": "能動的デブリ除去のための磁気デタンブリングおよび安定化制御則を計算。ターゲットの慣性テンソルとスピン速度をアップロードして、欧州宇宙機関（ESA）基準に準拠した最適なマグネトーカーコマンドと姿勢遷移プロファイルを生成します。",
+        "dojo-p2-rate": "プロフェッショナルプラン: $99/月",
+        "dojo-p2-btn": "制御則を計算 &rarr;",
 
-        "dojo-p3-tag": "リーダーシップと重要オペレーション",
-        "dojo-p3-title": "OTOKOJUKU SPIRIT (男塾精神)",
-        "dojo-p3-desc": "危機的状況下でのエンジニアリング・リーダーシップ。大学は数学を教えますが、ESA幹部の前でのプレゼンや、プレッシャーのかかるUAVチームの指揮法は教えません。主任エンジニアの委譲マインドセットを学びます。",
-        "dojo-p3-rate": "受講：コーチングスイート",
-        "dojo-p3-btn": "今すぐ指揮する &rarr;",
+        "dojo-p3-tag": "推進システム",
+        "dojo-p3-title": "HYBRID ROCKET SIMULATOR",
+        "dojo-p3-desc": "ハイブリッドロケット推進システム向けのクラウドベース後退速度および過渡燃焼シミュレーション。サーバーレスCFDクラスターを用いて、燃料グレイン形状の後退、燃焼室圧力振動、およびノズルガス力学を即座にモデル化します。",
+        "dojo-p3-rate": "エンタープライズプラン: $149/月",
+        "dojo-p3-btn": "シミュレーションを実行 &rarr;",
 
-        "dojo-p4-tag": "構造解析レジリエンス",
-        "dojo-p4-title": "UNBREAKABLE WALL (壊れぬ壁)",
-        "dojo-p4-desc": "構造工学の強靭さ。固体力学、ANSYSを使用した有限要素法 (FEA) 解析、厳格な検証戦略を直接指導します。コードと設計を故障から守る盾を作ります。",
-        "dojo-p4-rate": "受講：1対1訓練",
-        "dojo-p4-btn": "コードを鍛える &rarr;",
+        "dojo-p4-tag": "構造解析",
+        "dojo-p4-title": "CLOUD FEA VALIDATOR",
+        "dojo-p4-desc": "打上げ時の振動制約下における高精度構造解析検証および安全余裕確認パイプライン。メカニカルアセンブリをアップロードし、クラウドベースのANSYSラッパーを使用して応力集中、荷重伝達経路、および構造レジリエンス係数を自動検証します。",
+        "dojo-p4-rate": "ベースプラン: $29/月",
+        "dojo-p4-btn": "設計を検証 &rarr;",
 
         // Portfolio
         "portfolio-title": "ポートフォリオ",
@@ -329,15 +327,13 @@ const translations = {
         "manifesto-author": "&mdash; ZYAD EL AOUAD、アイアンエンジニア",
 
         // Booking Intake
-        "intake-header": "DOJO_ADMISSION_INTEG.EXE",
-        "intake-lbl-name": "> 志望者名を入力:",
-        "intake-lbl-email": "> 安全なメールアドレスを入力:",
-        "intake-lbl-pillar": "> 修行の柱を選択:",
-        "intake-pillar-default": "-- コースを選択してください --",
-        "intake-pillar-1": "THE DRIFT: MATLAB/Python チューニング",
-        "intake-pillar-2": "REINFORCED EXOSKELETON: ESA/ボーイング レジュメ",
-        "intake-pillar-3": "OTOKOJUKU SPIRIT: 危機下でのUAV指揮権限",
-        "intake-pillar-4": "UNBREAKABLE WALL: 構造レジリエンス (ANSYS)",
+        "intake-header": "SAAS_LICENSE_INITIALIZATION.EXE",
+        "intake-lbl-pillar": "> SAAS製品ライセンスを選択:",
+        "intake-pillar-default": "-- SAAS製品ライセンスを選択してください --",
+        "intake-pillar-1": "GNC AUTOPILOT TUNER ($49/月)",
+        "intake-pillar-2": "DEBRIS STABILIZATION SOLVER ($99/月)",
+        "intake-pillar-3": "HYBRID ROCKET SIMULATOR ($149/月)",
+        "intake-pillar-4": "CLOUD FEA VALIDATOR ($29/月)",
         "intake-lbl-objs": "> 現在のスキルと解決したい課題を入力:",
         "intake-btn-submit": "> システムコンパイルの開始",
 
@@ -385,11 +381,11 @@ const translations = {
         "teaser-intake-opt-3": "GNC＆制御理論コードの強化",
         "teaser-intake-opt-4": "システムレベルのポートフォリオ装甲構築",
         "teaser-intake-btn": "> 優先選考チケットを確保する",
-        "teaser-audit-badge": "ローンチ前特別プレミアムオファー",
-        "teaser-audit-price": "プレミアム枠",
-        "teaser-audit-title": "強化外骨格ポートフォリオ監査",
-        "teaser-audit-desc": "8月まで待つ必要はありません。Zyadによる1対1の個別レジュメ＆ポートフォリオ監査を予約しましょう。プロジェクトカタログを再構築し、レジュメの欠陥を特定し、GNCパラメータを事前に最適化します。",
-        "teaser-audit-btn": "プレミアム監査を予約 &rarr;",
+        "teaser-audit-badge": "SaaS監査",
+        "teaser-audit-price": "$49 / 監査",
+        "teaser-audit-title": "ポートフォリオ監査＆最適化",
+        "teaser-audit-desc": "エンジニアリングプロジェクトを強化。ポートフォリオとレジュメをアップロードして、厳格な航空宇宙採用要件に対する自動チェックを実行し、GNCコア用語、構造FEAプロジェクトのエントリ、およびフォーマットの整合性を検証します。",
+        "teaser-audit-btn": "監査を実行する &rarr;",
         "teaser-news-badge": "週刊配信情報",
         "teaser-news-title": "THE IRON TELEMETRY",
         "teaser-news-desc": "GNCシミュレーション設計図、最新インターンシップ情報、困難に立ち向かうための精神的レジリエンス手順書を毎週お届けします。",
@@ -435,29 +431,29 @@ const translations = {
         "dojo-title": "LE DOJO",
         "dojo-num": "SECT_01 // SERVICES",
         
-        "dojo-p1-tag": "SIMULATION & OPTIMISATION",
-        "dojo-p1-title": "THE DRIFT (LA DÉRIVE)",
-        "dojo-p1-desc": "Optimisation des processus techniques. Comme Takumi trouvant la trajectoire parfaite sur le mont Haruna, nous ajustons vos chaînes GNC. Maîtrisez la modélisation haute performance MATLAB/Simulink et l'écriture de scripts Python pour automatiser les suites de simulation.",
-        "dojo-p1-rate": "TARIF : SESSION INDIVIDUELLE 1-ON-1",
-        "dojo-p1-btn": "RÉSERVER UN AUDIT &rarr;",
+        "dojo-p1-tag": "SIMULATION & CONTRÔLE",
+        "dojo-p1-title": "GNC AUTOPILOT TUNER",
+        "dojo-p1-desc": "Optimisation et validation automatisées pour les boucles de contrôle de vol hautement dynamiques. Téléchargez vos modèles de système et vos architectures de contrôleur pour synthétiser automatiquement des gains robustes, exécuter des analyses de stabilité de Monte Carlo et exporter du code de pilote automatique C++/Python optimisé.",
+        "dojo-p1-rate": "DÉVELOPPEUR : $49/MOIS",
+        "dojo-p1-btn": "LANCER LE TUNER &rarr;",
 
-        "dojo-p2-tag": "BLINDAGE DE CARRIÈRE & PORTFOLIO",
-        "dojo-p2-title": "REINFORCED EXOSKELETON (EXOSQUELETTE)",
-        "dojo-p2-desc": "Construction d'armure professionnelle. Arrêtez de soumettre des CV faibles et ordinaires. Ensemble, nous structurons des CV de niveau aérospatial et des portefeuilles d'architecture de systèmes basés sur des expériences Boeing et des livrables techniques de niveau ESA.",
-        "dojo-p2-rate": "TARIF : SCHÉMA TECHNIQUE PREMIUM",
-        "dojo-p2-btn": "RENFORCER L'ARMURE &rarr;",
+        "dojo-p2-tag": "MÉCANIQUE ORBITALE",
+        "dojo-p2-title": "DEBRIS STABILIZATION SOLVER",
+        "dojo-p2-desc": "Calcul des lois de contrôle de stabilisation active et de désorbitation magnétique pour les débris spatiaux non coopératifs. Téléchargez les tenseurs d'inertie cibles et les vitesses de rotation pour générer des commandes de magnéto-coupleur et des profils de transition d'attitude conformes aux normes de l'ESA.",
+        "dojo-p2-rate": "PROFESSIONNEL : $99/MOIS",
+        "dojo-p2-btn": "CALCULER LA LOI &rarr;",
 
-        "dojo-p3-tag": "LEADERSHIP & OPÉRATIONS CRITIQUES",
-        "dojo-p3-title": "OTOKOJUKU SPIRIT (ESPRIT OTOKOJUKU)",
-        "dojo-p3-desc": "Leadership en ingénierie en temps de crise. Les universités standard enseignent les mathématiques, mais pas comment se tenir devant des cadres de l'ESA ou gérer une équipe de drones défaillante sous pression. Apprenez l'état d'esprit de délégation de l'ingénieur en chef.",
-        "dojo-p3-rate": "TARIF : SUITE D'ACCOMPAGNEMENT",
-        "dojo-p3-btn": "DIRIGER MAINTENANT &rarr;",
+        "dojo-p3-tag": "PROPULSION",
+        "dojo-p3-title": "HYBRID ROCKET SIMULATOR",
+        "dojo-p3-desc": "Simulation en nuage du taux de régression et de la combustion transitoire pour les systèmes de propulsion hybrides. Modélisez instantanément la régression de la géométrie du grain, les oscillations de pression de la chambre et la dynamique des gaz de tuyère à l'aide de notre cluster CFD sans serveur.",
+        "dojo-p3-rate": "ENTREPRISE : $149/MOIS",
+        "dojo-p3-btn": "LANCER LA SIMULATION &rarr;",
 
-        "dojo-p4-tag": "RÉSILIENCE DES ANALYSES STRUCTURELLES",
-        "dojo-p4-title": "UNBREAKABLE WALL (MUR INCASSABLE)",
-        "dojo-p4-desc": "Résilience en ingénierie structurelle. Enseignement direct sur la mécanique des solides, l'analyse par éléments finis (FEA) avec ANSYS, et les stratégies de vérification rigoureuses. Endurcissez votre code et vos conceptions contre les pannes.",
-        "dojo-p4-rate": "TARIF : ENTRAÎNEMENT INDIVIDUEL 1-ON-1",
-        "dojo-p4-btn": "DURCIR LE CODE &rarr;",
+        "dojo-p4-tag": "ANALYSE STRUCTURELLE",
+        "dojo-p4-title": "CLOUD FEA VALIDATOR",
+        "dojo-p4-desc": "Validation d'analyse structurelle haute fidélité et vérification des marges de sécurité sous contraintes de vibration de lancement. Téléchargez vos assemblages mécaniques pour vérifier les concentrations de contraintes, les chemins de charge et les coefficients de résilience à l'aide de scripts ANSYS automatisés.",
+        "dojo-p4-rate": "OFFRE DE BASE : $29/MOIS",
+        "dojo-p4-btn": "VALIDER LE DESIGN &rarr;",
 
         // Portfolio
         "portfolio-title": "LE PORTFOLIO",
@@ -528,15 +524,13 @@ const translations = {
         "manifesto-author": "&mdash; ZYAD EL AOUAD, THE IRON ENGINEER",
 
         // Booking Intake
-        "intake-header": "DOJO_ADMISSION_INTEG.EXE",
-        "intake-lbl-name": "> NOM DE L'OPÉRATEUR DE SÉLECTION :",
-        "intake-lbl-email": "> CANAUX DE MESSAGERIE SÉCURISÉS :",
-        "intake-lbl-pillar": "> CHOISIR VOTRE PILIER DE FORMATION :",
-        "intake-pillar-default": "-- CHOISIR UNE VOIE DE MENTORAT --",
-        "intake-pillar-1": "THE DRIFT : OPTIMISATION MATLAB/PYTHON",
-        "intake-pillar-2": "REINFORCED EXOSKELETON : DOSSIER ESA/BOEING",
-        "intake-pillar-3": "OTOKOJUKU SPIRIT : DRONE MANAGEMENT EN CRISE",
-        "intake-pillar-4": "UNBREAKABLE WALL : RÉSILIENCE STRUCTURELLE (ANSYS)",
+        "intake-header": "SAAS_LICENSE_INITIALIZATION.EXE",
+        "intake-lbl-pillar": "> SÉLECTIONNER LA LICENCE PRODUIT SAAS :",
+        "intake-pillar-default": "-- SÉLECTIONNER LA LICENCE PRODUIT SAAS --",
+        "intake-pillar-1": "GNC AUTOPILOT TUNER ($49/MOIS)",
+        "intake-pillar-2": "DEBRIS STABILIZATION SOLVER ($99/MOIS)",
+        "intake-pillar-3": "HYBRID ROCKET SIMULATOR ($149/MOIS)",
+        "intake-pillar-4": "CLOUD FEA VALIDATOR ($29/MOIS)",
         "intake-lbl-objs": "> COMPILER VOS CAPACITÉS ET OBJECTIFS :",
         "intake-btn-submit": "> INITIALISER LA COMPILATION DES SYSTÈMES",
 
@@ -584,11 +578,11 @@ const translations = {
         "teaser-intake-opt-3": "Renforcement du code GNC et de la théorie de contrôle",
         "teaser-intake-opt-4": "Développement de blindage de portfolio technique",
         "teaser-intake-btn": "> SÉCURISER VOTRE PLACE PRIORITAIRE",
-        "teaser-audit-badge": "OFFRE PREMIUM DE PRÉ-LANCEMENT",
-        "teaser-audit-price": "ACCÈS PREMIUM",
-        "teaser-audit-title": "AUDIT PORTFOLIO EXOSQUELETTE",
-        "teaser-audit-desc": "N'attendez pas août. Bénéficiez d'un audit individuel 1-sur-1 de votre CV et de votre portfolio par Zyad. Nous reconstruirons vos projets et optimiserons vos atouts aérospatiaux avant les candidatures.",
-        "teaser-audit-btn": "RÉSERVER L'AUDIT PREMIUM &rarr;",
+        "teaser-audit-badge": "AUDIT SaaS",
+        "teaser-audit-price": "$49 / AUDIT",
+        "teaser-audit-title": "AUDIT ET OPTIMISATION DU PORTFOLIO",
+        "teaser-audit-desc": "Endurcissez vos projets d'ingénierie. Téléchargez votre portfolio et vos CV pour exécuter une vérification automatisée par rapport aux exigences de recrutement aérospatiales strictes, validant les termes clés de GNC, les entrées de projet de FEA structurelle et la mise en page.",
+        "teaser-audit-btn": "LANCER L'AUDIT &rarr;",
         "teaser-news-badge": "TRANSMISSIONS HEBDOMADAIRES",
         "teaser-news-title": "THE IRON TELEMETRY",
         "teaser-news-desc": "Recevez chaque semaine des schémas de simulation GNC, des alertes de stages aérospatiaux et des guides de résilience mentale pour résister au stress sans faiblir.",
@@ -634,29 +628,29 @@ const translations = {
         "dojo-title": "EL DOJO",
         "dojo-num": "SECT_01 // SERVICIOS",
         
-        "dojo-p1-tag": "SIMULACIÓN Y OPTIMIZACIÓN",
-        "dojo-p1-title": "THE DRIFT (LA DERIVA)",
-        "dojo-p1-desc": "Optimización técnica de flujos de trabajo. Como Takumi encontrando la trayectoria perfecta en el monte Haruna, ajustamos tus cadenas de GNC. Domina el modelado de alto rendimiento en MATLAB/Simulink y scripts en Python para automatizar simulaciones.",
-        "dojo-p1-rate": "TARIFA: SESIÓN INDIVIDUAL 1-A-1",
-        "dojo-p1-btn": "RESERVAR AUDITORÍA &rarr;",
+        "dojo-p1-tag": "SIMULACIÓN Y CONTROL",
+        "dojo-p1-title": "GNC AUTOPILOT TUNER",
+        "dojo-p1-desc": "Sintonización y validación automatizadas para bucles de control de vuelo altamente dinámicos. Sube tus modelos de planta y arquitecturas de controlador para sintetizar ganancias robustas, ejecutar análisis de estabilidad de Montecarlo y exportar código de piloto automático optimizado en C++/Python.",
+        "dojo-p1-rate": "DESARROLLADOR: $49/MES",
+        "dojo-p1-btn": "INICIAR AFINACIÓN &rarr;",
 
-        "dojo-p2-tag": "BLINDAJE DE PORTAFOLIO Y CARRERA",
-        "dojo-p2-title": "REINFORCED EXOSKELETON (EXOESQUELETO)",
-        "dojo-p2-desc": "Construcción de armadura profesional. Deja de enviar currículums débiles e ineficaces. Juntos estructuramos currículums de nivel aeroespacial y carteras de arquitecturas de sistemas basados en experiencias en Boeing y entregas técnicas a nivel de la ESA.",
-"dojo-p2-rate": "TARIFA: PLANO PREMIUM",
-        "dojo-p2-btn": "REFORZAR ARMADURA &rarr;",
+        "dojo-p2-tag": "MECÁNICA ORBITAL",
+        "dojo-p2-title": "DEBRIS STABILIZATION SOLVER",
+        "dojo-p2-desc": "Cálculo de leyes de control de estabilización activa y desorbitación magnética para basura espacial no cooperativa. Sube tensores de inercia y velocidades de rotación para generar comandos óptimos de magnetopares y perfiles de transición de actitud conformes a los estándares de la ESA.",
+        "dojo-p2-rate": "PROFESIONAL: $99/MES",
+        "dojo-p2-btn": "CALCULAR LEY &rarr;",
 
-        "dojo-p3-tag": "LIDERAZGO Y OPERACIONES CRÍTICAS",
-        "dojo-p3-title": "OTOKOJUKU SPIRIT (ESPÍRITU OTOKOJUKU)",
-        "dojo-p3-desc": "Liderazgo de ingeniería en crisis. Las universidades estándar enseñan matemáticas, pero no cómo enfrentarse a los ejecutivos de la ESA o manejar un equipo de UAV que falla bajo presión. Aprende la mentalidad de delegación del ingeniero principal.",
-        "dojo-p3-rate": "TARIFA: SUITE DE COACHING",
-        "dojo-p3-btn": "DIRIGIR AHORA &rarr;",
+        "dojo-p3-tag": "PROPULSIÓN",
+        "dojo-p3-title": "HYBRID ROCKET SIMULATOR",
+        "dojo-p3-desc": "Simulación en la nube de la tasa de regresión y combustión transitoria para sistemas de propulsión de cohetes híbridos. Modela la regresión geométrica del grano, las oscilaciones de presión de la cámara y la dinámica de gases en toberas usando nuestro clúster CFD sin servidor.",
+        "dojo-p3-rate": "ENTERPRISE: $149/MES",
+        "dojo-p3-btn": "EJECUTAR SIMULACIÓN &rarr;",
 
-        "dojo-p4-tag": "RESILIENCIA EN ANÁLISIS ESTRUCTURAL",
-        "dojo-p4-title": "UNBREAKABLE WALL (MURO INQUEBRANTABLE)",
-        "dojo-p4-desc": "Resiliencia en ingeniería estructural. Instrucción directa en mecánica de sólidos, análisis de elementos finitos (FEA) mediante ANSYS y rigurosas estrategias de verificación. Endurece tu código y tus diseños contra fallos.",
-        "dojo-p4-rate": "TARIFA: ENTRENAMIENTO INDIVIDUAL 1-A-1",
-        "dojo-p4-btn": "ENDURECER CÓDIGO &rarr;",
+        "dojo-p4-tag": "ANÁLISIS ESTRUCTURAL",
+        "dojo-p4-title": "CLOUD FEA VALIDATOR",
+        "dojo-p4-desc": "Validación de análisis estructural de alta fidelidad y verificación de márgenes de seguridad bajo cargas de vibración de lanzamiento. Sube ensamblajes mecánicos para verificar concentraciones de tensión, trayectorias de carga y resiliencia estructural mediante scripts automatizados en la nube.",
+        "dojo-p4-rate": "PLAN BASE: $29/MES",
+        "dojo-p4-btn": "VALIDAR DISEÑO &rarr;",
 
         // Portfolio
         "portfolio-title": "EL PORTFOLIO",
@@ -727,15 +721,13 @@ const translations = {
         "manifesto-author": "&mdash; ZYAD EL AOUAD, THE IRON ENGINEER",
 
         // Booking Intake
-        "intake-header": "DOJO_ADMISSION_INTEG.EXE",
-        "intake-lbl-name": "> NOMBRE DEL OPERADOR DE SELECCIÓN:",
-        "intake-lbl-email": "> CANALES DE MENSAJERÍA SEGUROS:",
-        "intake-lbl-pillar": "> ELEGIR TU PILAR DE ENTRENAMIENTO:",
-        "intake-pillar-default": "-- SELECCIONE UNA VÍA DE MENTORÍA --",
-        "intake-pillar-1": "THE DRIFT: OPTIMIZACIÓN MATLAB/PYTHON",
-        "intake-pillar-2": "REINFORCED EXOSKELETON: ARCHIVO ESA/BOEING",
-        "intake-pillar-3": "OTOKOJUKU SPIRIT: GESTIÓN DE UAV EN CRISIS",
-        "intake-pillar-4": "UNBREAKABLE WALL: RESILIENCIA ESTRUCTURAL (ANSYS)",
+        "intake-header": "SAAS_LICENSE_INITIALIZATION.EXE",
+        "intake-lbl-pillar": "> SELECCIONAR LICENCIA DE PRODUCTO SAAS:",
+        "intake-pillar-default": "-- SELECCIONAR LICENCIA DE PRODUCTO SAAS --",
+        "intake-pillar-1": "GNC AUTOPILOT TUNER ($49/MES)",
+        "intake-pillar-2": "DEBRIS STABILIZATION SOLVER ($99/MES)",
+        "intake-pillar-3": "HYBRID ROCKET SIMULATOR ($149/MES)",
+        "intake-pillar-4": "CLOUD FEA VALIDATOR ($29/MES)",
         "intake-lbl-objs": "> COMPILAR CAPACIDADES Y OBJETIVOS:",
         "intake-btn-submit": "> INICIALIZAR COMPILACIÓN DE SISTEMAS",
 
@@ -784,11 +776,11 @@ const translations = {
         "teaser-intake-opt-3": "Endurecimiento de Código de GNC y Teoría de Control",
         "teaser-intake-opt-4": "Construcción de Armadura de Portafolio Nivel Sistemas",
         "teaser-intake-btn": "> ASEGURAR TICKET DE APLICACIÓN PRIORITARIA",
-        "teaser-audit-badge": "OFERTA PREMIUM DE PRE-LANZAMIENTO",
-        "teaser-audit-price": "INGRESO PREMIUM",
-        "teaser-audit-title": "AUDITORÍA DE PORTAFOLIO EXÓSQUELETO",
-        "teaser-audit-desc": "No esperes a agosto. Asegura una auditoría de currículum y portafolio directa y privada 1-a-1 con Zyad. Reconstruiremos tu catálogo de proyectos, identificaremos fallos estructurales en tu currículum y alinearemos tus parámetros de GNC antes de que se abran las postulaciones.",
-        "teaser-audit-btn": "RESERVAR AUDITORÍA PREMIUM &rarr;",
+        "teaser-audit-badge": "AUDITORÍA SaaS",
+        "teaser-audit-price": "$49 / AUDITORÍA",
+        "teaser-audit-title": "AUDITORÍA Y OPTIMIZACIÓN DE PORTAFOLIO",
+        "teaser-audit-desc": "Endurece tus proyectos de ingeniería. Sube tu portafolio y currículums para ejecutar una verificación automatizada contra los estrictos requisitos de contratación aeroespacial, validando términos clave de GNC, entradas de proyectos FEA estructurales y la alineación del diseño.",
+        "teaser-audit-btn": "EJECUTAR AUDITORÍA &rarr;",
         "teaser-news-badge": "TRANSMISIONES SEMANALES",
         "teaser-news-title": "THE IRON TELEMETRY",
         "teaser-news-desc": "Recibe planos de simulación de GNC, alertas de telemetría de próximas prácticas profesionales y manuales de resiliencia emocional para mantener tu disciplina de ingeniería inquebrantable bajo el estrés.",
@@ -835,29 +827,29 @@ const translations = {
         "dojo-title": "الدوجو",
         "dojo-num": "SECT_01 // الخدمات",
         
-        "dojo-p1-tag": "المحاكاة والتطوير",
-        "dojo-p1-title": "THE DRIFT (الدريفت)",
-        "dojo-p1-desc": "تطوير طُرق الخدمة التقنية. بحال طاكومي ملي كيلقا أحسن طريق فجبل هارونا، حنا كنقادو ليك الخدمة ديال GNC. تعلم الموديلات المعقدة بـ MATLAB/Simulink والسكربتات بـ Python باش تخلي كولشي خدام أوتوماتيك.",
-        "dojo-p1-rate": "التعليم: حصة 1 لـ 1 نيشان",
-        "dojo-p1-btn": "حجز حصة تدقيق &rarr;",
+        "dojo-p1-tag": "المحاكاة والتحكّم",
+        "dojo-p1-title": "GNC AUTOPILOT TUNER",
+        "dojo-p1-desc": "الضبط والتحقق الأوتوماتيكي ديال أنظمة التحكم فـ ديناميكيات الطيران العالية. صصيفط الموديلات ديالك وديزاين الكنترولر باش تصايب روبوست غينز (gains)، دير تحليلات الاستقرار ديال مونتي كارلو، وتخرج كود طيران آلي مقاد بـ C++/Python.",
+        "dojo-p1-rate": "المطور: 49$/الشهر",
+        "dojo-p1-btn": "خدم المنظم &rarr;",
 
-        "dojo-p2-tag": "تدريع وبناء الكاريير",
-        "dojo-p2-title": "REINFORCED EXOSKELETON (الهيكل المقوّى)",
-        "dojo-p2-desc": "بناء درع الخدمة. حبس من التقديم بـ CVs ضعاف ورطبين. مجموعين غنقادو CV قاصح ديال الطيران وبورتفوليو ديال تسيير الأنظمة مبني على الخدمة فـ Boeing ومشاريع بمستوى وكالة الفضاء الأوروبية (ESA).",
-        "dojo-p2-rate": "التعليم: ورقة التصميم العالية",
-        "dojo-p2-btn": "قوّي الدرع ديالك &rarr;",
+        "dojo-p2-tag": "الميكانيك المداري",
+        "dojo-p2-title": "DEBRIS STABILIZATION SOLVER",
+        "dojo-p2-desc": "حساب قوانين التحكم فالتنقية المغناطيسية واستقرار الحطام الفضائي غير المتعاون. صيفط الماتريس ديال القصور الذاتي وسرعة الدوران باش تخرج أوامر الماغنيطوركرز (magnetorquers) وتغيير الوضعية بمواصفات وكالة الفضاء الأوروبية (ESA).",
+        "dojo-p2-rate": "المحترف: 99$/الشهر",
+        "dojo-p2-btn": "حسب قوانين التحكم &rarr;",
 
-        "dojo-p3-tag": "القيادة والتسيير الحرج",
-        "dojo-p3-title": "OTOKOJUKU SPIRIT (روح أوطوكوجوكو)",
-        "dojo-p3-desc": "القيادة الهندسية فظروف الأزمات. الجامعات العادية كيقريوك الماط، ولكن ماكيعلموكش كيفاش توقف قدام المدراء ديال وكالة الفضاء الأوروبية (ESA) ولا كيفاش تسير فرقة د الدرونات مخربقة تحت الضغط. تعلم عقلية تسيير المهندسين الكبار.",
-        "dojo-p3-rate": "التعليم: مجموعة كوتشينغ كاملة",
-        "dojo-p3-btn": "قود دابا &rarr;",
+        "dojo-p3-tag": "الدفع الفضائي",
+        "dojo-p3-title": "HYBRID ROCKET SIMULATOR",
+        "dojo-p3-desc": "محاكاة سحابية ديال سرعة الاحتراق وديناميكيات الغازات فأنظمة الدفع ديال الصواريخ الهجينة. موديلي دغيا تآكل الحشوة الفضائية، تغيرات الضغط فالغرفة، وحركة الغاز فالفوهة باستعمال الكلوستر CFD السحابي ديالنا.",
+        "dojo-p3-rate": "المؤسسات: 149$/الشهر",
+        "dojo-p3-btn": "دير المحاكاة &rarr;",
 
-        "dojo-p4-tag": "صلابة التحليل الهيكلي",
-        "dojo-p4-title": "UNBREAKABLE WALL (الحيط اللي ماكيتهرسش)",
-        "dojo-p4-desc": "الصلابة ديال الهندسة الهيكلية. تعليم مباشر فـ ميكانيك المواد الصلبة، تحليل العناصر المحدودة (FEA) باستعمال ANSYS، وطرق التحقق الدقيقة. قصح الكود والديزاين ديالك ضد أي مشكل ولا هروسية.",
-        "dojo-p4-rate": "التعليم: تداريب قاصحة 1 لـ 1",
-        "dojo-p4-btn": "قصح الكود ديالك &rarr;",
+        "dojo-p4-tag": "التحليل الهيكلي",
+        "dojo-p4-title": "CLOUD FEA VALIDATOR",
+        "dojo-p4-desc": "تحقق عالي الدقة من الهندسة الهيكلية وحساب هوامش الأمان تحت ضغط اهتزازات الإطلاق. صيفط أجزاء الميكانيك باش تفحص نقط تركز الضغط وتوزيع الثقل باستعمال سكربتات ANSYS أوتوماتيكية فالسحاب.",
+        "dojo-p4-rate": "الأساسي: 29$/الشهر",
+        "dojo-p4-btn": "تحقق من الديزاين &rarr;",
 
         // Portfolio
         "portfolio-title": "ملف الأعمال",
@@ -928,15 +920,13 @@ const translations = {
         "manifesto-author": "&mdash; زياد العواد، مهندس من حديد",
 
         // Booking Intake
-        "intake-header": "DOJO_ADMISSION_INTEG.EXE",
-        "intake-lbl-name": "> أدخل اسم المشغّل المقبول:",
-        "intake-lbl-email": "> أدخل إيميل التواصل الآمن:",
-        "intake-lbl-pillar": "> اختر مجال التدريب:",
-        "intake-pillar-default": "-- اختر مسار التدريب والمرافقة --",
-        "intake-pillar-1": "THE DRIFT: ضبط MATLAB/PYTHON",
-        "intake-pillar-2": "REINFORCED EXOSKELETON: بورتفوليو ESA/BOEING",
-        "intake-pillar-3": "OTOKOJUKU SPIRIT: قيادة الدرونات فالحالات الحرجة",
-        "intake-pillar-4": "UNBREAKABLE WALL: الصلابة الهيكلية (ANSYS)",
+        "intake-header": "SAAS_LICENSE_INITIALIZATION.EXE",
+        "intake-lbl-pillar": "> اختر ترخيص منتج SAAS:",
+        "intake-pillar-default": "-- اختر ترخيص منتج SAAS --",
+        "intake-pillar-1": "GNC AUTOPILOT TUNER ($49/الشهر)",
+        "intake-pillar-2": "DEBRIS STABILIZATION SOLVER ($99/الشهر)",
+        "intake-pillar-3": "HYBRID ROCKET SIMULATOR ($149/الشهر)",
+        "intake-pillar-4": "CLOUD FEA VALIDATOR ($29/الشهر)",
         "intake-lbl-objs": "> جمّع القدرات والأهداف الحالية ديابك:",
         "intake-btn-submit": "> بدا عملية تركيب الأنظمة",
 
@@ -985,11 +975,11 @@ const translations = {
         "teaser-intake-opt-3": "تقوية كود التحكّم GNC والرياضيات ديالو",
         "teaser-intake-opt-4": "بناء درع البورتفوليو نيفو سيستم",
         "teaser-intake-btn": "> احصل على تذكرة التقديم ذات الأولوية",
-        "teaser-audit-badge": "عرض بريميوم قبل الإطلاق",
-        "teaser-audit-price": "تقديم خاص",
-        "teaser-audit-title": "تدقيق البورتفوليو والهيكل الخارجي",
-        "teaser-audit-desc": "ماتسناش حتى لشهر غشت. احجز حصة تدقيق 1 لـ 1 خاصة ومباشرة مع زياد. غنعاودو نقادو المشاريع ديالك، نلقاو نقط الضعف فالـ CV، ونقادو كاع معاملات GNC قبل ما يبداو التقديمات.",
-        "teaser-audit-btn": "احجز حصة تدقيق بريميوم &rarr;",
+        "teaser-audit-badge": "تدقيق SaaS",
+        "teaser-audit-price": "49$ / للتدقيق",
+        "teaser-audit-title": "تدقيق وتحسين ملف الأعمال",
+        "teaser-audit-desc": "قصّح مشاريع الهندسة ديالك. صيفط ملف الأعمال والـ CV باش تدير فحص أوتوماتيكي ضد شروط القبول الصعبة فمجال الطيران والفضاء، والتأكد من مصطلحات GNC، ومشاريع FEA الهيكلية، ومقاييس الديزاين.",
+        "teaser-audit-btn": "دير التدقيق دابا &rarr;",
         "teaser-news-badge": "نشرات أسبوعية",
         "teaser-news-title": "THE IRON TELEMETRY",
         "teaser-news-desc": "توصل كل سيمانة بتصاميم ومحاكاة GNC، تنبيهات لفرص التدريب فالفضاء، ودليل الصلابة النفسية باش تحافظ على الصرامة الهندسية ديالك تحت الضغط.",
@@ -1262,7 +1252,7 @@ const localizedBlueprintDetails = {
                     <div class="drawer-body">
                         <p><strong>System Objective:</strong> Establish high-accuracy computational thrust profile reconstruction and structural simulation templates for the Tadori-Tadori Class hybrid rocket test vehicle.</p>
                         <p><strong>Aerospace GNC Context:</strong> Calculated the center of pressure shifting dynamics during hybrid propellant grain regression to model aerodynamic flight stability coefficients.</p>
-                        <p><strong>Mentorship Application:</strong> Demonstrates real-world, high-pressure dynamic structural design and instrumentation constraints. Taught directly under 'The Drift' (Simulink control tuning) and 'The Unbreakable Wall' (Ansys finite element hardening).</p>
+                        <p><strong>Mentorship Application:</strong> Demonstrates real-world, high-pressure dynamic structural design and instrumentation constraints. Taught directly under GNC Autopilot Tuner (Simulink control tuning) and Cloud FEA Validator (Ansys finite element hardening).</p>
                     </div>
                     <div class="drawer-specs">
                         <h5>TECHNICAL HARDWARE VERIFICATION</h5>
@@ -1330,7 +1320,7 @@ const localizedBlueprintDetails = {
                     <div class="drawer-body">
                         <p><strong>システム目的：</strong>Tadori-Tadoriクラスハイブリッドロケット試験機の高精度推力プロファイル再構築および構造シミュレーションテンプレートの確立。</p>
                         <p><strong>航空宇宙GNC文脈：</strong>ハイブリッド推進剤の後退中に変化する圧力中心力学を計算し、空気力学的飛行安定係数をモデリング。</p>
-                        <p><strong>道場での応用：</strong>実世界の高圧動的構造設計と計測の制約を習得。「THE DRIFT」（Simulink制御調整）と「UNBREAKABLE WALL」（Ansys有限要素法）の直下で指導。</p>
+                        <p><strong>道場での応用：</strong>実世界の高圧動的構造設計と計測の制約を習得。「GNC AUTOPILOT TUNER」（Simulink制御調整）と「CLOUD FEA VALIDATOR」（Ansys有限要素法）の直下で指導。</p>
                     </div>
                     <div class="drawer-specs">
                         <h5>技術ハードウェア検証</h5>
@@ -1398,7 +1388,7 @@ const localizedBlueprintDetails = {
                     <div class="drawer-body">
                         <p><strong>Objectif système :</strong> Établir des modèles de reconstruction de poussée et des simulations structurelles précises pour le véhicule d'essai hybride classe Tadori-Tadori.</p>
                         <p><strong>Contexte GNC aérospatial :</strong> Calcul de la dérive dynamique du centre de pression lors de la régression du grain de carburant hybride pour modéliser les coefficients aérodynamiques.</p>
-                        <p><strong>Application Mentorat :</strong> Démontre les contraintes réelles de conception structurelle et d'instrumentation sous haute pression. Enseigné sous 'The Drift' (Simulink) et 'The Unbreakable Wall' (durcissement ANSYS).</p>
+                        <p><strong>Application Mentorat :</strong> Démontre les contraintes réelles de conception structurelle et d'instrumentation sous haute pression. Enseigné sous GNC Autopilot Tuner (Simulink) et Cloud FEA Validator (durcissement ANSYS).</p>
                     </div>
                     <div class="drawer-specs">
                         <h5>VERIFICATION TECHNIQUE MATÉRIEL</h5>
@@ -1466,7 +1456,7 @@ const localizedBlueprintDetails = {
                     <div class="drawer-body">
                         <p><strong>Objetivo del Sistema:</strong> Establecer reconstrucciones del perfil de empuje por computación y plantillas de simulación estructural para el vehículo de prueba híbrido clase Tadori-Tadori.</p>
                         <p><strong>Contexto GNC Aeroespacial:</strong> Cálculo del centro de presión dinámico durante la regresión del grano sólido híbrido para modelar coeficientes de estabilidad aerodinámica.</p>
-                        <p><strong>Aplicación de Mentoría:</strong> Demuestra las limitaciones del diseño estructural y la instrumentación en el mundo real bajo alta presión. Impartido directamente en 'The Drift' (Simulink) y 'The Unbreakable Wall' (ANSYS).</p>
+                        <p><strong>Aplicación de Mentoría:</strong> Demuestra las limitaciones del diseño estructural y la instrumentación en el mundo real bajo alta presión. Impartido directamente en GNC Autopilot Tuner (Simulink) y Cloud FEA Validator (ANSYS).</p>
                     </div>
                     <div class="drawer-specs">
                         <h5>VERIFICACIÓN TÉCNICA DEL HARDWARE</h5>
@@ -1534,7 +1524,7 @@ const localizedBlueprintDetails = {
                     <div class="drawer-body">
                         <p><strong>هدف النظام:</strong> بناء نماذج حسابية دقيقة لإعادة بناء ملف الدفع والمحاكاة الهيكلية لصاروخ الاختبار الهجين من فئة تادوري-تادوري.</p>
                         <p><strong>سياق GNC للطيران:</strong> حساب ديناميكيات تغير مركز الضغط أثناء تآكل الوقود الهجين للحصول على معاملات الاستقرار الهوائية.</p>
-                        <p><strong>تطبيق المرافقة:</strong> كيبين القيود الحقيقية لتصميم الهياكل فالعالم الحقيقي تحت الضغط العالي. مقري نيشان تحت مسار 'The Drift' (Simulink) و 'The Unbreakable Wall' (ANSYS).</p>
+                        <p><strong>تطبيق المرافقة:</strong> كيبين القيود الحقيقية لتصميم الهياكل فالعالم الحقيقي تحت الضغط العالي. مقري نيشان تحت مسار GNC Autopilot Tuner (Simulink) و Cloud FEA Validator (ANSYS).</p>
                     </div>
                     <div class="drawer-specs">
                         <h5>التحقق التقني للأجهزة</h5>

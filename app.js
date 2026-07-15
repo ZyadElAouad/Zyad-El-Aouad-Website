@@ -445,7 +445,7 @@ const blueprintDetails = {
                 <div class="drawer-body">
                     <p><strong>System Objective:</strong> Establish high-accuracy computational thrust profile reconstruction and structural simulation templates for the Tadori-Tadori Class hybrid rocket test vehicle.</p>
                     <p><strong>Aerospace GNC Context:</strong> Calculated the center of pressure shifting dynamics during hybrid propellant grain regression to model aerodynamic flight stability coefficients.</p>
-                    <p><strong>Mentorship Application:</strong> Demonstrates real-world, high-pressure dynamic structural design and instrumentation constraints. Taught directly under 'The Drift' (Simulink control tuning) and 'The Unbreakable Wall' (Ansys finite element hardening).</p>
+                    <p><strong>Mentorship Application:</strong> Demonstrates real-world, high-pressure dynamic structural design and instrumentation constraints. Taught directly under GNC Autopilot Tuner (Simulink control tuning) and Cloud FEA Validator (Ansys finite element hardening).</p>
                 </div>
                 <div class="drawer-specs">
                     <h5>TECHNICAL HARDWARE VERIFICATION</h5>
