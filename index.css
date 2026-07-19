@@ -1727,4 +1727,155 @@ html[dir="rtl"] .dojo-title-large {
     -webkit-backdrop-filter: blur(8px) !important;
 }
 
+/* --- LIGHT THEME STYLING OVERRIDES --- */
+body.light-theme {
+    background: radial-gradient(ellipse at bottom, #f9fafb 0%, #f3f4f6 100%) !important;
+    color: #111827 !important;
+    
+    --bg-darkest: #ffffff;
+    --bg-dark: #f3f4f6;
+    --bg-card: rgba(255, 255, 255, 0.75);
+    --bg-panel: rgba(243, 244, 246, 0.85);
+    --crimson: #c8102e;
+    --crimson-hover: #9c0c22;
+    --crimson-glow: rgba(200, 16, 46, 0.08);
+    --crimson-glow-strong: rgba(200, 16, 46, 0.2);
+    --steel: #4b5563;
+    --steel-dark: #cbd5e1;
+    --text-light: #111827;
+    --text-muted: #4b5563;
+    --accent-cyan: #0284c7;
+    --accent-gold: #b45309;
+    --terminal-green: #15803d;
+    
+    --manga-border: 1px solid rgba(0, 0, 0, 0.15);
+    --manga-border-thick: 2px solid rgba(0, 0, 0, 0.3);
+    --manga-border-crimson: 1px solid rgba(200, 16, 46, 0.4);
+}
+
+body.light-theme a,
+body.light-theme .footer-logo,
+body.light-theme nav a {
+    color: #111827 !important;
+}
+
+body.light-theme .footer-link:hover,
+body.light-theme nav a:hover {
+    color: var(--crimson) !important;
+}
+
+body.light-theme .manga-outline {
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.15) !important;
+}
+
+body.light-theme .lang-selector-group {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+body.light-theme .lang-btn {
+    color: #4b5563 !important;
+}
+
+body.light-theme .lang-btn.active {
+    color: var(--accent-cyan) !important;
+}
+
+body.light-theme #theme-toggle {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    color: #4b5563 !important;
+}
+
+body.light-theme #theme-toggle:hover {
+    color: var(--crimson) !important;
+    border-color: var(--crimson) !important;
+}
+
+body.light-theme .dojo-panel,
+body.light-theme .portfolio-card,
+body.light-theme .blueprint-card,
+body.light-theme .terminal-box,
+body.light-theme .manga-panel,
+body.light-theme .comms-form,
+body.light-theme .lang-selector-group,
+body.light-theme .hero-dashboard,
+body.light-theme .countdown-dashboard {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08) !important;
+}
+
+body.light-theme .terminal-input,
+body.light-theme .terminal-select {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    color: #111827 !important;
+}
+
+body.light-theme .blueprint-grid {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px) !important;
+}
+
+body.light-theme .speed-line {
+    stroke: rgba(0, 0, 0, 0.08) !important;
+}
+
+body.light-theme .btn-bankai {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    border-color: #111827 !important;
+    box-shadow: 3px 3px 0px #111827 !important;
+}
+
+body.light-theme .btn-bankai:hover {
+    background-color: var(--crimson) !important;
+    color: #ffffff !important;
+    border-color: var(--crimson) !important;
+    box-shadow: 3px 3px 0px var(--crimson) !important;
+}
+
+body.light-theme .badge-crimson {
+    background-color: var(--crimson) !important;
+    color: #ffffff !important;
+    border: 2px solid var(--crimson) !important;
+}
+
+body.light-theme #live-card-sandbox {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    border-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+body.light-theme #blueprint-comments-block {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    border-top: 2px dashed rgba(0, 0, 0, 0.15) !important;
+}
+
+body.light-theme #audio-toggle {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(0, 0, 0, 0.15) !important;
+    color: #111827 !important;
+}
+
+body.light-theme #audio-toggle span {
+    color: #111827 !important;
+}
+
+body.light-theme .terminal-response-box {
+    border-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+body.light-theme .drawer-body p,
+body.light-theme .drawer-specs p,
+body.light-theme .drawer-specs h5 {
+    color: #111827 !important;
+}
+
+body.light-theme .drawer-specs {
+    border-top: 2px dashed rgba(0, 0, 0, 0.15) !important;
+}
+
+
 
