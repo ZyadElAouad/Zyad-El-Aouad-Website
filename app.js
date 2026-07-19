@@ -1,11 +1,3 @@
-// --- 0. THEME SWITCHER INITIALIZATION (FAST) ---
-(function() {
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    if (currentTheme === 'dark') {
-        document.body.classList.remove('light-theme');
-    }
-})();
-
 // --- 1. TELEMETRY & SYSTEM STATUS TICKS ---
 const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE"; // Put your Web3Forms access key here to receive form submissions via email automatically!
 const telemetryLog = document.getElementById('telemetry-log');
@@ -53,7 +45,7 @@ function addTelemetryLine() {
 }
 setInterval(addTelemetryLine, 3500);
 
-// --- 2. PROGRESS BAR & THEME SWITCHER HANDLERS ---
+// --- 2. PROGRESS BAR ANIMATION ---
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         const progressBars = document.querySelectorAll('.stat-bar-fill');
@@ -62,30 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
             bar.style.width = targetWidth;
         });
     }, 400);
-
-    // Setup Theme Toggle Button
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    if (themeToggleBtn) {
-        updateThemeUI();
-        themeToggleBtn.addEventListener('click', () => {
-            if (document.body.classList.contains('light-theme')) {
-                document.body.classList.remove('light-theme');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                document.body.classList.add('light-theme');
-                localStorage.setItem('theme', 'light');
-            }
-            updateThemeUI();
-        });
-    }
-
-    function updateThemeUI() {
-        const isLight = document.body.classList.contains('light-theme');
-        const iconEl = document.getElementById('theme-toggle-icon');
-        const textEl = document.getElementById('theme-toggle-text');
-        if (iconEl) iconEl.textContent = isLight ? '🌙' : '☀';
-        if (textEl) textEl.textContent = isLight ? 'DARK' : 'LIGHT';
-    }
 });
 
 // --- 3. CANVAS DEEP SPACE STARFIELD ANIMATION ---
@@ -191,16 +159,12 @@ class ShootingStar {
     draw(context) {
         if (!this.active || !context) return;
         
-        const isLight = document.body.classList.contains('light-theme');
-        const colorPrefix = isLight ? '0, 0, 0' : '255, 255, 255';
-        const opacityMult = isLight ? 0.35 : 1;
-        
         const grad = context.createLinearGradient(
             this.x, this.y, 
             this.x - this.speedX * 2, this.y - this.speedY * 2
         );
-        grad.addColorStop(0, `rgba(${colorPrefix}, ${this.opacity * opacityMult})`);
-        grad.addColorStop(1, `rgba(${colorPrefix}, 0)`);
+        grad.addColorStop(0, `rgba(255, 255, 255, ${this.opacity})`);
+        grad.addColorStop(1, 'rgba(255, 255, 255, 0)');
         
         context.beginPath();
         context.strokeStyle = grad;
@@ -244,18 +208,13 @@ function animateStarfield() {
         drawX = (drawX % width + width) % width;
         drawY = (drawY % height + height) % height;
         
-        const isLight = document.body.classList.contains('light-theme');
-        const colorPrefix = isLight ? '0, 0, 0' : '255, 255, 255';
-        const opacityMult = isLight ? 0.3 : 1;
-        const shadowOpacity = isLight ? 0.1 : 0.4;
-        
         ctx.beginPath();
-        ctx.fillStyle = `rgba(${colorPrefix}, ${opacity * opacityMult})`;
+        ctx.fillStyle = `rgba(255, 255, 255, ${opacity})`;
         
         // Draw standard stars, foreground stars get a tiny premium glow
         if (star.size > 1.4) {
             ctx.shadowBlur = 4;
-            ctx.shadowColor = `rgba(${colorPrefix}, ${shadowOpacity})`;
+            ctx.shadowColor = 'rgba(255, 255, 255, 0.4)';
         } else {
             ctx.shadowBlur = 0;
         }
