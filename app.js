@@ -1,8 +1,8 @@
 // --- 0. THEME SWITCHER INITIALIZATION (FAST) ---
 (function() {
-    const currentTheme = localStorage.getItem('theme') || 'dark';
-    if (currentTheme === 'light') {
-        document.body.classList.add('light-theme');
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    if (currentTheme === 'dark') {
+        document.body.classList.remove('light-theme');
     }
 })();
 
