@@ -111,7 +111,6 @@
             
             <nav style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
                 <a href="about.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-about">ABOUT</a>
-                <a href="dojo.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-dojo">THE DOJO</a>
                 <a href="portfolio.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-portfolio">PORTFOLIO</a>
                 <a href="blog.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-blog">BLOG</a>
                 <a href="manifesto.html" class="footer-link" style="font-size: 0.95rem; letter-spacing: 1px;" data-i18n="nav-manifesto">MANIFESTO</a>
@@ -128,8 +127,6 @@
                     <span style="color: var(--steel-dark); font-size: 0.8rem;">|</span>
                     <button class="lang-btn" data-lang="ar">AR</button>
                 </div>
-                
-                <a href="#booking" class="btn-bankai" id="nav-bankai-btn" style="font-size: 1.1rem; padding: 6px 18px; box-shadow: 3px 3px 0px var(--text-light); margin-left: 10px;" data-i18n="nav-booking">ENTER DOJO</a>
             </nav>
         </div>
     </header>
@@ -201,88 +198,7 @@
 
         <!-- Subpage sections (ABOUT, DOJO, PORTFOLIO, BLOG, MANIFESTO) are moved to their respective HTML pages. -->
 
-        <!-- SERVICES SECTION HEADER -->
-        <div class="section-title-wrapper" style="margin-top: 50px; margin-bottom: 25px;">
-            <h2 class="section-title" style="color: var(--text-light);">SERVICES</h2>
-            <div class="section-num">// ADMISSIONS & MENTORSHIP</div>
-        </div>
-        
-        <hr style="border: none; border-top: 2px dashed var(--steel-dark); margin-bottom: 40px;">
 
-        <!-- ADMISSIONS & MONETIZATION FUNNELS -->
-        <section id="booking" class="monetization-wrapper" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 30px;">
-            
-            <!-- Left: Call to Action for cohort & trigger button -->
-            <div style="display: flex; flex-direction: column; gap: 30px;">
-                
-                <!-- Cohort Enrollment Card -->
-                <div class="dojo-panel manga-outline" style="padding: 24px 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height: 200px;">
-                    <div>
-                        <span class="dojo-tag" style="margin-bottom: 15px;" data-i18n="teaser-waitlist-header">COHORT ENROLLMENT</span>
-                        <h3 class="dojo-title" style="font-size: 2.2rem;" data-i18n="teaser-waitlist-title">JOIN ELITE MENTORSHIP</h3>
-                        <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-waitlist-desc">
-                              Mentorship cohort seats are capped strictly at 5 students for Fall 2026. Submitting enters you into the priority selection queue.
-                        </p>
-                    </div>
-                    <div style="margin-top: 20px;">
-                        <!-- This button opens the interactive terminal booking modal -->
-                        <button class="btn-bankai dojo-action" style="display: block; width: 100%; text-align: center; color: var(--text-light) !important;" data-i18n="teaser-nav-cta">JOIN</button>
-                    </div>
-                </div>
-
-                <!-- See the Dojo Card -->
-                <div class="dojo-panel manga-outline" style="padding: 24px 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height: 180px; border-color: var(--accent-cyan); box-shadow: 3px 3px 0 var(--accent-cyan);">
-                    <div>
-                        <span class="dojo-tag" style="margin-bottom: 15px; color: var(--accent-cyan) !important;" data-i18n="teaser-dojo-header">TRAINING PATHS</span>
-                        <h3 class="dojo-title" style="font-size: 2.2rem; color: var(--accent-cyan) !important;" data-i18n="teaser-dojo-title">EXPLORE THE DOJO</h3>
-                        <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-dojo-desc">
-                            Inspect our detailed training paths, GNC control loops syllabus, and mechanical engineering modules.
-                        </p>
-                    </div>
-                    <div style="margin-top: 20px;">
-                        <a href="dojo.html" class="btn-bankai" style="display: block; text-align: center; font-size: 1rem; border-color: var(--accent-cyan); color: var(--accent-cyan); text-decoration: none; box-shadow: 3px 3px 0 var(--accent-cyan);" data-i18n="teaser-dojo-btn">SEE THE DOJO &rarr;</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Right: Premium Audit & Newsletter Options -->
-            <div style="display: flex; flex-direction: column; gap: 30px;">
-                
-                <!-- Premium Resume Audit Card -->
-                <div class="dojo-panel manga-outline" style="border-color: var(--accent-gold); padding: 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height: 200px;">
-                    <div>
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                            <span class="badge-crimson" style="background-color: var(--accent-gold); border-color: var(--accent-gold); color: #000; font-weight: bold;" data-i18n="teaser-audit-badge">SaaS AUDIT</span>
-                            <span style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.9rem;" data-i18n="teaser-audit-price">$49 / AUDIT</span>
-                        </div>
-                        <h3 class="dojo-title" style="font-size: 2.2rem; color: var(--accent-gold); text-shadow: 0 0 5px rgba(212, 175, 55, 0.2);" data-i18n="teaser-audit-title">PORTFOLIO AUDIT & OPTIMIZATION</h3>
-                        <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-audit-desc">
-                            Harden your engineering projects. Upload your portfolio and resumes to run an automated check against strict aerospace recruitment requirements, verifying GNC core terms, structural FEA project entries, and formatting alignment.
-                        </p>
-                    </div>
-                    <div style="margin-top: 25px;">
-                        <a href="mailto:elaouadzyad@gmail.com?subject=[BeWinnerEngineer] Pre-Launch Portfolio Audit Booking" class="btn-bankai" style="display: block; text-align: center; font-size: 1rem; border-color: var(--accent-gold); color: var(--accent-gold); text-decoration: none; box-shadow: 3px 3px 0 var(--accent-gold);" data-i18n="teaser-audit-btn">RUN AUDIT &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Newsletter Subscription Card -->
-                <div class="dojo-panel manga-outline" style="padding: 30px; background-color: rgba(7, 8, 11, 0.95); display: flex; flex-direction: column; justify-content: space-between; min-height: 180px;">
-                    <div>
-                        <span class="dojo-tag" style="margin-bottom: 15px;" data-i18n="teaser-news-badge">WEEKLY TRANSMISSIONS</span>
-                        <h3 class="dojo-title" style="font-size: 2.2rem;" data-i18n="teaser-news-title">THE IRON TELEMETRY</h3>
-                        <p class="dojo-desc" style="font-size: 0.95rem; margin-top: 15px; line-height: 1.5;" data-i18n="teaser-news-desc">
-                            Receive GNC simulation blueprints, upcoming internship telemetry alerts, and emotional resilience manuals to keep your engineering discipline unbreakable under stress.
-                        </p>
-                    </div>
-                    <div style="margin-top: 25px; display: grid; grid-template-columns: 1fr auto; gap: 10px;">
-                        <input type="email" id="newsletter-email" class="terminal-input" placeholder="operator@satellite.org" style="margin: 0;">
-                        <button id="newsletter-btn" class="btn-bankai" style="font-size: 0.9rem; padding: 10px 20px; box-shadow: 2px 2px 0 var(--accent-cyan); border-color: var(--accent-cyan); color: var(--accent-cyan);" data-i18n="teaser-news-btn">SUBSCRIBE</button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
 
         <!-- Dynamic Live Ticker Overlay -->
         <div class="hero-dashboard manga-outline" style="max-width: 800px; margin: 0 auto padding: 20px; background-color: #07080b;">
@@ -290,8 +206,8 @@
                 <span data-i18n="teaser-feed-header">> DYNAMIC SYSTEM TELEMETRY TICKER</span>
             </div>
             <div class="telemetry-feed" id="telemetry-log" style="height: 100px; color: var(--terminal-green);">
-                <div class="telemetry-line">> Establishing secure signal block...</div>
-                <div class="telemetry-line">> Listening for incoming intake packets...</div>
+                <div class="telemetry-line">> Establishing secure telemetry link...</div>
+                <div class="telemetry-line">> ADCS attitude determination loop active.</div>
             </div>
         </div>
 
@@ -327,65 +243,7 @@
         </div>
     </footer>
 
-    <!-- INTERACTIVE TERMINAL BOOKING MODAL -->
-    <div class="modal-overlay" id="booking-modal">
-        <div class="terminal-box manga-outline">
-            <div class="terminal-header">
-                <div class="terminal-dots">
-                    <span class="dot dot-red"></span>
-                    <span class="dot dot-yellow"></span>
-                    <span class="dot dot-green"></span>
-                </div>
-                <span data-i18n="intake-header">DOJO_ADMISSION_INTEG.EXE</span>
-                <button class="terminal-close" id="close-booking">&times;</button>
-            </div>
-            <div class="terminal-body">
-                <div class="terminal-banner" id="terminal-ascii">
-===================================================
-        ___ __  __ ___ _____ ___ __  __ ___
-       / __|\ \/ / __|_   _| __|  \/  / __|
-       \__ \ \  /\__ \ | | | _| | |\/| \__ \
-       |___/ /_/ |___/ |_| |___|_|  |_|___/
-             - SYSTEMS ENGINEERING -
-===================================================
-                </div>
-                
-                <form id="dojo-form" onsubmit="return false;">
-                    <div class="terminal-form-group">
-                        <label class="terminal-label" data-i18n="intake-lbl-name">> ENTER INTAKE OPERATOR NAME:</label>
-                        <input type="text" id="intake-name" class="terminal-input" required placeholder="e.g. CAD_WARRIOR_01">
-                    </div>
 
-                    <div class="terminal-form-group">
-                        <label class="terminal-label" data-i18n="intake-lbl-email">> ENTER SECURE EMAIL CHANNELS:</label>
-                        <input type="email" id="intake-email" class="terminal-input" required placeholder="e.g. name@satellite.org">
-                    </div>
-
-                    <div class="terminal-form-group">
-                        <label class="terminal-label" data-i18n="intake-lbl-pillar">> SELECT SAAS PRODUCT LICENSE:</label>
-                        <select id="intake-pillar" class="terminal-select" required>
-                            <option value="" data-i18n="intake-pillar-default">-- SELECT SAAS PRODUCT LICENSE --</option>
-                            <option value="GNC Autopilot Tuner" data-i18n="intake-pillar-1">GNC AUTOPILOT TUNER ($49/MO)</option>
-                            <option value="Debris Stabilization Solver" data-i18n="intake-pillar-2">DEBRIS STABILIZATION SOLVER ($99/MO)</option>
-                            <option value="Hybrid Rocket Simulator" data-i18n="intake-pillar-3">HYBRID ROCKET SIMULATOR ($149/MO)</option>
-                            <option value="Cloud FEA Validator" data-i18n="intake-pillar-4">CLOUD FEA VALIDATOR ($29/MO)</option>
-                        </select>
-                    </div>
-
-                    <div class="terminal-form-group">
-                        <label class="terminal-label" data-i18n="intake-lbl-objs">> COMPILE CURRENT CAPABILITIES & OBJECTIVES:</label>
-                        <textarea id="intake-objectives" class="terminal-input" rows="4" style="resize: none;" required placeholder="List your current tools (Solidworks, MATLAB, etc.) and what is blocking you from achieving technical excellence..."></textarea>
-                    </div>
-
-                    <button type="submit" class="terminal-btn-submit" id="submit-intake" data-i18n="intake-btn-submit">> INITIALIZE SYSTEMS COMPILATION</button>
-                </form>
-
-                <div class="terminal-response-box" id="terminal-response">
-                    <!-- Dynamic Output on Submit -->
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- GENERAL DIALOG/DRAWER BLUEPRINT MODAL -->
     <div class="modal-overlay" id="blueprint-modal">
