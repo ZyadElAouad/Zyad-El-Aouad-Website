@@ -194,7 +194,7 @@ const translations = {
         "teaser-news-desc": "Receive GNC simulation blueprints, upcoming internship telemetry alerts, and emotional resilience manuals to keep your engineering discipline unbreakable under stress.",
         "teaser-news-btn": "SUBSCRIBE",
         "teaser-feed-header": "> DYNAMIC SYSTEM TELEMETRY TICKER",
-        "teaser-footer-sub": "// MENTORSHIP STAGES // 5 LANGUAGES SUPPORTED",
+        "teaser-footer-sub": "// AEROSPACE ENGINEERING // 5 LANGUAGES SPEAKER // GNC & ADCS // SPACE DEBRIS MITIGATION // SYSTEMS THINKING",
         "teaser-footer-copy": "&copy; 2026 ZYAD EL AOUAD. ALL CODES SECURED. POWER LEVEL: SYSTEMS."
     },
     jp: {
@@ -391,7 +391,7 @@ const translations = {
         "teaser-news-desc": "GNCシミュレーション設計図、最新インターンシップ情報、困難に立ち向かうための精神的レジリエンス手順書を毎週お届けします。",
         "teaser-news-btn": "購読する",
         "teaser-feed-header": "> ダイナミック・システムテレメトリ・ティッカー",
-        "teaser-footer-sub": "// 指導ステップ // 5ヶ国語対応",
+        "teaser-footer-sub": "// 宇宙航空工学 // 5カ国語に対応 // GNC & ADCS // スペースデブリ対策 // システム思考",
         "teaser-footer-copy": "&copy; 2026 ZYAD EL AOUAD. 全コードセキュリティ確保完了。パワーレベル：システム。"
     },
     fr: {
@@ -588,7 +588,7 @@ const translations = {
         "teaser-news-desc": "Recevez chaque semaine des schémas de simulation GNC, des alertes de stages aérospatiaux et des guides de résilience mentale pour résister au stress sans faiblir.",
         "teaser-news-btn": "S'ABONNER",
         "teaser-feed-header": "> MONITEUR DE TÉLÉMÉTRIE DYNAMIQUE",
-        "teaser-footer-sub": "// MENTORAT // MULTILINGUE EN 5 LANGUES",
+        "teaser-footer-sub": "// GÉNIE AÉROSPATIAL // PARLE 5 LANGUES // GNC & ADCS // MITIGATION DES DÉBRIS SPATIAUX // PENSÉE SYSTÉMIQUE",
         "teaser-footer-copy": "&copy; 2026 ZYAD EL AOUAD. TOUS DROITS SÉCURISÉS. PUISSANCE : CLASSE SYSTEME."
     },
     es: {
@@ -786,7 +786,7 @@ const translations = {
         "teaser-news-desc": "Recibe planos de simulación de GNC, alertas de telemetría de próximas prácticas profesionales y manuales de resiliencia emocional para mantener tu disciplina de ingeniería inquebrantable bajo el estrés.",
         "teaser-news-btn": "SUSCRIBIRSE",
         "teaser-feed-header": "> MONITOR DE TELEMETRÍA DINÁMICA DEL SISTEMA",
-        "teaser-footer-sub": "// ETAPAS DE MENTORÍA // 5 IDIOMAS DISPONIBLES",
+        "teaser-footer-sub": "// INGENIERÍA AEROESPACIAL // HABLA 5 IDIOMAS // GNC y ADCS // MITIGACIÓN DE DESECHOS ESPACIALES // PENSAMIENTO DE SISTEMAS",
         "teaser-footer-copy": "&copy; 2026 ZYAD EL AOUAD. TODOS LOS CÓDIGOS PROTEGIDOS. NIVEL DE PODER: SISTEMA."
     },
     ar: {
@@ -985,7 +985,7 @@ const translations = {
         "teaser-news-desc": "توصل كل سيمانة بتصاميم ومحاكاة GNC، تنبيهات لفرص التدريب فالفضاء، ودليل الصلابة النفسية باش تحافظ على الصرامة الهندسية ديالك تحت الضغط.",
         "teaser-news-btn": "اشترك دابا",
         "teaser-feed-header": "> شريط التيليميتري الديناميكي للأنظمة",
-        "teaser-footer-sub": "// مراحل المرافقة // 5 لغات مدعومة",
+        "teaser-footer-sub": "// هندسة الطيران والفضاء // كنهضر بـ 5 د اللغات // GNC و ADCS // الحد من الحطام الفضائي // التفكير المنهجي",
         "teaser-footer-copy": "&copy; 2026 ZYAD EL AOUAD. كاع الأكواد محمية. مستوى الطاقة: أنظمة مهنية."
     }
 };
