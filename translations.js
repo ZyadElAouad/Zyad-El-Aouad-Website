@@ -1,4 +1,4 @@
-﻿const translations = {
+const translations = {
     en: {
         // Nav
         "nav-about": "ABOUT",
@@ -151,7 +151,7 @@
         "teaser-telemetry": "INITIALIZING LAUNCH VECTOR // POWER LEVEL: UNBOUNDED",
         "teaser-title-1": "Zyad El Aouad:",
         "teaser-title-2": "BeWinnerEngineer",
-        "teaser-desc": "This website is dedicated to the various aspects that shaped and still do shape my life and path to becoming a reliable and professional aerospace engineer. University studies require a high level of guidance and discipline in order to achieve high engineer goals. Therefore, I intend to share what I have learned and still learn to survive and thrive in the current world. Join the elite cohort of future aerospace and systems engineers. Accelerate your career from basic student to premium systems architect.",
+        "teaser-desc": "This website is dedicated to the various aspects that shaped and still do shape my life and path to becoming a reliable and professional aerospace engineer. University studies require a high level of guidance and discipline in order to achieve high engineer goals. Therefore, I intend to share what I have learned and still learn to survive and thrive in the current world.",
         "teaser-clock-header": "> TIME_TILL_LAUNCH.EXE",
         "teaser-days": "DAYS",
         "teaser-hours": "HOURS",
@@ -348,7 +348,7 @@
         "teaser-telemetry": "起動ベクトル初期化中 // パワーレベル：無制限",
         "teaser-title-1": "Zyad El Aouad:",
         "teaser-title-2": "BeWinnerEngineer",
-        "teaser-desc": "このウェブサイトは、信頼できるプロフェッショナルな宇宙航空エンジニアになるための私の人生と道のりを形作り、今なお形作り続けているさまざまな側面に捧げられています。大学での研究は、高いエンジニアの目標を達成するために、高いレベルの指導と規律を必要とします。したがって、私は現在の世界で生き残り、繁栄するために学んだこと、そして今も学び続けていることを共有するつもりです。未来の宇宙航空およびシステムエンジニアのエリートコホートに参加しましょう。基本的な学生からプレミアムシステムアーキテクトへとキャリアを加速させてください。",
+        "teaser-desc": "このウェブサイトは、信頼できるプロフェッショナルな宇宙航空エンジニアになるための私の人生と道のりを形作り、今なお形作り続けているさまざまな側に捧げられています。大学での研究は、高いエンジニアの目標を達成するために、高いレベルの指導と規律を必要とします。したがって、私は現在の世界で生き残り、繁栄するために学んだこと、そして今も学び続けていることを共有するつもりです。",
         "teaser-clock-header": "> TIME_TILL_LAUNCH.EXE",
         "teaser-days": "日",
         "teaser-hours": "時間",
@@ -545,7 +545,7 @@
         "teaser-telemetry": "VECTEUR DE DÉPLOIEMENT INITIALISÉ // PUISSANCE : ILLIMITÉE",
         "teaser-title-1": "Zyad El Aouad:",
         "teaser-title-2": "BeWinnerEngineer",
-        "teaser-desc": "Ce site web est dédié aux différents aspects qui ont façonné et continuent de façonner ma vie et mon parcours pour devenir un ingénieur aérospatial fiable et professionnel. Les études universitaires exigent un niveau élevé d'encadrement et de discipline pour atteindre des objectifs d'ingénierie élevés. C'est pourquoi j'ai l'intention de partager ce que j'ai appris et ce que j'apprends encore pour survivre et prospérer dans le monde actuel. Rejoignez la cohorte d'élite des futurs ingénieurs de l'aérospatiale et des systèmes. Accélérez votre carrière de simple étudiant à architecte de systèmes de premier plan.",
+        "teaser-desc": "Ce site web est dédié aux différents aspects qui ont façonné et continuent de façonner ma vie et mon parcours pour devenir un ingénieur aérospatial fiable et professionnel. Les études universitaires exigent un niveau élevé d'encadrement et de discipline pour atteindre des objectifs d'ingénierie élevés. C'est pourquoi j'ai l'intention de partager ce que j'ai appris et ce que j'apprends encore pour survivre et prospérer dans le monde actuel.",
         "teaser-clock-header": "> TIME_TILL_LAUNCH.EXE",
         "teaser-days": "JOURS",
         "teaser-hours": "HEURES",
@@ -743,7 +743,7 @@
         "teaser-telemetry": "INICIALIZANDO VECTOR DE LANZAMIENTO // NIVEL DE PODER: ILIMITADO",
         "teaser-title-1": "Zyad El Aouad:",
         "teaser-title-2": "BeWinnerEngineer",
-        "teaser-desc": "Este sitio web está dedicado a los diversos aspectos que dieron forma y aún dan forma a mi vida y mi camino para convertirme en un ingeniero aeroespacial confiable y profesional. Los estudios universitarios requieren un alto nivel de orientación y disciplina para lograr altos objetivos de ingeniería. Por lo tanto, tengo la intención de compartir lo que he aprendido y sigo aprendiendo para sobrevivir y prosperar en el mundo actual. Únete a la cohorte de élite de futuros ingenieros aeroespaciales y de sistemas. Acelera tu carrera de estudiante básico a arquitecto de sistemas premium.",
+        "teaser-desc": "Este sitio web está dedicado a los diversos aspectos que dieron forma y aún dan forma a mi vida y mi camino para convertirme en un ingeniero aeroespacial confiable y profesional. Los estudios universitarios requieren un alto nivel de orientación y disciplina para lograr altos objetivos de ingeniería. Por lo tanto, tengo la intención de compartir lo que he aprendido y sigo aprendiendo para sobrevivir y prosperar en el mundo actual.",
         "teaser-clock-header": "> TIEMPO_PARA_EL_LANZAMIENTO.EXE",
         "teaser-days": "DÍAS",
         "teaser-hours": "HORAS",
@@ -942,7 +942,7 @@
         "teaser-telemetry": "البدء فـ توجيه الإطلاق // مستوى الطاقة: غير محدود",
         "teaser-title-1": "Zyad El Aouad:",
         "teaser-title-2": "BeWinnerEngineer",
-        "teaser-desc": "هاد الموقع مخصص لمختلف الجوانب اللي بْنات وكتْبني حياتي ومساري باش نولي مهندس فضاء وطيران موثوق ومحترف. الدراسات الجامعية كتحتاج لدرجة عالية من التوجيه والانضباط باش الواحد يوصل لأهداف هندسية عالية. داكشي علاش، باغي نشارك داكشي اللي تعلمت ومازال كنتعلم باش نسلك راسي وننجح فهاد العالم دابا. شارك في النخبة ديال مهندسين الفضاء والأنظمة ديال المستقبل. زرب الكاريير ديالك من طالب عادي لمهندس أنظمة متميز.",
+        "teaser-desc": "هاد الموقع مخصص لمختلف الجوانب اللي بْنات وكتْبني حياتي ومساري باش نولي مهندس فضاء وطيران موثوق ومحترف. الدراسات الجامعية كتحتاج لدرجة عالية من التوجيه والانضباط باش الواحد يوصل لأهداف هندسية عالية. داكشي علاش، باغي نشارك داكشي اللي تعلمت ومازال كنتعلم باش نسلك راسي وننجح فهاد العالم دابا.",
         "teaser-clock-header": "> الوقت_المتبقي_للإطلاق.EXE",
         "teaser-days": "أيام",
         "teaser-hours": "ساعات",
