@@ -2,3 +2,5 @@ ZYAD MASTER JAPON/
 ~$*.docx
 *.docx
 *.pdf
+!cv/
+!cv/*.pdf
