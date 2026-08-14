@@ -8,7 +8,6 @@ const translations = {
         "nav-blog": "BLOG",
         "nav-manifesto": "MANIFESTO",
         "nav-booking": "ENTER DOJO",
-
         // Hero
         "hero-telemetry": "TELEMETRY ESTABLISHED // POWER SCALE: SYSTEMS LEVEL",
         "hero-title-1": "HEAVEN OR HELL:",
@@ -16,55 +15,49 @@ const translations = {
         "hero-desc": "University taught you how to calculate. I teach you how to survive. Accelerate your career from basic CAD modeler to Systems Architect with high-intensity aerospace guidance. Fusing ESA standard design pipelines with raw 90s shonen grit.",
         "hero-cta": "ENTER THE DOJO. BEGIN YOUR SYSTEMS TRAINING.",
         "hero-operator": "OPERATOR: ZYAD_EL_AOUAD",
-
         // Hero Stats
         "stat-gnc": "GNC & ADCS CONTROL",
         "stat-workflow": "WORKFLOW DRIFTING (MATLAB/PY)",
         "stat-structural": "RIGOROUS STRUCTURAL RESILIENCE",
-
         // About
         "about-title": "THE OPERATOR",
         "about-num": "SECT_00 // GENERAL BIOGRAPHY",
         "about-stamp": "RECORD VALIDATED",
         "about-name": "ZYAD EL AOUAD",
-        "about-para-1": "I am a Guidance, Navigation, and Control (GNC) and Attitude Determination and Control Systems (ADCS) engineer, aiming to specialize in active space debris mitigation and high-dynamic flight control loops and dynamic systems. My technical foundation and experience span contributing to rocket launches both in Spain and Japan, presenting space debris stabilization laws at the European Space Agency (ESA/ESTEC), and being at the heat of a competitive student UAV universitary project at Universidad Europea de Madrid.",
-        "about-para-2": "Having operated within both European aerospace standard environments and the intense academic engineering culture as an exchange student at Kyushu University (and Planet Q Rocketry Club), I help students and future engineers fulfilling their goals and go past their comfort zone to grow.",
-        "about-para-3": "Operating fluently across five languages (English, French, Arabic, Spanish, and Japanese), I coach engineers on technical optimization, structural resilience, and building bulletproof portfolios.",
-        "about-langs": "LANGUAGES: EN, FR, AR, ES, JP",
-
+        "about-para-1":
+        "Hi there!\n My name is Zyad!\n I am an aerospace engineer (2028) with focus interest on Guidance, Navigation, and Control (GNC) and Attitude Determination and Control Systems (ADCS) engineer, aiming to specialize in active space debris mitigation and dynamic flight control loops and systems. My technical foundation and experience span contributing to rocket launches both in Spain and Japan, satellite missionsin Spain, presenting space debris stabilization laws at the European Space Agency (ESA/ESTEC), and being at the head of one of two groups of students UAV universitary project at Universidad Europea de Madrid.\n",
+        "about-para-2":
+        "Having operated within both European aerospace standard environments and the intense academic engineering culture as an exchange student at Kyushu University (and Planet Q Rocketry Club), I have developed a strong flexibility to new cultures and environments.\n",
+        "about-para-3":
+        "I am also able to operate across five languages (English, French, Arabic, Spanish, and Japanese) and have a great passion for language learning.\n",
+        "about-langs": "LANGUAGES: EN, FR, AR, ES, JP"
         // Dojo
         "dojo-title": "THE DOJO",
-        "dojo-num": "SECT_01 // SERVICES",
-        
+        "dojo-num": "SECT_01 // SERVICES",        
         "dojo-p1-tag": "SIMULATION & CONTROL",
         "dojo-p1-title": "GNC AUTOPILOT TUNER",
         "dojo-p1-desc": "Automated tuning and validation for high-dynamic flight control loops. Upload plant models and controller architectures to automatically synthesize robust gains, run Monte Carlo stability analyses, and export optimized C++/Python autopilot code.",
         "dojo-p1-rate": "DEVELOPER: $49/MO",
         "dojo-p1-btn": "LAUNCH TUNER &rarr;",
-
         "dojo-p2-tag": "ORBITAL MECHANICS",
         "dojo-p2-title": "DEBRIS STABILIZATION SOLVER",
         "dojo-p2-desc": "Compute magnetic detumbling and active debris stabilization control laws. Upload target inertia tensors and spin rates to generate optimal magnetorquer commands and attitude transition profiles compliant with European Space Agency (ESA) standards.",
         "dojo-p2-rate": "PROFESSIONAL: $99/MO",
         "dojo-p2-btn": "COMPUTE LAW &rarr;",
-
         "dojo-p3-tag": "PROPULSION SYSTEM",
         "dojo-p3-title": "HYBRID ROCKET SIMULATOR",
         "dojo-p3-desc": "Cloud-based regression rate and transient combustion simulation for hybrid rocket propulsion systems. Instantly model grain geometry regression, chamber pressure oscillations, and nozzle gas dynamics using our serverless CFD cluster.",
         "dojo-p3-rate": "ENTERPRISE: $149/MO",
         "dojo-p3-btn": "RUN SIMULATION &rarr;",
-
         "dojo-p4-tag": "STRUCTURAL ANALYSIS",
         "dojo-p4-title": "CLOUD FEA VALIDATOR",
         "dojo-p4-desc": "High-fidelity structural analysis validation and safety margin verification pipelines. Upload mechanical assemblies to verify stress concentrations, load paths, and structural resilience factors under launch vibration constraints using cloud-based ANSYS wrappers.",
         "dojo-p4-rate": "BASE TIER: $29/MO",
         "dojo-p4-btn": "VALIDATE DESIGN &rarr;",
-
         // Portfolio
         "portfolio-title": "THE PORTFOLIO",
-        "portfolio-num": "SECT_02 // SYSTEM ARSENAL",
+        "portfolio-num": "SECT_01 // SYSTEM ARSENAL",
         "portfolio-intro": "Here is my operational record—proof of GNC and propulsion capability validated by aerospace agencies and academic clubs.",
-        
         "proj1-overlay": "PLANET Q // KYUSHU U",
         "proj1-title": "TADORI-TADORI HYBRID ROCKETS",
         "proj1-desc": "Reconstructed flight control logs and structural layout simulation for Kyushu University's Planet Q Rocketry club. Analyzed dynamic atmospheric stabilization, nozzle expansion ratios, and hybrid combustion telemetry under extreme conditions.",
@@ -77,7 +70,6 @@ const translations = {
         "proj1-val1": "4.5 MPa",
         "proj1-lbl2": "Max Thrust",
         "proj1-val2": "2.8 kN",
-
         "proj2-overlay": "ADCS SIMULATOR",
         "proj2-title": "SART CUBESAT ATTITUDE SIMULATOR",
         "proj2-desc": "Hardware-in-the-loop and software simulation of a 3-axis Cubesat ADCS (Attitude Determination and Control System). Modeled orbital magnetic fields, gravity gradient torques, and reaction wheel detumbling.",
@@ -90,19 +82,16 @@ const translations = {
         "proj2-val1": "50 Hz Real-Time",
         "proj2-lbl2": "Sensor Fusion",
         "proj2-val2": "EKF Algorithm",
-
         "proj3-overlay": "ESA CLEAN SPACE DAYS 2026",
         "proj3-title": "UNDERACTUATED DEBRIS STABILIZATION",
         "proj3-desc": "Selected speaker presentation at ESTEC (European Space Research and Technology Centre) for ESA Clean Space Days. Developed a highly customized adaptive control law to stabilize a multi-body spacecraft stack post-capture when half the actuator thrusters are disabled or degraded.",
         "proj3-btn": "EXAMINE ABSTRACT &rarr;",
-
         // Blog Workspace
         "blog-title": "MISSION LOGS",
-        "blog-num": "SECT_03 // TACTICAL BRIEFINGS",
+        "blog-num": "SECT_02 // TACTICAL BRIEFINGS",
         "blog-intro": "Operational logs detailing code performance, rocketry Club stress-testing, and career blueprint algorithms. Compiled for active study.",
         "blog-tab-read": "> READ MISSION LOGS",
         "blog-tab-forge": "> FORGE NEW LOG",
-        
         "editor-fields-title": "BLUEPRINT_INPUT_FIELDS",
         "editor-lbl-title": "> LOG ENTRY TITLE:",
         "editor-lbl-tag": "> METADATA LOG CLASS (TAG):",
@@ -112,13 +101,11 @@ const translations = {
         "editor-lbl-content": "> CORE LOG TRANSMISSION (CONTENT):",
         "editor-btn-submit": "> TRANSMIT LOG TO DATABASE",
         "editor-btn-cancel": "> CANCEL EDIT MODE",
-
         "editor-preview-title": "LIVE_CARD_PREVIEW (REAL-TIME)",
         "editor-db-title": "DATABASE_MONITOR.LOG",
         "editor-btn-wipe": "WIPE LOCAL DATABASE",
         "editor-snippet-title": "HTML_SNIPPET_GENERATOR.EXE",
         "editor-btn-copy": "COPY SNIPPET TO CLIPBOARD",
-
         // Manifesto
         "manifesto-stamp": "STUDENT FOREVER",
         "manifesto-title": "LIFE-LONG LEARNING<br>AS IF NOTHING<br>WAS KNOWN.",
@@ -127,7 +114,6 @@ const translations = {
         "manifesto-para-3": "I don't offer generic templates or academic hand-holding. I mentor engineers who want to test their steel under fire, rebuild their methodologies, and unlock their technical Bankai.",
         "manifesto-quote": "\"THE ULTIMATE SHIELD IS NOT YOUR DEGREE. IT IS AN UNBREAKABLE DISCIPLINE TO REMAIN A STUDENT AT THE HEIGHT OF THREAT.\"",
         "manifesto-author": "&mdash; ZYAD EL AOUAD, THE IRON ENGINEER",
-
         // Booking Intake
         "intake-header": "SAAS_LICENSE_INITIALIZATION.EXE",
         "intake-lbl-pillar": "> SELECT SAAS PRODUCT LICENSE:",
@@ -138,12 +124,10 @@ const translations = {
         "intake-pillar-4": "CLOUD FEA VALIDATOR ($29/MO)",
         "intake-lbl-objs": "> COMPILE CURRENT CAPABILITIES & OBJECTIVES:",
         "intake-btn-submit": "> INITIALIZE SYSTEMS COMPILATION",
-
         // Footer & Copyright
         "footer-subtext": "// PRESENTING GNC ARCHITECTURES AT ESA // SIMULATING HYBRIDS IN JAPAN // FLUENT IN 5 LANGUAGES",
         "footer-top": "TOP",
         "footer-copy": "&copy; 2026 ZYAD EL AOUAD. ALL OPERATIONS RECORDED. POWER SCALE: SYSTEMS LEVEL.",
-        
         // Teaser Keys
         "teaser-logo": "Zyad El Aouad",
         "teaser-nav-portfolio": "VIEW PORTFOLIO",
@@ -206,7 +190,6 @@ const translations = {
         "nav-blog": "ブログ",
         "nav-manifesto": "マニフェスト",
         "nav-booking": "道場に入門",
-
         // Hero
         "hero-telemetry": "テレメトリ接続確立 // パワースケール：システムレベル",
         "hero-title-1": "ヘブン・オア・ヘル：",
@@ -214,55 +197,46 @@ const translations = {
         "hero-desc": "大学は計算方法を教えてくれたが、私は生き残る術を教える。高強度の宇宙工学指導により、基本的なCADモデラーからシステムアーキテクトへとキャリアを加速させよ。ESA標準の設計パイプラインと、90年代少年漫画の闘志を融合。",
         "hero-cta": "道場に入門。システムの修行を開始する。",
         "hero-operator": "オペレーター: ZYAD_EL_AOUAD",
-
         // Hero Stats
         "stat-gnc": "GNC＆ADCS制御",
         "stat-workflow": "ワークフロー・ドリフト (MATLAB/PY)",
         "stat-structural": "高度構造レジリエンス",
-
         // About
         "about-title": "オペレーター",
         "about-num": "SECT_00 // 自己紹介",
         "about-stamp": "レコード検証済",
         "about-name": "ZYAD EL AOUAD",
-        "about-para-1": "私は、能動的な宇宙デブリ除去、高運動飛行制御ループ、および動的システムを専門とすることを目指す、制御・ナビゲーション・操縦 (GNC) および姿勢決定制御システム (ADCS) のエンジニアです。私の技術的基礎と経験は、スペインと日本でのロケット打ち上げへの貢献、欧州宇宙機関 (ESA/ESTEC) での宇宙デブリ安定化則の発表、マドリード・ヨーロッパ大学での競争力のある学生UAVプロジェクトの中核での活動に及びます。",
-        "about-para-2": "欧州の宇宙航空標準環境と、九州大学（およびPlanet Q Rocketry Club）の交換留学生としての激しい学術エンジニアリング文化の双方で活動した経験を活かし、私は学生や将来のエンジニアが目標を達成し、自らのコンフォートゾーンを超えて成長できるよう支援します。",
-        "about-para-3": "英語、フランス語、アラビア語、スペイン語、日本語の5カ国語を流暢に操り、エンジニアの技術的最適化、構造レジリエンス、完璧なポートフォリオの構築をコーチしています。",
-        "about-langs": "対応言語: EN, FR, AR, ES, JP",
-
+        "about-para-1": "こんにちは！\n私の名前はジアッドです！\n私は航空宇宙エンジニア（2028年卒業予定）であり、誘導・ナビゲーション・制御（GNC）および姿勢決定・制御システム（ADCS）に強い関心を持っています。能動的スペースデブリ除去および動的飛行制御ループとシステムを専門にすることを目指しています。私の技術的基盤と経験は、スペインと日本でのロケット打ち上げへの貢献、スペインでの衛星ミッション、欧州宇宙機関（ESA/ESTEC）でのスペースデブリ安定化法則のプレゼンテーション、そしてマドリード・エウロペア大学での2つの学生UAV大学プロジェクトグループのうちの1つのリーダーを務めることに至るまで多岐にわたります。\n",
+        "about-para-2": "欧州の航空宇宙規格環境と、九州大学（およびPlanet Q Rocketry Club）の交換留学生としての集中的な学術的エンジニアリング文化の両方で活動してきたことで、新しい文化や環境に対する強い柔軟性を培ってきました。\n",
+        "about-para-3": "また、5ヶ国語（英語、フランス語、アラビア語、スペイン語、日本語）を操ることができ、言語学習に大きな情熱を持っています。\n",
+        "about-langs": "言語: EN, FR, AR, ES, JP"
         // Dojo
         "dojo-title": "道場",
         "dojo-num": "SECT_01 // サービス",
-        
         "dojo-p1-tag": "シミュレーション＆制御",
         "dojo-p1-title": "GNC AUTOPILOT TUNER",
         "dojo-p1-desc": "高運動飛行制御ループの自動チューニングと検証。プラントモデルとコントローラ構成をアップロードして、ロバストゲインを自動合成し、モンテカルロ安定性解析を実行し、最適化されたC++/Python自動操縦コードをエクスポートします。",
         "dojo-p1-rate": "開発者プラン: $49/月",
         "dojo-p1-btn": "チューナーを起動 &rarr;",
-
         "dojo-p2-tag": "軌道力学",
         "dojo-p2-title": "DEBRIS STABILIZATION SOLVER",
         "dojo-p2-desc": "能動的デブリ除去のための磁気デタンブリングおよび安定化制御則を計算。ターゲットの慣性テンソルとスピン速度をアップロードして、欧州宇宙機関（ESA）基準に準拠した最適なマグネトーカーコマンドと姿勢遷移プロファイルを生成します。",
         "dojo-p2-rate": "プロフェッショナルプラン: $99/月",
         "dojo-p2-btn": "制御則を計算 &rarr;",
-
         "dojo-p3-tag": "推進システム",
         "dojo-p3-title": "HYBRID ROCKET SIMULATOR",
         "dojo-p3-desc": "ハイブリッドロケット推進システム向けのクラウドベース後退速度および過渡燃焼シミュレーション。サーバーレスCFDクラスターを用いて、燃料グレイン形状の後退、燃焼室圧力振動、およびノズルガス力学を即座にモデル化します。",
         "dojo-p3-rate": "エンタープライズプラン: $149/月",
         "dojo-p3-btn": "シミュレーションを実行 &rarr;",
-
         "dojo-p4-tag": "構造解析",
         "dojo-p4-title": "CLOUD FEA VALIDATOR",
         "dojo-p4-desc": "打上げ時の振動制約下における高精度構造解析検証および安全余裕確認パイプライン。メカニカルアセンブリをアップロードし、クラウドベースのANSYSラッパーを使用して応力集中、荷重伝達経路、および構造レジリエンス係数を自動検証します。",
         "dojo-p4-rate": "ベースプラン: $29/月",
         "dojo-p4-btn": "設計を検証 &rarr;",
-
         // Portfolio
         "portfolio-title": "ポートフォリオ",
-        "portfolio-num": "SECT_02 // 実績",
+        "portfolio-num": "SECT_01 // 実績",
         "portfolio-intro": "宇宙機関や大学の部活動で検証された、GNCと推進システムの実績ログを公開します。",
-        
         "proj1-overlay": "PLANET Q // 九州大学",
         "proj1-title": "TADORI-TADORI ハイブリッドロケット",
         "proj1-desc": "九州大学Planet Qロケットクラブにおける飛行制御ログと構造設計シミュレーションの再構築。極限状態での動的大気安定化、ノズル膨張比、ハイブリッド燃焼テレメトリを解析。",
@@ -275,7 +249,6 @@ const translations = {
         "proj1-val1": "4.5 MPa",
         "proj1-lbl2": "最大推力",
         "proj1-val2": "2.8 kN",
-
         "proj2-overlay": "ADCSシミュレータ",
         "proj2-title": "SART CUBESAT 姿勢制御シミュレータ",
         "proj2-desc": "3軸Cubesat ADCS (姿勢決定制御システム) のハードウェア・イン・ザ・ループ (HIL) およびソフトウェア・シミュレーション。地球磁場、重力傾斜トルク、リアクションホイールによるデタンプリングのモデリング。",
@@ -288,19 +261,16 @@ const translations = {
         "proj2-val1": "50 Hz リアルタイム",
         "proj2-lbl2": "センサフュージョン",
         "proj2-val2": "EKFアルゴリズム",
-
         "proj3-overlay": "ESA CLEAN SPACE DAYS 2026",
         "proj3-title": "劣駆動スペースデブリ安定化",
         "proj3-desc": "ESA Clean Space Daysにて、ESTECでのスピーカープレゼンテーションに選出。ロボットキャプチャ後にアクチュエータの半分が破損または劣化した場合でも、複数衛星結合体の姿勢を安定化させる適応制御則を開発。",
         "proj3-btn": "要旨を解析 &rarr;",
-
         // Blog Workspace
         "blog-title": "作戦日誌",
-        "blog-num": "SECT_03 // 戦術ブリーフィング",
+        "blog-num": "SECT_02 // 戦術ブリーフィング",
         "blog-intro": "コードの挙動、ロケット工学部の過酷試験、キャリア設計アルゴリズムを記述した作戦日誌。分析用にコンパイル済。",
         "blog-tab-read": "> 日誌を読む",
         "blog-tab-forge": "> 日誌を鍛造",
-        
         "editor-fields-title": "BLUEPRINT_入力フィールド",
         "editor-lbl-title": "> ログタイトル:",
         "editor-lbl-tag": "> メタデータタグ (TAG):",
@@ -310,13 +280,11 @@ const translations = {
         "editor-lbl-content": "> ログ本文 (HTML/Markdown対応):",
         "editor-btn-submit": "> ログをデータベースに送信",
         "editor-btn-cancel": "> 編集モードをキャンセル",
-
         "editor-preview-title": "ライブカードプレビュー (リアルタイム)",
         "editor-db-title": "DATABASE_MONITOR.LOG",
         "editor-btn-wipe": "ローカルデータベースを消去",
         "editor-snippet-title": "HTML_SNIPPET_GENERATOR.EXE",
         "editor-btn-copy": "クリップボードにコピー",
-
         // Manifesto
         "manifesto-stamp": "終身学習者",
         "manifesto-title": "何も知らぬが如く<br>生涯にわたり<br>学び続ける。",
@@ -325,7 +293,6 @@ const translations = {
         "manifesto-para-3": "ありきたりのテンプレートや甘い指導は提供しません。戦火の中で己の鋼を鍛え、手法を再構築し、技術的卍解を解放したいエンジニアを指導します。",
         "manifesto-quote": "「最強の盾は学位ではない。脅威の最中であっても学び続ける、揺るぎなき規律だ。」",
         "manifesto-author": "&mdash; ZYAD EL AOUAD、アイアンエンジニア",
-
         // Booking Intake
         "intake-header": "SAAS_LICENSE_INITIALIZATION.EXE",
         "intake-lbl-pillar": "> SAAS製品ライセンスを選択:",
@@ -336,11 +303,9 @@ const translations = {
         "intake-pillar-4": "CLOUD FEA VALIDATOR ($29/月)",
         "intake-lbl-objs": "> 現在のスキルと解決したい課題を入力:",
         "intake-btn-submit": "> システムコンパイルの開始",
-
         "footer-subtext": "// ESAでのGNC設計発表 // 日本でのロケット開発シミュレーション // 5カ国語に対応",
         "footer-top": "一番上へ",
         "footer-copy": "&copy; 2026 ZYAD EL AOUAD. 全てのデータ記録完了。パワー：システムクラス。",
-        
         // Teaser Keys
         "teaser-logo": "Zyad El Aouad",
         "teaser-nav-portfolio": "ポートフォリオを見る",
@@ -403,7 +368,6 @@ const translations = {
         "nav-blog": "BLOG",
         "nav-manifesto": "MANIFESTE",
         "nav-booking": "ACCÉDER AU DOJO",
-
         // Hero
         "hero-telemetry": "TÉLÉMÉTRIE ÉTABLIE // ÉCHELLE DE PUISSANCE : NIVEAU SYSTÈMES",
         "hero-title-1": "LE CIEL OU L'ENFER :",
@@ -411,55 +375,46 @@ const translations = {
         "hero-desc": "L'université vous a appris à calculer. Je vous apprends à survivre. Accélérez votre carrière de simple modélisateur CAO à architecte système grâce à un accompagnement aérospatial intensif. Fusionnant les processus de conception standard de l'ESA avec le style brut des shonen des années 90.",
         "hero-cta": "ENTRER DANS LE DOJO. COMMENCER VOTRE APPRENTISSAGE DES SYSTÈMES.",
         "hero-operator": "OPÉRATEUR : ZYAD_EL_AOUAD",
-
         // Hero Stats
         "stat-gnc": "CONTRÔLE GNC & ADCS",
         "stat-workflow": "DÉRIVE DE FLUX DE TRAVAIL (MATLAB/PY)",
         "stat-structural": "RÉSILIENCE STRUCTURELLE RIGOUREUSE",
-
         // About
         "about-title": "L'OPÉRATEUR",
         "about-num": "SECT_00 // BIOGRAPHIE GÉNÉRALE",
         "about-stamp": "DOSSIER VALIDÉ",
         "about-name": "ZYAD EL AOUAD",
-        "about-para-1": "Je suis ingénieur en Guidage, Navigation et Contrôle (GNC) et Systèmes de Détermination et de Contrôle d'Attitude (ADCS), visant à me spécialiser dans l'atténuation active des débris spatiaux, les boucles de contrôle de vol à haute dynamique et les systèmes dynamiques. Mes bases techniques et mon expérience s'étendent de la contribution aux lancements de fusées en Espagne et au Japon, à la présentation de lois de stabilisation des débris spatiaux à l'Agence spatiale européenne (ESA/ESTEC), en passant par une participation active à un projet universitaire de drone étudiant compétitif à l'Universidad Europea de Madrid.",
-        "about-para-2": "Ayant évolué à la fois dans des environnements aérospatiaux standards européens et dans la culture d'ingénierie académique intense en tant qu'étudiant d'échange à l'Université de Kyushu (et au Planet Q Rocketry Club), j'aide les étudiants et futurs ingénieurs à atteindre leurs objectifs et à sortir de leur zone de confort pour grandir.",
-        "about-para-3": "Opérant couramment dans cinq langues (anglais, français, arabe, espagnol et japonais), je conseille les ingénieurs sur l'optimisation technique, la résilience structurelle et la création de portfolios solides.",
-        "about-langs": "LANGUES : EN, FR, AR, ES, JP",
-
+        "about-para-1": "Salut !\n Je m'appelle Zyad !\n Je suis ingénieur en aérospatiale (2028) avec un intérêt particulier pour le guidage, la navigation et le contrôle (GNC) et ingénieur en systèmes de détermination et de contrôle d'attitude (ADCS), visant à me spécialiser dans l'atténuation active des débris spatiaux et les boucles et systèmes de contrôle de vol dynamique. Ma base technique et mon expérience comprennent la contribution à des lancements de fusées en Espagne et au Japon, à des missions de satellites en Espagne, la présentation de lois de stabilisation des débris spatiaux à l'Agence spatiale européenne (ESA/ESTEC), et la direction de l'un des deux groupes d'étudiants du projet universitaire de drones à l'Universidad Europea de Madrid.\n",
+        "about-para-2": "Ayant évolué à la fois dans les environnements de normes aérospatiales européennes et dans l'intense culture de l'ingénierie académique en tant qu'étudiant en échange à l'Université de Kyushu (et au Planet Q Rocketry Club), j'ai développé une grande capacité d'adaptation aux nouvelles cultures et aux nouveaux environnements.\n",
+        "about-para-3": "Je suis également capable de travailler dans cinq langues (anglais, français, arabe, espagnol et japonais) et j'ai une grande passion pour l'apprentissage des langues.\n",
+        "about-langs": "LANGUES : EN, FR, AR, ES, JP"
         // Dojo
         "dojo-title": "LE DOJO",
         "dojo-num": "SECT_01 // SERVICES",
-        
         "dojo-p1-tag": "SIMULATION & CONTRÔLE",
         "dojo-p1-title": "GNC AUTOPILOT TUNER",
         "dojo-p1-desc": "Optimisation et validation automatisées pour les boucles de contrôle de vol hautement dynamiques. Téléchargez vos modèles de système et vos architectures de contrôleur pour synthétiser automatiquement des gains robustes, exécuter des analyses de stabilité de Monte Carlo et exporter du code de pilote automatique C++/Python optimisé.",
         "dojo-p1-rate": "DÉVELOPPEUR : $49/MOIS",
         "dojo-p1-btn": "LANCER LE TUNER &rarr;",
-
         "dojo-p2-tag": "MÉCANIQUE ORBITALE",
         "dojo-p2-title": "DEBRIS STABILIZATION SOLVER",
         "dojo-p2-desc": "Calcul des lois de contrôle de stabilisation active et de désorbitation magnétique pour les débris spatiaux non coopératifs. Téléchargez les tenseurs d'inertie cibles et les vitesses de rotation pour générer des commandes de magnéto-coupleur et des profils de transition d'attitude conformes aux normes de l'ESA.",
         "dojo-p2-rate": "PROFESSIONNEL : $99/MOIS",
         "dojo-p2-btn": "CALCULER LA LOI &rarr;",
-
         "dojo-p3-tag": "PROPULSION",
         "dojo-p3-title": "HYBRID ROCKET SIMULATOR",
         "dojo-p3-desc": "Simulation en nuage du taux de régression et de la combustion transitoire pour les systèmes de propulsion hybrides. Modélisez instantanément la régression de la géométrie du grain, les oscillations de pression de la chambre et la dynamique des gaz de tuyère à l'aide de notre cluster CFD sans serveur.",
         "dojo-p3-rate": "ENTREPRISE : $149/MOIS",
         "dojo-p3-btn": "LANCER LA SIMULATION &rarr;",
-
         "dojo-p4-tag": "ANALYSE STRUCTURELLE",
         "dojo-p4-title": "CLOUD FEA VALIDATOR",
         "dojo-p4-desc": "Validation d'analyse structurelle haute fidélité et vérification des marges de sécurité sous contraintes de vibration de lancement. Téléchargez vos assemblages mécaniques pour vérifier les concentrations de contraintes, les chemins de charge et les coefficients de résilience à l'aide de scripts ANSYS automatisés.",
         "dojo-p4-rate": "OFFRE DE BASE : $29/MOIS",
         "dojo-p4-btn": "VALIDER LE DESIGN &rarr;",
-
         // Portfolio
         "portfolio-title": "LE PORTFOLIO",
-        "portfolio-num": "SECT_02 // PORTFOLIO",
+        "portfolio-num": "SECT_01 // PORTFOLIO",
         "portfolio-intro": "Voici mon historique opérationnel — preuve de mes compétences en propulsion et GNC validées par des agences aérospatiales et des clubs académiques.",
-        
         "proj1-overlay": "PLANET Q // U KYUSHU",
         "proj1-title": "FUSÉES HYBRIDES TADORI-TADORI",
         "proj1-desc": "Reconstruction des journaux de contrôle de vol et simulation structurelle pour le club de fusées Planet Q de l'Université de Kyushu. Analyse de la stabilisation atmosphérique dynamique, des rapports d'expansion de tuyère, et télémétrie de combustion hybride.",
@@ -472,7 +427,6 @@ const translations = {
         "proj1-val1": "4.5 MPa",
         "proj1-lbl2": "Poussée Max",
         "proj1-val2": "2.8 kN",
-
         "proj2-overlay": "SIMULATEUR ADCS",
         "proj2-title": "SIMULATEUR D'ATTITUDE CUBESAT SART",
         "proj2-desc": "Simulation matérielle (HIL) et logicielle du système ADCS (détermination et contrôle d'attitude) d'un CubeSat 3U. Modélisation du champ magnétique orbital, des couples de gradient de gravité et de la stabilisation par roues de réaction.",
@@ -485,19 +439,16 @@ const translations = {
         "proj2-val1": "50 Hz Temps-Réel",
         "proj2-lbl2": "Fusion Capteurs",
         "proj2-val2": "Algorithme EKF",
-
         "proj3-overlay": "ESA CLEAN SPACE DAYS 2026",
         "proj3-title": "STABILISATION DE DEBRIS SOUS-ACTIONNÉS",
         "proj3-desc": "Présentation sélectionnée à l'ESTEC (Centre européen de recherche et de technologie spatiales) pour les ESA Clean Space Days. Développement d'une loi de contrôle adaptative pour stabiliser un satellite après capture lorsque la moitié des actionneurs sont dégradés.",
         "proj3-btn": "EXAMINER L'ABSTRACT &rarr;",
-
         // Blog Workspace
         "blog-title": "JOURNAUX DE MISSION",
-        "blog-num": "SECT_03 // BRIEFINGS TACTIQUES",
+        "blog-num": "SECT_02 // BRIEFINGS TACTIQUES",
         "blog-intro": "Journaux opérationnels détaillant les performances du code, les tests sous contrainte en club de fusée, et les algorithmes de carrière. Compilés pour étude active.",
         "blog-tab-read": "> LIRE LES LOGS",
         "blog-tab-forge": "> FORGER UN NOUVEAU LOG",
-        
         "editor-fields-title": "CHAMPS_DE_SAISIE_SCHÉMA",
         "editor-lbl-title": "> TITRE DU LOG :",
         "editor-lbl-tag": "> CLASSE DU LOG (TAG) :",
@@ -507,13 +458,11 @@ const translations = {
         "editor-lbl-content": "> CONTENU DU LOG (HTML/Markdown supporté) :",
         "editor-btn-submit": "> TRANSMETTRE LE LOG A LA BDD",
         "editor-btn-cancel": "> ANNULER LE MODE ÉDITION",
-
         "editor-preview-title": "PREVIEW_CARTE_DYNAMIQUE (TEMPS RÉEL)",
         "editor-db-title": "MONITEUR_BASE_DE_DONNÉES.LOG",
         "editor-btn-wipe": "RÉINITIALISER LA BASE DE DONNÉES",
         "editor-snippet-title": "GENERATEUR_SNIPPET_HTML.EXE",
         "editor-btn-copy": "COPIER LE CODE HTML",
-
         // Manifesto
         "manifesto-stamp": "APPRENTI TOUJOURS",
         "manifesto-title": "APPRENDRE TOUTE SA VIE<br>COMME SI RIEN<br>N'ÉTAIT ACQUIS.",
@@ -522,7 +471,6 @@ const translations = {
         "manifesto-para-3": "Je n'offre pas de modèles faciles ou d'accompagnement académique passif. J'accompagne les ingénieurs qui veulent forger leur acier sous le feu, reconstruire leurs méthodes et débloquer leur Bankai technique.",
         "manifesto-quote": "\"LE BLINDAGE ULTIME N'EST PAS VOTRE DIPLÔME. C'EST LA DISCIPLINE INCASSABLE DE RESTER UN ÉTUDIANT AU CŒUR DE LA MENACE.\"",
         "manifesto-author": "&mdash; ZYAD EL AOUAD, THE IRON ENGINEER",
-
         // Booking Intake
         "intake-header": "SAAS_LICENSE_INITIALIZATION.EXE",
         "intake-lbl-pillar": "> SÉLECTIONNER LA LICENCE PRODUIT SAAS :",
@@ -533,11 +481,9 @@ const translations = {
         "intake-pillar-4": "CLOUD FEA VALIDATOR ($29/MOIS)",
         "intake-lbl-objs": "> COMPILER VOS CAPACITÉS ET OBJECTIFS :",
         "intake-btn-submit": "> INITIALISER LA COMPILATION DES SYSTÈMES",
-
         "footer-subtext": "// CONCEPTION GNC POUR L'ESA // SIMULATIONS ROCKETRY AU JAPON // TRILINGUE EN 5 LANGUES",
         "footer-top": "HAUT",
         "footer-copy": "&copy; 2026 ZYAD EL AOUAD. TOUTES OPÉRATIONS ENREGISTRÉES. PUISSANCE : CLASSE SYSTEME.",
-        
         // Teaser Keys
         "teaser-logo": "Zyad El Aouad",
         "teaser-nav-portfolio": "VOIR LE PORTFOLIO",
@@ -600,7 +546,6 @@ const translations = {
         "nav-blog": "BLOG",
         "nav-manifesto": "MANIFIESTO",
         "nav-booking": "ENTRAR AL DOJO",
-
         // Hero
         "hero-telemetry": "TELEMETRÍA ESTABLECIDA // ESCALA DE PODER: NIVEL DE SISTEMAS",
         "hero-title-1": "EL CIELO O EL INFIERNO:",
@@ -608,55 +553,46 @@ const translations = {
         "hero-desc": "La universidad te enseñó a calcular. Yo te enseño a sobrevivir. Acelera tu carrera de modelador CAD básico a arquitecto de sistemas con orientación aeroespacial de alta intensidad. Fusionando procesos de diseño estándar de la ESA con la fuerza bruta del shonen de los 90.",
         "hero-cta": "ENTRAR AL DOJO. INICIAR TU ENTRENAMIENTO DE SISTEMAS.",
         "hero-operator": "OPERADOR: ZYAD_EL_AOUAD",
-
         // Hero Stats
         "stat-gnc": "CONTROL GNC Y ADCS",
         "stat-workflow": "DERIVA DE FLUJO DE TRABAJO (MATLAB/PY)",
         "stat-structural": "RESILIENCIA ESTRUCTURAL RIGUROSA",
-
         // About
         "about-title": "EL OPERADOR",
         "about-num": "SECT_00 // BIOGRAFÍA GENERAL",
         "about-stamp": "REGISTRO VALIDADO",
         "about-name": "ZYAD EL AOUAD",
-        "about-para-1": "Soy ingeniero de Guiado, Navegación y Control (GNC) y Sistemas de Determinación y Control de Actitud (ADCS), con el objetivo de especializarme en la mitigación activa de basura espacial, bucles de control de vuelo altamente dinámicos y sistemas dinámicos. Mi base técnica y experiencia abarcan la contribución a lanzamientos de cohetes tanto en España como en Japón, la presentación de leyes de estabilización de basura espacial en la Agencia Espacial Europea (ESA/ESTEC), y el liderazgo en un proyecto universitario de UAV estudiantil competitivo en la Universidad Europea de Madrid.",
-        "about-para-2": "Habiendo operado tanto en entornos estándar aeroespaciales europeos como en la intensa cultura de ingeniería académica como estudiante de intercambio en la Universidad de Kyushu (y Planet Q Rocketry Club), ayudo a estudiantes y futuros ingenieros a cumplir sus objetivos y salir de su zona de confort para crecer.",
-        "about-para-3": "Operando con fluidez en cinco idiomas (inglés, francés, árabe, español y japonés), asesoro a ingenieros en optimización técnica, resiliencia estructural y en la construcción de portafolios blindados.",
-        "about-langs": "IDIOMAS: EN, FR, AR, ES, JP",
-
+        "about-para-1": "¡Hola!\n ¡Me llamo Zyad!\n Soy ingeniero aeroespacial (2028) con un interés especial en Guiado, Navegación y Control (GNC) e ingeniero de Sistemas de Determinación y Control de Actitud (ADCS), con el objetivo de especializarme en la mitigación activa de basura espacial y en sistemas y bucles de control de vuelo dinámico. Mi base técnica y experiencia abarcan la contribución a lanzamientos de cohetes tanto en España como en Japón, misiones de satélites en España, la presentación de leyes de estabilización de basura espacial en la Agencia Espacial Europea (ESA/ESTEC), y ser el líder de uno de los dos grupos de estudiantes del proyecto universitario de UAV en la Universidad Europea de Madrid.\n",
+        "about-para-2": "Habiendo operado tanto dentro de los entornos de estándares aeroespaciales europeos como en la intensa cultura académica de ingeniería como estudiante de intercambio en la Universidad de Kyushu (y en el Planet Q Rocketry Club), he desarrollado una gran flexibilidad hacia nuevas culturas y entornos.\n",
+        "about-para-3": "También soy capaz de desenvolverme en cinco idiomas (inglés, francés, árabe, español y japonés) y tengo una gran pasión por el aprendizaje de idiomas.\n",
+        "about-langs": "IDIOMAS: EN, FR, AR, ES, JP"
         // Dojo
         "dojo-title": "EL DOJO",
         "dojo-num": "SECT_01 // SERVICIOS",
-        
         "dojo-p1-tag": "SIMULACIÓN Y CONTROL",
         "dojo-p1-title": "GNC AUTOPILOT TUNER",
         "dojo-p1-desc": "Sintonización y validación automatizadas para bucles de control de vuelo altamente dinámicos. Sube tus modelos de planta y arquitecturas de controlador para sintetizar ganancias robustas, ejecutar análisis de estabilidad de Montecarlo y exportar código de piloto automático optimizado en C++/Python.",
         "dojo-p1-rate": "DESARROLLADOR: $49/MES",
         "dojo-p1-btn": "INICIAR AFINACIÓN &rarr;",
-
         "dojo-p2-tag": "MECÁNICA ORBITAL",
         "dojo-p2-title": "DEBRIS STABILIZATION SOLVER",
         "dojo-p2-desc": "Cálculo de leyes de control de estabilización activa y desorbitación magnética para basura espacial no cooperativa. Sube tensores de inercia y velocidades de rotación para generar comandos óptimos de magnetopares y perfiles de transición de actitud conformes a los estándares de la ESA.",
         "dojo-p2-rate": "PROFESIONAL: $99/MES",
         "dojo-p2-btn": "CALCULAR LEY &rarr;",
-
         "dojo-p3-tag": "PROPULSIÓN",
         "dojo-p3-title": "HYBRID ROCKET SIMULATOR",
         "dojo-p3-desc": "Simulación en la nube de la tasa de regresión y combustión transitoria para sistemas de propulsión de cohetes híbridos. Modela la regresión geométrica del grano, las oscilaciones de presión de la cámara y la dinámica de gases en toberas usando nuestro clúster CFD sin servidor.",
         "dojo-p3-rate": "ENTERPRISE: $149/MES",
         "dojo-p3-btn": "EJECUTAR SIMULACIÓN &rarr;",
-
         "dojo-p4-tag": "ANÁLISIS ESTRUCTURAL",
         "dojo-p4-title": "CLOUD FEA VALIDATOR",
         "dojo-p4-desc": "Validación de análisis estructural de alta fidelidad y verificación de márgenes de seguridad bajo cargas de vibración de lanzamiento. Sube ensamblajes mecánicos para verificar concentraciones de tensión, trayectorias de carga y resiliencia estructural mediante scripts automatizados en la nube.",
         "dojo-p4-rate": "PLAN BASE: $29/MES",
         "dojo-p4-btn": "VALIDAR DISEÑO &rarr;",
-
         // Portfolio
         "portfolio-title": "EL PORTFOLIO",
-        "portfolio-num": "SECT_02 // PORTAFOLIO",
+        "portfolio-num": "SECT_01 // PORTAFOLIO",
         "portfolio-intro": "Aquí está mi registro operativo: pruebas de capacidad GNC y propulsión validadas por agencias aeroespaciales y clubes académicos.",
-        
         "proj1-overlay": "PLANET Q // U KYUSHU",
         "proj1-title": "COHETES HÍBRIDOS TADORI-TADORI",
         "proj1-desc": "Reconstrucción de diarios de control de vuelo y simulación de distribución estructural para el club de cohetes Planet Q de la Universidad de Kyushu. Análisis de estabilización atmosférica dinámica, coeficientes de expansión en toberas y telemetría de combustión.",
@@ -669,7 +605,6 @@ const translations = {
         "proj1-val1": "4.5 MPa",
         "proj1-lbl2": "Empuje Máximo",
         "proj1-val2": "2.8 kN",
-
         "proj2-overlay": "SIMULADOR ADCS",
         "proj2-title": "SIMULADOR DE ACTITUD CUBESAT SART",
         "proj2-desc": "Simulación de hardware (HIL) y software de un sistema ADCS (determinación y control de actitud) de un CubeSat de 3U. Modelado de campos magnéticos orbitales, pares de gradiente de gravedad y estabilización mediante ruedas de reacción.",
@@ -682,19 +617,16 @@ const translations = {
         "proj2-val1": "50 Hz Tiempo Real",
         "proj2-lbl2": "Fusión Sensores",
         "proj2-val2": "Algoritmo EKF",
-
         "proj3-overlay": "ESA CLEAN SPACE DAYS 2026",
         "proj3-title": "ESTABILIZACIÓN DE BASURA SUBACCIONADA",
         "proj3-desc": "Presentación seleccionada en el ESTEC (Centro Europeo de Investigación y Tecnología Espacial) para los ESA Clean Space Days. Desarrollo de una ley de control adaptativa para estabilizar un satélite tras la captura cuando la mitad de los actuadores están degradados.",
         "proj3-btn": "EXAMINAR RESUMEN &rarr;",
-
         // Blog Workspace
         "blog-title": "DIARIOS DE MISIÓN",
-        "blog-num": "SECT_03 // INFORMES TÁCTICOS",
+        "blog-num": "SECT_02 // INFORMES TÁCTICOS",
         "blog-intro": "Diarios operativos que detallan el rendimiento del código, pruebas de esfuerzo en cohetes y algoritmos de carrera profesional. Compilados para el estudio activo.",
         "blog-tab-read": "> LEER DIARIOS",
         "blog-tab-forge": "> FORJAR NUEVO DIARIO",
-        
         "editor-fields-title": "CAMPOS_DE_ENTRADA_PLANO",
         "editor-lbl-title": "> TÍTULO DEL DIARIO:",
         "editor-lbl-tag": "> CLASE DEL DIARIO (TAG):",
@@ -704,13 +636,11 @@ const translations = {
         "editor-lbl-content": "> CONTENIDO DEL DIARIO (HTML/Markdown soportado):",
         "editor-btn-submit": "> TRANSMITIR DIARIO A LA BDD",
         "editor-btn-cancel": "> CANCELAR MODO EDICIÓN",
-
         "editor-preview-title": "VISTA_PREVIA_DINA (TIEMPO REAL)",
         "editor-db-title": "MONITOR_BASE_DE_DATOS.LOG",
         "editor-btn-wipe": "RECOMPILAR BDD ORIGINAL",
         "editor-snippet-title": "GENERADOR_SNIPPET_HTML.EXE",
         "editor-btn-copy": "COPIAR CÓDIGO HTML",
-
         // Manifesto
         "manifesto-stamp": "ESTUDIANTE SIEMPRE",
         "manifesto-title": "APRENDER TODA LA VIDA<br>COMO SI NADA<br>ESTUVIESE ESCRITO.",
@@ -719,7 +649,6 @@ const translations = {
         "manifesto-para-3": "No ofrezco plantillas genéricas ni tutorías pasivas. Acompaño a ingenieros que quieren templar su acero bajo el fuego, reconstruir sus metodologías y desbloquear su Bankai técnico.",
         "manifesto-quote": "\"EL BLINDAJE DEFINITIVO NO ES TU TÍTULO. ES LA DISCIPLINA INQUEBRANTABLE DE SEGUIR SIENDO UN ESTUDIANTE EN MEDIO DE LA AMENAZA.\"",
         "manifesto-author": "&mdash; ZYAD EL AOUAD, THE IRON ENGINEER",
-
         // Booking Intake
         "intake-header": "SAAS_LICENSE_INITIALIZATION.EXE",
         "intake-lbl-pillar": "> SELECCIONAR LICENCIA DE PRODUCTO SAAS:",
@@ -730,12 +659,10 @@ const translations = {
         "intake-pillar-4": "CLOUD FEA VALIDATOR ($29/MES)",
         "intake-lbl-objs": "> COMPILAR CAPACIDADES Y OBJETIVOS:",
         "intake-btn-submit": "> INICIALIZAR COMPILACIÓN DE SISTEMAS",
-
         // Footer
         "footer-subtext": "// PRESENTANDO DISEÑOS GNC EN LA ESA // SIMULACIONES EN JAPÓN // FLUIDO EN 5 IDIOMAS",
         "footer-top": "ARRIBA",
         "footer-copy": "&copy; 2026 ZYAD EL AOUAD. TODAS LAS OPERACIONES REGISTRADAS. PODER: CLASE SISTEMA.",
-
         // Teaser Keys
         "teaser-logo": "Zyad El Aouad",
         "teaser-nav-portfolio": "VER PORTAFOLIO",
@@ -799,7 +726,6 @@ const translations = {
         "nav-blog": "البلوغ",
         "nav-manifesto": "البيان ديالي",
         "nav-booking": "دخل للدوجو",
-
         // Hero
         "hero-telemetry": "تيليميتري واجدة // الجهد: نيفو سيستم",
         "hero-title-1": "الجنة ولا جهنم:",
@@ -807,55 +733,46 @@ const translations = {
         "hero-desc": "الجامعة قراتك كيفاش تحسب، وأنا غنعلمك كيفاش تسلك راسك وتنجح. زرب الكاريير ديالك من رسام CAD عادي لـ مهندس أنظمة بفضل توجيه قاصح فالطيران والفضاء. كنخلطو طرق الخدمة ديال وكالة الفضاء الأوروبية (ESA) مع الحماس والروح ديال أنمي التسعينات.",
         "hero-cta": "دخل للدوجو. بدا تدريب الأنظمة ديالك دابا.",
         "hero-operator": "المشغل: ZYAD_EL_AOUAD",
-
         // Hero Stats
         "stat-gnc": "التحكّم GNC & ADCS",
         "stat-workflow": "تسيير الخدمة (MATLAB/PY)",
         "stat-structural": "الصلابة الهيكلية الدقيقة",
-
         // About
         "about-title": "المُشغّل",
         "about-num": "SECT_00 // السيرة العامة",
         "about-stamp": "الملف مقبول",
         "about-name": "زياد العواد",
-        "about-para-1": "أنا مهندس توجيه وملاحة وتحكّم (GNC) وأنظمة تحكّم وتحديد الوضعية (ADCS)، باغي نتخصص فتنقية الحطام الفضائي وأنظمة التحكّم فـ ديناميكيات الطيران العالية والأنظمة الديناميكية. الخبرة ديالي واصلة للمساهمة فإطلاق الصواريخ فإسبانيا واليابان، وتقديم قوانين استقرار الحطام الفضائي فوكالة الفضاء الأوروبية (ESA/ESTEC)، وتواجد ديالي فقلب مشروع درون طلابي تنافسي فجامعة مدريد الأوروبية.",
-        "about-para-2": "من بعد ما خدمت فبيئات معيارية ديال الطيران والفضاء ف أوروبا وفالثقافة الهندسية الأكاديمية القاصحة كطالب تبادل فجامعة كيوشو (وفي نادي الصواريخ Planet Q)، كنساعد الطلبة ومهندسي المستقبل باش يوصلو لأهدافهم ويخرجو من منطقة الراحة ديالهم باش يطورو راسهم.",
-        "about-para-3": "كنهضر بخمسة د اللغات بطلاقة (الإنجليزية، الفرنسية، العربية، الإسبانية، واليابانية)، وكنعاون المهندسين على تطوير الخدمة ديالهم، الصلابة الهيكلية، وبناء بورتفوليو حديدي كيقنع الشركات.",
-        "about-langs": "اللغات: EN, FR, AR, ES, JP",
-
+        "about-para-1": "مرحباً!\n اسمي زياد!\n أنا مهندس طيران وفضاء (2028) مع اهتمام خاص بهندسة التوجيه والملاحة والتحكم (GNC) وأنظمة تحديد والتحكم في الاتجاه (ADCS)، وأهدف إلى التخصص في التخفيف النشط للحطام الفضائي وحلقات وأنظمة التحكم في الطيران الديناميكي. تشمل أسسي التقنية وخبرتي المساهمة في إطلاق الصواريخ في كل من إسبانيا واليابان، ومهام الأقمار الصناعية في إسبانيا، وتقديم قوانين استقرار الحطام الفضائي في وكالة الفضاء الأوروبية (ESA/ESTEC)، وقيادة إحدى مجموعتي الطلاب في مشروع الطائرات بدون طيار الجامعي في جامعة مدريد الأوروبية (Universidad Europea de Madrid).\n",
+        "about-para-2": "من خلال عملي داخل بيئات معايير الطيران والفضاء الأوروبية وثقافة الهندسة الأكاديمية المكثفة كطالب تبادل في جامعة كيوشو (ونادي كوكب كيو للصواريخ)، طورت مرونة قوية للتكيف مع الثقافات والبيئات الجديدة.\n",
+        "about-para-3": "أنا قادر أيضاً على العمل بخمس لغات (الإنجليزية، الفرنسية، العربية، الإسبانية، واليابانية) ولدي شغف كبير بتعلم اللغات.\n",
+        "about-langs": "اللغات: EN, FR, AR, ES, JP"
         // Dojo
         "dojo-title": "الدوجو",
         "dojo-num": "SECT_01 // الخدمات",
-        
         "dojo-p1-tag": "المحاكاة والتحكّم",
         "dojo-p1-title": "GNC AUTOPILOT TUNER",
         "dojo-p1-desc": "الضبط والتحقق الأوتوماتيكي ديال أنظمة التحكم فـ ديناميكيات الطيران العالية. صصيفط الموديلات ديالك وديزاين الكنترولر باش تصايب روبوست غينز (gains)، دير تحليلات الاستقرار ديال مونتي كارلو، وتخرج كود طيران آلي مقاد بـ C++/Python.",
         "dojo-p1-rate": "المطور: 49$/الشهر",
         "dojo-p1-btn": "خدم المنظم &rarr;",
-
         "dojo-p2-tag": "الميكانيك المداري",
         "dojo-p2-title": "DEBRIS STABILIZATION SOLVER",
         "dojo-p2-desc": "حساب قوانين التحكم فالتنقية المغناطيسية واستقرار الحطام الفضائي غير المتعاون. صيفط الماتريس ديال القصور الذاتي وسرعة الدوران باش تخرج أوامر الماغنيطوركرز (magnetorquers) وتغيير الوضعية بمواصفات وكالة الفضاء الأوروبية (ESA).",
         "dojo-p2-rate": "المحترف: 99$/الشهر",
         "dojo-p2-btn": "حسب قوانين التحكم &rarr;",
-
         "dojo-p3-tag": "الدفع الفضائي",
         "dojo-p3-title": "HYBRID ROCKET SIMULATOR",
         "dojo-p3-desc": "محاكاة سحابية ديال سرعة الاحتراق وديناميكيات الغازات فأنظمة الدفع ديال الصواريخ الهجينة. موديلي دغيا تآكل الحشوة الفضائية، تغيرات الضغط فالغرفة، وحركة الغاز فالفوهة باستعمال الكلوستر CFD السحابي ديالنا.",
         "dojo-p3-rate": "المؤسسات: 149$/الشهر",
         "dojo-p3-btn": "دير المحاكاة &rarr;",
-
         "dojo-p4-tag": "التحليل الهيكلي",
         "dojo-p4-title": "CLOUD FEA VALIDATOR",
         "dojo-p4-desc": "تحقق عالي الدقة من الهندسة الهيكلية وحساب هوامش الأمان تحت ضغط اهتزازات الإطلاق. صيفط أجزاء الميكانيك باش تفحص نقط تركز الضغط وتوزيع الثقل باستعمال سكربتات ANSYS أوتوماتيكية فالسحاب.",
         "dojo-p4-rate": "الأساسي: 29$/الشهر",
         "dojo-p4-btn": "تحقق من الديزاين &rarr;",
-
         // Portfolio
         "portfolio-title": "ملف الأعمال",
-        "portfolio-num": "SECT_02 // ملف الأعمال",
+        "portfolio-num": "SECT_01 // ملف الأعمال",
         "portfolio-intro": "ها هو سجل الخدمة ديالي — دليل على القدرة فـ GNC والدفع الفضائي مقبول من وكالات الفضاء والنوادي الأكاديمية.",
-        
         "proj1-overlay": "PLANET Q // جامعة كيوشو",
         "proj1-title": "صواريخ هجينة TADORI-TADORI",
         "proj1-desc": "إعادة بناء سجلات التحكم فـ الطيران ومحاكاة الهيكل الهندسي لنادي الصواريخ Planet Q بجامعة كيوشو. تحليل الاستقرار الديناميكي فـ الجو، ونسب توسع الفوهات، وتيليميتري الاحتراق الهجين.",
@@ -868,7 +785,6 @@ const translations = {
         "proj1-val1": "4.5 ميغاباسكال",
         "proj1-lbl2": "أقصى دفع",
         "proj1-val2": "2.8 كيلو نيوتن",
-
         "proj2-overlay": "محاكي ADCS",
         "proj2-title": "محاكي وضعية الأقمار الاصطناعية CUBESAT SART",
         "proj2-desc": "محاكاة هجينة (HIL) وبرمجية لنظام ADCS (تحديد وتحكم وضعية الأقمار الاصطناعية) لـ CubeSat 3U. نمذجة الحقول المغناطيسية المدارية، وعزوم الجاذبية، واستقرار التدوير باستعمال عجلات رد الفعل.",
@@ -881,19 +797,16 @@ const translations = {
         "proj2-val1": "50 هرتز حقيقي",
         "proj2-lbl2": "دمج الحساسات",
         "proj2-val2": "خوارزمية EKF",
-
         "proj3-overlay": "أيام الفضاء النظيف لـ ESA 2026",
         "proj3-title": "استقرار الحطام الفضائي عند نقص المشغلات",
         "proj3-desc": "تم اختيار العرض التقديمي ديالي فـ ESTEC (المركز الأوروبي لأبحاث وتكنولوجيا الفضاء) فـ أيام الفضاء النظيف لـ ESA. تطوير خوارزمية تحكم تكيفية لتثبيت المركبة الفضائية بعد الالتقاط ملي كيكونو نص المشغلات خاسرين ولا عيانين.",
         "proj3-btn": "شوف الملخص &rarr;",
-
         // Blog Workspace
         "blog-title": "سجلات المهام",
-        "blog-num": "SECT_03 // تقارير تكتيكية",
+        "blog-num": "SECT_02 // تقارير تكتيكية",
         "blog-intro": "سجلات عملية كتفصل أداء الكود، وتجارب الضغط لنادي الصواريخ، وخوارزميات الكاريير المهني. مصوبة ومجموعة للدراسة التكتيكية.",
         "blog-tab-read": "> قرا السجلات",
         "blog-tab-forge": "> قاد سجل جديد",
-        
         "editor-fields-title": "حقول_إدخال_الديزاين",
         "editor-lbl-title": "> عنوان السجل:",
         "editor-lbl-tag": "> نوع السجل (التاغ):",
@@ -903,13 +816,11 @@ const translations = {
         "editor-lbl-content": "> محتوى السجل الأساسي (HTML/Markdown مقبول):",
         "editor-btn-submit": "> رسل السجل لقاعدة البيانات",
         "editor-btn-cancel": "> إلغاء التعديل",
-
         "editor-preview-title": "معاينة_الكارت_حينية (وقت حقيقي)",
         "editor-db-title": "مراقب_قاعدة_البيانات.LOG",
         "editor-btn-wipe": "مسح قاعدة البيانات كاملة",
         "editor-snippet-title": "مولد_أكواد_HTML.EXE",
         "editor-btn-copy": "نسخ كود HTML",
-
         // Manifesto
         "manifesto-stamp": "طالب ديما",
         "manifesto-title": "التعلم مدى الحياة<br>بحال يلا ما عمرك<br>عرفتي شي حاجة.",
@@ -918,7 +829,6 @@ const translations = {
         "manifesto-para-3": "أنا ماكنعطيش موديلات واجدة وساهلة ولا كوتشينغ ناعس. أنا كنورّي المهندسين اللي باغيين يقصحو كتافهم تحت الضغط ويفجروا البانكاي الهندسي ديالهم.",
         "manifesto-quote": "\"الدرع الحقيقي ماشي هو الشهادة ديالك. هو الديسيبلين والصرامة باش تبقى طالب كيتعلم واخا تكون وسط الخطر.\"",
         "manifesto-author": "&mdash; زياد العواد، مهندس من حديد",
-
         // Booking Intake
         "intake-header": "SAAS_LICENSE_INITIALIZATION.EXE",
         "intake-lbl-pillar": "> اختر ترخيص منتج SAAS:",
@@ -929,12 +839,10 @@ const translations = {
         "intake-pillar-4": "CLOUD FEA VALIDATOR ($29/الشهر)",
         "intake-lbl-objs": "> جمّع القدرات والأهداف الحالية ديابك:",
         "intake-btn-submit": "> بدا عملية تركيب الأنظمة",
-
         // Footer
         "footer-subtext": "// تقديم ديزاين GNC فـ ESA // محاكاة الصواريخ فاليابان // كنهضر بـ 5 د اللغات",
         "footer-top": "للفوق",
         "footer-copy": "&copy; 2026 زياد العواد. كاع العمليات مسجلة. مستوى الطاقة: أنظمة مهنية.",
-
         // Teaser Keys
         "teaser-logo": "Zyad El Aouad",
         "teaser-nav-portfolio": "شاهد البورتفوليو",

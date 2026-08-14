@@ -1,1 +1,1 @@
-Personal website with my different academic and career achievements.
+Personal website with my different academic and professional achievements, goals and projects.
